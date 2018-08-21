@@ -1,0 +1,14 @@
+// logo
+
+@import '../../layouts/variables.scss';
+
+.logo svg {
+  height: 60px;
+  width: auto;
+  .a {
+    fill: #333;
+  }
+  .b {
+    fill: $ntv-primary;
+  }
+}

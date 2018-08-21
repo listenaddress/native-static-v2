@@ -1,0 +1,59 @@
+@import 'variables.scss';
+
+// Typography
+
+// --- baseline
+
+body {
+  font-size: 16px;
+}
+
+// --- Headings
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+h5 {
+
+}
+
+h6 {
+
+}
+
+// --- Paragraphs
+
+p {
+
+}
+
+p.large {
+  font-size: 1.35em;
+  font-weight: 300;
+  line-height: 1.5em;
+}
+
+
+// --- Links
+
+a {
+  color: $ntv-action;
+  text-decoration: none;
+  transition: all .2s linear;
+  &:hover {
+
+  }
+}
