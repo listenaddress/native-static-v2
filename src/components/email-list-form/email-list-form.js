@@ -6,25 +6,30 @@ import './email-list-form.scss'
 class EmailListForm extends React.Component {
   state = {
     resultMessage: '',
+    error: false,
   }
 
   handleSubmit = async (e) => {
     e.preventDefault();
     const formData = new FormData(this.form);
     const result = await addToMailchimp(formData.get('email'))
+    const newState = { resultMessage: result.msg.split('<a')[0] }
     this.setState({
-      resultMessage: result.msg,
+      resultMessage: result.msg.split('<a')[0],
+      error: result.result === 'error',
     })
     this.form.reset();
   }
  
   render () {
+    const resultMessage = this.state.error ? "error-message" : "success-message";
+
     return (
       <form onSubmit={this.handleSubmit} name="emailForm" ref={(el) => this.form = el} autoComplete="off">
         <input type="text" name="email" placeholder="email address" />
         <button type="submit">STAY UPDATED</button>
         <div>
-          <p>{this.state.resultMessage}</p>
+          <p className={resultMessage}>{this.state.resultMessage}</p>
         </div>
       </form>
     )
