@@ -9,16 +9,17 @@ class EmailListForm extends React.Component {
     error: false,
   }
 
-  handleSubmit = async (e) => {
+  handleSubmit = (e) => {
     e.preventDefault();
     const formData = new FormData(this.form);
-    const result = await addToMailchimp(formData.get('email'))
-    const newState = { resultMessage: result.msg.split('<a')[0] }
-    this.setState({
-      resultMessage: result.msg.split('<a')[0],
-      error: result.result === 'error',
-    })
-    this.form.reset();
+    addToMailchimp(formData.get('email')).then((result) => {
+      const newState = { resultMessage: result.msg.split('<a')[0] }
+      this.setState({
+        resultMessage: result.msg.split('<a')[0],
+        error: result.result === 'error',
+      })
+      this.form.reset();
+    });
   }
  
   render () {

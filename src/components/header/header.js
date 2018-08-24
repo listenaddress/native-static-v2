@@ -3,7 +3,7 @@ import './header.scss'
 import Logo from '../logo/logo'
 import Link from 'gatsby-link'
 
-const Header = ({ siteTitle }) => (
+const Header = () => (
   <div className="navbar">
     <Link to="/">
       <Logo />
