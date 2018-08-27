@@ -1,5 +1,7 @@
 import React from 'react'
 import EmailListForm from '../components/email-list-form/email-list-form'
+import CommunityCarousel from '../components/community-carousel/community-carousel'
+
 import './home.scss'
 
 const IndexPage = () => (
@@ -57,6 +59,9 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
+    </section>
+    <section>
+      <CommunityCarousel />
     </section>
   </div>
 )
