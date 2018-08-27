@@ -15,11 +15,11 @@ h1 {
 }
 
 h2 {
-
+  font-size: 2.75em;
 }
 
 h3 {
-
+  font-size: 2em;
 }
 
 h4 {
@@ -31,13 +31,16 @@ h5 {
 }
 
 h6 {
-
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 100;
 }
 
 // --- Paragraphs
 
 p {
-
+ font-weight: 100;
+ letter-spacing: .05em;
 }
 
 p.large {
