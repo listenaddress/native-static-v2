@@ -13,22 +13,21 @@ class CommunityCarousel extends React.Component {
   }
 
   componentDidMount() {
-    this.buildCommunityList()
+    this.setState({
+      communityList: this.buildCommunityList(this.state.tribeList),
+    })
   }
 
-  buildCommunityList = () => {
-    const communityList = (communityData || []).map((community) => {
+  buildCommunityList = (list) => {
+    return (communityData[list] || []).map((community) => {
       return <CommunityCard community={community} key={community.id} />
     });
-
-    this.setState({
-      communityList: communityList,
-    })
   }
 
   swapCommunityList = (listName) => {
     this.setState({
       tribeList: listName,
+      communityList: this.buildCommunityList(listName),
     })
   }
 
@@ -74,7 +73,7 @@ class CommunityCarousel extends React.Component {
         <div className="Communities__carousel">
           
           <Slider ref={c => (this.slider = c)} {...settings}>
-           {this.state.communityList}
+            {this.state.communityList}
           </Slider>
           <button onClick={this.previous}>PREV</button>
           <button onClick={this.next}>NEXT</button>
