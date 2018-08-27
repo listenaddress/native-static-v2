@@ -16,9 +16,18 @@ class CommunityCarousel extends React.Component {
     })
   }
 
+  next = () => {
+    this.slider.slickNext();
+  }
+  
+  previous = () => {
+    this.slider.slickPrev();
+  }
+
   render () {
     const settings = {
-      dots: true,
+      // dots: ,
+      arrows: false,
       infinite: true,
       speed: 500,
       slidesToShow: 5,
@@ -48,7 +57,8 @@ class CommunityCarousel extends React.Component {
           </div>
         </div>
         <div className="Communities__carousel">
-          <Slider {...settings}>
+          
+          <Slider ref={c => (this.slider = c)} {...settings}>
             <div>
               <h3>1</h3>
             </div>
@@ -68,6 +78,8 @@ class CommunityCarousel extends React.Component {
               <h3>6</h3>
             </div>
           </Slider>
+          <button onClick={this.previous}>PREV</button>
+          <button onClick={this.next}>NEXT</button>
         </div>
       </div>
 
