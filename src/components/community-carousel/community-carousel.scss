@@ -1,0 +1,29 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.Communities {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.Communities__header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+
+.Communities__header--links {
+  flex-basis: 70%;
+}
+
+.Communities__header--links a {
+  margin-right: 1em;
+}
+
+.active--current {
+  text-decoration: underline;
+}
+
+.active--future {
+  text-decoration: underline;
+}
