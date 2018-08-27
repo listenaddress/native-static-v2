@@ -18,13 +18,40 @@ class CommunityCarousel extends React.Component {
     })
   }
 
-  buildCommunityList = (list) => {
-    return (communityData[list] || []).map((community) => {
-      return <CommunityCard community={community} key={community.id} />
+  buildCommunityList = (list, middleItem) => {
+    return communityData[list].map((community, i) => {
+      const middleItemIndex = middleItem || 0;
+      return <CommunityCard 
+        community={community} 
+        key={community.id} 
+        displayClass={this.setDisplayClass(middleItemIndex, i)}/>
     });
   }
 
+  setDisplayClass = (middleItemIndex, i) => {
+    const itemCount = communityData[this.state.tribeList].length - 1;
+    const lastItem = i === itemCount;
+    const lastItemMiddle = middleItemIndex === itemCount;
+    let previous = middleItemIndex - 1 === i;
+    if (!middleItemIndex && lastItem)  {
+      previous = true
+    }
+    let next = middleItemIndex + 1  === i;
+    if (!i && lastItemMiddle)  {
+      next = true
+    }
+
+    if (middleItemIndex === i) {
+      return 'CommunityCard--center';
+    } else if (previous || next) {
+      return 'CommunityCard--adjacent';
+    } else {
+      return 'CommunityCard';
+    }
+  }
+
   swapCommunityList = (listName) => {
+    this.slider.slickGoTo(0)
     this.setState({
       tribeList: listName,
       communityList: this.buildCommunityList(listName),
@@ -39,13 +66,24 @@ class CommunityCarousel extends React.Component {
     this.slider.slickPrev();
   }
 
+  handleSlide = (current) => {
+    this.setState({
+      communityList: this.buildCommunityList(this.state.tribeList, current),
+    })
+  }
+
   render () {
     const settings = {
       arrows: false,
       infinite: true,
       speed: 500,
       slidesToShow: 5,
-      slidesToScroll: 1
+      slidesToScroll: 1,
+      centerMode: true,
+      focusOnSelect: true,
+      initialSlide: 0,
+      beforeChange: (prev, current) => this.handleSlide(current),
+      onReInit: console.log('reinit')
     }
     const activeCurrent = this.state.tribeList === 'current' ? 'active--current' : '';
     const activeFuture = this.state.tribeList === 'future' ? 'active--future' : '';;
@@ -71,7 +109,6 @@ class CommunityCarousel extends React.Component {
           </div>
         </div>
         <div className="Communities__carousel">
-          
           <Slider ref={c => (this.slider = c)} {...settings}>
             {this.state.communityList}
           </Slider>

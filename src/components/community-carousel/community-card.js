@@ -1,10 +1,9 @@
 import React from 'react'
-import Slider from "react-slick";
 
 import './community-carousel.scss'
 
-const CommunityCard = ({ community }) => (
-  <div className="CommunityCard" key={community.id}>
+const CommunityCard = ({ community, displayClass }) => (
+  <div className={displayClass} key={community.id}>
     <p>{community.name}</p>
     <p>{community.subtitle}</p>
     <img src={community.image} width="200"/>

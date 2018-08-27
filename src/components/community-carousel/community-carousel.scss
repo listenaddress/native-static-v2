@@ -37,3 +37,16 @@ button.slick-arrow .slick-prev {
   color: black;
   background: none;
 }
+
+.CommunityCard {
+  opacity: 0.45;
+}
+
+.CommunityCard--center p {
+  font-size: 20px;
+  opacity: 1;
+}
+
+.CommunityCard--adjacent {
+  opacity: 0.75;
+}
