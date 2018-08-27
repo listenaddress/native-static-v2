@@ -1,14 +1,30 @@
-import React from 'react'
-import Slider from "react-slick";
+import React from 'react';
+import Slider from 'react-slick';
+
+import CommunityCard from './community-card';
+import communityData from '../../data/communities';
 
 import './community-carousel.scss'
 
 class CommunityCarousel extends React.Component {
   state = {
     tribeList: 'current',
+    communityList: [],
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    this.buildCommunityList()
+  }
+
+  buildCommunityList = () => {
+    const communityList = (communityData || []).map((community) => {
+      return <CommunityCard community={community} key={community.id} />
+    });
+
+    this.setState({
+      communityList: communityList,
+    })
+  }
 
   swapCommunityList = (listName) => {
     this.setState({
@@ -26,7 +42,6 @@ class CommunityCarousel extends React.Component {
 
   render () {
     const settings = {
-      // dots: ,
       arrows: false,
       infinite: true,
       speed: 500,
@@ -59,24 +74,7 @@ class CommunityCarousel extends React.Component {
         <div className="Communities__carousel">
           
           <Slider ref={c => (this.slider = c)} {...settings}>
-            <div>
-              <h3>1</h3>
-            </div>
-            <div>
-              <h3>2</h3>
-            </div>
-            <div>
-              <h3>3</h3>
-            </div>
-            <div>
-              <h3>4</h3>
-            </div>
-            <div>
-              <h3>5</h3>
-            </div>
-            <div>
-              <h3>6</h3>
-            </div>
+           {this.state.communityList}
           </Slider>
           <button onClick={this.previous}>PREV</button>
           <button onClick={this.next}>NEXT</button>
