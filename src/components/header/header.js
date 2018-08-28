@@ -15,8 +15,8 @@ class Header extends React.Component {
   }
 
   render() {
-    const mobileNavClass = this.state.navOpen ? 
-      'navbar--mobile navbar--collapsed' : 'navbar--mobile';
+    const mobileNavClass = this.state.navOpen ?
+      'navbar--mobile navbar--mobile--collapsed' : 'navbar--mobile';
 
     return (
       <div className="navbar">
