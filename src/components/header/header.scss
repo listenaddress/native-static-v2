@@ -49,8 +49,12 @@
   width: 100%;
   height: 100vh;
   background: $ntv-cream;
-  opacity: 1;
+  opacity: 0;
   z-index: 1;
+}
+
+.navbar--mobile.navbar--collapsed {
+  opacity: 1;
 }
 
 .navbar--mobile .navbar--links {

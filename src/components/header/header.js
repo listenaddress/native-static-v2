@@ -15,6 +15,9 @@ class Header extends React.Component {
   }
 
   render() {
+    const mobileNavClass = this.state.navOpen ? 
+      'navbar--mobile navbar--collapsed' : 'navbar--mobile';
+
     return (
       <div className="navbar">
         <Link to="/">
@@ -32,19 +35,14 @@ class Header extends React.Component {
         </div>
 
         <div className="navbar__hambuger" onClick={this.toggleNav}>***</div>
-        {
-          this.state.navOpen && 
-          (
-            <div className="navbar--mobile">
-              <div className="navbar--links">
-                <Link to="/">Home</Link>
-                <Link to="/how-it-works">How it works</Link>
-                <Link to="/team">Team</Link>
-                <a className="button">Get Native Tokens</a>
-              </div>
-            </div>
-          )
-        }
+       <div className={mobileNavClass}>
+          <div className="navbar--links">
+            <Link to="/" onClick={this.toggleNav}>Home</Link>
+            <Link to="/how-it-works" onClick={this.toggleNav}>How it works</Link>
+            <Link to="/team" onClick={this.toggleNav}>Team</Link>
+            <a className="button" onClick={this.toggleNav}>Get Native Tokens</a>
+          </div>
+        </div>
       </div>
     )
   }
