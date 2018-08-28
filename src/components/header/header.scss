@@ -1,4 +1,5 @@
 @import '../../layouts/variables.scss';
+@import '../../layouts/hamburger.scss';
 
 // Header
 
@@ -33,7 +34,7 @@
  }
 }
 
-.navbar__hambuger {
+.navbar__hamburger {
   position: absolute;
   top: 35px;
   right: 25px;
@@ -51,9 +52,10 @@
   background: $ntv-cream;
   opacity: 0;
   z-index: 1;
+  transition: all .1s linear;
 }
 
-.navbar--mobile.navbar--collapsed {
+.navbar--mobile.navbar--mobile--collapsed {
   opacity: 1;
 }
 

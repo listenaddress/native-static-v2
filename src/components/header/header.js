@@ -15,8 +15,11 @@ class Header extends React.Component {
   }
 
   render() {
-    const mobileNavClass = this.state.navOpen ? 
-      'navbar--mobile navbar--collapsed' : 'navbar--mobile';
+    const mobileNavClass = this.state.navOpen ?
+      'navbar--mobile navbar--mobile--collapsed' : 'navbar--mobile';
+
+    const hamburgerClass = this.state.navOpen ?
+      'navbar__hamburger hamburger hamburger--spin is-active' : 'navbar__hamburger hamburger hamburger--spin';
 
     return (
       <div className="navbar">
@@ -33,8 +36,11 @@ class Header extends React.Component {
             <a className="button">Get Native Tokens</a>
           </div>
         </div>
-
-        <div className="navbar__hambuger" onClick={this.toggleNav}>***</div>
+        <button className={hamburgerClass} type="button" onClick={this.toggleNav}>
+          <span className="hamburger-box">
+            <span className="hamburger-inner"></span>
+          </span>
+        </button>
        <div className={mobileNavClass}>
           <div className="navbar--links">
             <Link to="/" onClick={this.toggleNav}>Home</Link>
