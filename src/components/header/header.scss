@@ -1,4 +1,5 @@
 @import '../../layouts/variables.scss';
+@import '../../layouts/hamburger.scss';
 
 // Header
 
@@ -33,7 +34,7 @@
  }
 }
 
-.navbar__hambuger {
+.navbar__hamburger {
   position: absolute;
   top: 35px;
   right: 25px;
