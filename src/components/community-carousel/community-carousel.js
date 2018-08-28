@@ -21,9 +21,9 @@ class CommunityCarousel extends React.Component {
   buildCommunityList = (list, middleItem) => {
     return communityData[list].map((community, i) => {
       const middleItemIndex = middleItem || 0;
-      return <CommunityCard 
-        community={community} 
-        key={community.id} 
+      return <CommunityCard
+        community={community}
+        key={community.id}
         displayClass={this.setDisplayClass(middleItemIndex, i)}/>
     });
   }
@@ -42,9 +42,9 @@ class CommunityCarousel extends React.Component {
     }
 
     if (middleItemIndex === i) {
-      return 'CommunityCard--center';
+      return 'CommunityCard CommunityCard--center';
     } else if (previous || next) {
-      return 'CommunityCard--adjacent';
+      return 'CommunityCard CommunityCard--adjacent';
     } else {
       return 'CommunityCard';
     }
@@ -61,7 +61,7 @@ class CommunityCarousel extends React.Component {
   next = () => {
     this.slider.slickNext();
   }
-  
+
   previous = () => {
     this.slider.slickPrev();
   }
@@ -80,6 +80,7 @@ class CommunityCarousel extends React.Component {
       slidesToShow: 5,
       slidesToScroll: 1,
       centerMode: true,
+      centerPadding: '0px',
       focusOnSelect: true,
       initialSlide: 0,
       beforeChange: (prev, current) => this.handleSlide(current),
@@ -90,30 +91,33 @@ class CommunityCarousel extends React.Component {
 
     return (
       <div className="Communities">
-        <div className="Communities__header">
-          <div>
+        <div className="Communities__header contain">
+          <div className="Communities__header--text">
             <h3>Find Your Community</h3>
-            <p>Native is a collective of Communities comprised of Curators and Contributors. 
+            <p>Native is a collective of Communities comprised of Curators and Contributors.
               Tribes are governed by their members who make decisions about how to best achieve the Community's goals.
               Native is an antirivalrous ecosystem - when one Community grows, all Communities benefit.</p>
           </div>
+          <div className="spacer"><p></p></div>
           <div className="Communities__header--links">
-            <a onClick={() => this.swapCommunityList('current')} 
+            <a onClick={() => this.swapCommunityList('current')}
               className={activeCurrent}>
               CURRENT TRIBES
             </a>
-            <a onClick={() => this.swapCommunityList('future')} 
+            <a onClick={() => this.swapCommunityList('future')}
               className={activeFuture}>
                 FUTURE TRIBES
             </a>
           </div>
         </div>
-        <div className="Communities__carousel">
+        <div className="Communities__carousel contain">
           <Slider ref={c => (this.slider = c)} {...settings}>
             {this.state.communityList}
           </Slider>
-          <button onClick={this.previous}>PREV</button>
-          <button onClick={this.next}>NEXT</button>
+          <div className="carousel--actions">
+            <button onClick={this.previous}>PREV</button>
+            <button onClick={this.next}>NEXT</button>
+          </div>
         </div>
       </div>
 
