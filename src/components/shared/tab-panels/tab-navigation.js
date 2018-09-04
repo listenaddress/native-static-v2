@@ -5,10 +5,10 @@ import './tab-panels.scss';
 export default function TabNavigation({ panels, activeTab, clickHandler }) {
 
   return (
-    <ul>
+    <ul className="tab__navigation">
       {(panels || []).map((name, i) => {
         return (
-          <li
+          <li className="item"
             key={i}
             onClick={() => clickHandler(i)}
           >

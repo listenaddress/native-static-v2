@@ -32,7 +32,7 @@ class Header extends React.Component {
           <div className="navbar--links">
             <Link to="/">Home</Link>
             <Link to="/how-it-works">How it works</Link>
-            <Link to="/team">Team</Link>
+            <Link to="/project">Project</Link>
             <a className="button">Get Native Tokens</a>
           </div>
         </div>
@@ -45,7 +45,7 @@ class Header extends React.Component {
           <div className="navbar--links">
             <Link to="/" onClick={this.toggleNav}>Home</Link>
             <Link to="/how-it-works" onClick={this.toggleNav}>How it works</Link>
-            <Link to="/team" onClick={this.toggleNav}>Team</Link>
+            <Link to="/project" onClick={this.toggleNav}>Project</Link>
             <a className="button" onClick={this.toggleNav}>Get Native Tokens</a>
           </div>
         </div>
