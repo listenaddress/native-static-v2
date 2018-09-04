@@ -2,7 +2,8 @@ import React from 'react';
 import Slider from 'react-slick';
 
 import CommunityCard from './community-card';
-import communityData from '../../data/communities';
+import communityData from '../../../data/communities';
+import Zoom from 'react-reveal/Zoom'
 
 import './community-carousel.scss'
 
@@ -110,9 +111,12 @@ class CommunityCarousel extends React.Component {
           </div>
         </div>
         <div className="Communities__carousel contain">
-          <Slider ref={c => (this.slider = c)} {...settings}>
-            {this.state.communityList}
-          </Slider>
+          <Zoom>
+            <Slider ref={c => (this.slider = c)} {...settings}>
+              {this.state.communityList}
+            </Slider>
+          </Zoom>
+
           <div className="carousel--actions">
             <button onClick={this.previous}>PREV</button>
             <button onClick={this.next}>NEXT</button>

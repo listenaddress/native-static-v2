@@ -88,13 +88,13 @@
     background-color: $ntv-cream;
     margin-top: 0px;
     .contents {
-    max-width: 1200px;
-    margin: 0px auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
+      max-width: 1200px;
+      margin: 0px auto;
+      padding-top: 25px;
+      padding-bottom: 25px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
       .column:nth-child(1) {
         width: 50%;
         background-image: url('../assets/home__how--three.png');
