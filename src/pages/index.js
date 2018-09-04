@@ -28,8 +28,8 @@ const IndexPage = () => (
       </div>
       <div className="intro">
         <div className="contents">
-          <Fade cascade>
-          <h2>How it works</h2>
+          <Fade top cascade>
+            <h2>How it works</h2>
           </Fade>
         </div>
       </div>
