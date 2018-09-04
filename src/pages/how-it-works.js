@@ -6,6 +6,8 @@ import CreatePanel from '../components/how-it-works/panels/create-panel';
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse'
 
+import './how-it-works.scss'
+
 const tabs = [
   {
     name: 'Discover',
