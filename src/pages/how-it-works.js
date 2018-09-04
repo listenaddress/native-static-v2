@@ -1,17 +1,17 @@
 import React from 'react'
 
 import TabPanels from '../components/shared/tab-panels/tab-panels';
-import DiscoverTab from '../components/how-it-works/panels/discover-panel';
-import CreateTab from '../components/how-it-works/panels/create-panel';
+import DiscoverPanel from '../components/how-it-works/panels/discover-panel';
+import CreatePanel from '../components/how-it-works/panels/create-panel';
 
 const tabs = [
   {
     name: 'Discover',
-    render: () => <DiscoverTab />,
+    render: () => <DiscoverPanel />,
   },
   {
     name: 'Create',
-    render: () => <CreateTab />,
+    render: () => <CreatePanel />,
   },
 ]
 
