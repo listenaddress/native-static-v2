@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 
 import CommunityCard from './community-card';
-import communityData from '../../data/communities';
+import communityData from '../../../data/communities';
 
 import './community-carousel.scss'
 

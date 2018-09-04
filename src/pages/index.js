@@ -1,6 +1,6 @@
 import React from 'react'
-import EmailListForm from '../components/email-list-form/email-list-form'
-import CommunityCarousel from '../components/community-carousel/community-carousel'
+import EmailListForm from '../components/home/email-list-form/email-list-form'
+import CommunityCarousel from '../components/home/community-carousel/community-carousel'
 
 import './home.scss'
 

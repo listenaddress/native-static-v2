@@ -1,7 +1,6 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
 import Link from 'gatsby-link'
-import LogoMono from '../../components/logo-mono/logo-mono'
+import LogoMono from '../../shared/logo-mono/logo-mono'
 import './footer.scss'
 import { SocialIcon } from 'react-social-icons'
 
