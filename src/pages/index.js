@@ -3,7 +3,7 @@ import React from 'react'
 import EmailListForm from '../components/home/email-list-form/email-list-form'
 import CommunityCarousel from '../components/home/community-carousel/community-carousel'
 import Fade from 'react-reveal/Fade'
-import Zoom from 'react-reveal/Zoom'
+import Pulse from 'react-reveal/Pulse'
 
 import './home.scss'
 
@@ -29,7 +29,9 @@ const IndexPage = () => (
       </div>
       <div className="intro">
         <div className="contents">
-          <h2>How it works</h2>
+          <Fade top cascade>
+            <h2>How it works</h2>
+          </Fade>
         </div>
       </div>
       <div className="step-one">
@@ -72,8 +74,12 @@ const IndexPage = () => (
             <h6>STEP THREE</h6>
             <h3>Thrive</h3>
             <p>The Tribe is the economy. Projects are funded and visions are realized at this level. Tribe token price is reflective of activity and interest levels.</p>
-            <a className="button">Take a deeper dive</a>
-          </Fade>
+            </Fade>
+            <Pulse>
+            <div>
+              <a className="button">Take a deeper dive</a>
+            </div>
+            </Pulse>
           </div>
         </div>
       </div>
