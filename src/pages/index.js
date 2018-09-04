@@ -17,7 +17,7 @@ const IndexPage = () => (
         </Fade>
       </div>
     </div>
-    <section className="home__how-it-works">
+    <section className="home__how-it-works steps">
       <div className="launch">
         <div className="contents">
           <Fade up>
