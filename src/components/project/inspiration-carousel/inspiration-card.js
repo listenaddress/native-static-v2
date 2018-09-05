@@ -2,7 +2,7 @@ import React from 'react'
 
 import './inspiration-carousel.scss'
 
-const CommunityCard = ({ item, logo, key }) => {
+const InspirationCard = ({ item, logo, key }) => {
   return (
     <div key={key}>
       <img src={logo} />
@@ -12,4 +12,4 @@ const CommunityCard = ({ item, logo, key }) => {
   )
 }
 
-export default CommunityCard
+export default InspirationCard
