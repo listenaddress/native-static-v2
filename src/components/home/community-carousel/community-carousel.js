@@ -9,13 +9,13 @@ import './community-carousel.scss'
 
 class CommunityCarousel extends React.Component {
   state = {
-    tribeList: 'current',
+    communityList: 'current',
     communityList: [],
   }
 
   componentDidMount() {
     this.setState({
-      communityList: this.buildCommunityList(this.state.tribeList),
+      communityList: this.buildCommunityList(this.state.communityList),
     })
   }
 
@@ -30,7 +30,7 @@ class CommunityCarousel extends React.Component {
   }
 
   setDisplayClass = (middleItemIndex, i) => {
-    const itemCount = communityData[this.state.tribeList].length - 1;
+    const itemCount = communityData[this.state.communityList].length - 1;
     const lastItem = i === itemCount;
     const lastItemMiddle = middleItemIndex === itemCount;
     let previous = middleItemIndex - 1 === i;
@@ -54,7 +54,7 @@ class CommunityCarousel extends React.Component {
   swapCommunityList = (listName) => {
     this.slider.slickGoTo(0)
     this.setState({
-      tribeList: listName,
+      communityList: listName,
       communityList: this.buildCommunityList(listName),
     })
   }
@@ -69,7 +69,7 @@ class CommunityCarousel extends React.Component {
 
   handleSlide = (current) => {
     this.setState({
-      communityList: this.buildCommunityList(this.state.tribeList, current),
+      communityList: this.buildCommunityList(this.state.communityList, current),
     })
   }
 
@@ -86,8 +86,8 @@ class CommunityCarousel extends React.Component {
       initialSlide: 0,
       beforeChange: (prev, current) => this.handleSlide(current),
     }
-    const activeCurrent = this.state.tribeList === 'current' ? 'active--current' : '';
-    const activeFuture = this.state.tribeList === 'future' ? 'active--future' : '';;
+    const activeCurrent = this.state.communityList === 'current' ? 'active--current' : '';
+    const activeFuture = this.state.communityList === 'future' ? 'active--future' : '';;
 
     return (
       <div className="Communities">
@@ -95,18 +95,18 @@ class CommunityCarousel extends React.Component {
           <div className="Communities__header--text">
             <h3>Find Your Community</h3>
             <p>Native is a collective of Communities comprised of Curators and Contributors.
-              Tribes are governed by their members who make decisions about how to best achieve the Community's goals.
+              Communities are governed by their members who make decisions about how to best achieve the Community's goals.
               Native is an antirivalrous ecosystem - when one Community grows, all Communities benefit.</p>
           </div>
           <div className="spacer"><p></p></div>
           <div className="Communities__header--links">
             <a onClick={() => this.swapCommunityList('current')}
               className={activeCurrent}>
-              CURRENT TRIBES
+              CURRENT COMMUNITIES
             </a>
             <a onClick={() => this.swapCommunityList('future')}
               className={activeFuture}>
-                FUTURE TRIBES
+                FUTURE COMMUNITIES
             </a>
           </div>
         </div>

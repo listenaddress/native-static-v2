@@ -15,9 +15,9 @@ const Footer = ({ siteTitle }) => (
     </div>
     <div className="spacer"></div>
     <div className="footer__socials">
-      <SocialIcon url="http://medium.com/odyssy" color="rgba(132,206,200,1)"/>
-      <SocialIcon url="http://twitter.com/odyssy" />
-      <SocialIcon url="http://facebook.com/odyssy" />
+      <SocialIcon url="http://medium.com/odyssy" color="rgba(132,206,200,1)" style={{ height: 40, width: 40 }} />
+      <SocialIcon url="http://twitter.com/odyssy" style={{ height: 40, width: 40 }} />
+      <SocialIcon url="http://facebook.com/odyssy" style={{ height: 40, width: 40 }} />
 
     </div>
   </div>
