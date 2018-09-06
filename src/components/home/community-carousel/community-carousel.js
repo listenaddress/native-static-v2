@@ -10,12 +10,12 @@ import './community-carousel.scss'
 class CommunityCarousel extends React.Component {
   state = {
     communityList: 'current',
-    communityList: [],
+    communityData: [],
   }
 
   componentDidMount() {
     this.setState({
-      communityList: this.buildCommunityList(this.state.communityList),
+      communityData: this.buildCommunityList(this.state.communityList),
     })
   }
 
@@ -55,7 +55,7 @@ class CommunityCarousel extends React.Component {
     this.slider.slickGoTo(0)
     this.setState({
       communityList: listName,
-      communityList: this.buildCommunityList(listName),
+      communityData: this.buildCommunityList(listName),
     })
   }
 
@@ -69,7 +69,7 @@ class CommunityCarousel extends React.Component {
 
   handleSlide = (current) => {
     this.setState({
-      communityList: this.buildCommunityList(this.state.communityList, current),
+      communityData: this.buildCommunityList(this.state.communityList, current),
     })
   }
 
@@ -113,7 +113,7 @@ class CommunityCarousel extends React.Component {
         <div className="Communities__carousel contain">
           <Zoom>
             <Slider ref={c => (this.slider = c)} {...settings}>
-              {this.state.communityList}
+              {this.state.communityData}
             </Slider>
           </Zoom>
 
