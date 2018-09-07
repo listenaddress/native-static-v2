@@ -1,13 +1,18 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "Native",
+  "description": "Build Properous Communitie",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.46",
+    "gatsby-plugin-mailchimp": "^3.0.0",
     "gatsby-plugin-react-helmet": "^2.0.11",
-    "react-helmet": "^5.2.0"
+    "gatsby-plugin-sass": "^1.0.26",
+    "hamburgers": "^0.9.3",
+    "react-helmet": "^5.2.0",
+    "react-reveal": "^1.2.2",
+    "react-slick": "^0.23.1",
+    "slick-carousel": "^1.8.1"
   },
   "keywords": [
     "gatsby"
@@ -20,10 +25,11 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "prettier": "^1.13.7"
+    "prettier": "^1.13.7",
+    "react-social-icons": "^3.0.0"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/Native-Protocol/native-static-v2"
   }
 }

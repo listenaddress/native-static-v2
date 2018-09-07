@@ -1,0 +1,23 @@
+// Global Variables and Styles
+
+// Color Palette
+$ntv-primary: rgba(166,191,76,1);
+$ntv-cream: rgba(249,248,244,1);
+$ntv-action: rgba(248, 128, 115,1);
+$ntv-sky: rgba(132,206,200,1);
+
+
+// Typography
+
+// --- Import Fonts
+@import url('https://fonts.googleapis.com/css?family=Rubik:100,200,300,400,500,700,900');
+
+// --- Set Fonts
+$base-font: 'Rubik', sans-serif;
+
+
+// Layout
+
+// --- Media Queries
+$tablet: 768px;
+$phone: 420px;

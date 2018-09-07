@@ -1,0 +1,60 @@
+@import '../layouts/variables.scss';
+
+.home__how-it-works {
+  background-image: url('../assets/home__how-it-works--launch.png');
+  background-color: $ntv-sky;
+  .launch {
+    width: 100%;
+    .contents {
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    color: #fff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    }
+  }
+  .step-one {
+    margin-top: 75px;
+    .contents {
+      .column:nth-child(1) {
+        background-image: url('../assets/home__how--one.png');
+      }
+      .column:nth-child(2) {
+        @media (max-width: $tablet) {
+          padding-top: 0px;
+          margin-top: -50px;
+        }
+      }
+    }
+  }
+  .step-two {
+    .contents {
+      @media (max-width: $tablet) {
+        flex-direction: column-reverse;
+      }
+      .column:nth-child(1) {
+        @media (max-width: $tablet) {
+          padding-top: 0px;
+          margin-top: -50px;
+        }
+      }
+      .column:nth-child(2) {
+        background-image: url('../assets/home__how--two.png');
+      }
+    }
+  }
+  .step-three {
+    .contents {
+      .column:nth-child(1) {
+        background-image: url('../assets/home__how--three.png');
+      }
+      .column:nth-child(2) {
+        @media (max-width: $tablet) {
+          padding-top: 0px;
+          margin-top: -50px;
+        }
+      }
+    }
+  }
+}
