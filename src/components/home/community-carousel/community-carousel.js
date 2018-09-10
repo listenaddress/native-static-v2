@@ -111,7 +111,7 @@ class CommunityCarousel extends React.Component {
           </div>
         </div>
         <div className="Communities__carousel contain">
-          <Zoom>
+          <Zoom appear spy={this.state.communityList}>
             <Slider ref={c => (this.slider = c)} {...settings}>
               {this.state.communityData}
             </Slider>
