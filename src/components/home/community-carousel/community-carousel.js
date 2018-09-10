@@ -85,6 +85,20 @@ class CommunityCarousel extends React.Component {
       focusOnSelect: true,
       initialSlide: 0,
       beforeChange: (prev, current) => this.handleSlide(current),
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
     }
     const activeCurrent = this.state.communityList === 'current' ? 'active--current' : '';
     const activeFuture = this.state.communityList === 'future' ? 'active--future' : '';;

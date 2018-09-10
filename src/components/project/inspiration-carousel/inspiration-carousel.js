@@ -56,6 +56,26 @@ class InspirationCarousel extends React.Component {
       centerPadding: '0px',
       focusOnSelect: true,
       initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
     }
 
     return (
