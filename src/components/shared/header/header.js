@@ -33,6 +33,7 @@ class Header extends React.Component {
             <Link to="/">Home</Link>
             <Link to="/how-it-works">How it works</Link>
             <Link to="/project">Project</Link>
+            <a target="_blank" href="https://drive.google.com/file/d/1YXVOFl35AJcsYPz8aOjgfXm-ZpsHxZmk/view?usp=sharing">Whitepaper</a>
             <a className="button">Get Native Tokens</a>
           </div>
         </div>
