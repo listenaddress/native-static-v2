@@ -12,6 +12,7 @@
     "react-helmet": "^5.2.0",
     "react-reveal": "^1.2.2",
     "react-slick": "^0.23.1",
+    "react-typeform-embed": "^0.1.6",
     "slick-carousel": "^1.8.1"
   },
   "keywords": [

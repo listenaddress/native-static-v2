@@ -50,12 +50,13 @@
   height: 100vh;
   background: $ntv-cream;
   opacity: 0;
-  z-index: 1;
+  z-index: -1;
   transition: all .1s linear;
 }
 
 .navbar--mobile.navbar--mobile--collapsed {
   opacity: 1;
+  z-index: 1;
 }
 
 .navbar--mobile .navbar--links {
