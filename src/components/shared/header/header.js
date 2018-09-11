@@ -1,7 +1,9 @@
 import React from 'react'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import Link from 'gatsby-link'
+
 import './header.scss'
 import Logo from '../../shared/logo/logo'
-import Link from 'gatsby-link'
 
 class Header extends React.Component {
   state = {
@@ -33,7 +35,9 @@ class Header extends React.Component {
             <Link to="/">Home</Link>
             <Link to="/how-it-works">How it works</Link>
             <Link to="/project">Project</Link>
-            <a className="button">Get Native Tokens</a>
+            <OutboundLink href="/" className="button">
+              Join Native
+            </OutboundLink>
           </div>
         </div>
         <button className={hamburgerClass} type="button" onClick={this.toggleNav}>
@@ -46,7 +50,9 @@ class Header extends React.Component {
             <Link to="/" onClick={this.toggleNav}>Home</Link>
             <Link to="/how-it-works" onClick={this.toggleNav}>How it works</Link>
             <Link to="/project" onClick={this.toggleNav}>Project</Link>
-            <a className="button" onClick={this.toggleNav}>Get Native Tokens</a>
+            <OutboundLink href="/" className="button" onClick={this.toggleNav}>
+              Join Native
+            </OutboundLink>
           </div>
         </div>
       </div>
