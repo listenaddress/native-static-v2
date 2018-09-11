@@ -35,6 +35,7 @@ class Header extends React.Component {
             <Link to="/">Home</Link>
             <Link to="/how-it-works">How it works</Link>
             <Link to="/project">Project</Link>
+            <a target="_blank" href="https://drive.google.com/file/d/1YXVOFl35AJcsYPz8aOjgfXm-ZpsHxZmk/view?usp=sharing">Whitepaper</a>
             <OutboundLink href="/" className="button">
               Join Native
             </OutboundLink>
@@ -50,6 +51,7 @@ class Header extends React.Component {
             <Link to="/" onClick={this.toggleNav}>Home</Link>
             <Link to="/how-it-works" onClick={this.toggleNav}>How it works</Link>
             <Link to="/project" onClick={this.toggleNav}>Project</Link>
+            <a target="_blank" href="https://drive.google.com/file/d/1YXVOFl35AJcsYPz8aOjgfXm-ZpsHxZmk/view?usp=sharing">Whitepaper</a>
             <OutboundLink href="/" className="button" onClick={this.toggleNav}>
               Join Native
             </OutboundLink>

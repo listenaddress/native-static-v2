@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Link from 'gatsby-link'
 import EmailListForm from '../components/home/email-list-form/email-list-form'
 import CommunityCarousel from '../components/home/community-carousel/community-carousel'
 import Fade from 'react-reveal/Fade'
@@ -77,7 +78,7 @@ const IndexPage = () => (
             </Fade>
             <Pulse>
             <div>
-              <a className="button">Take a deeper dive</a>
+              <Link to="/how-it-works" className="button">Take a deeper dive</Link>
             </div>
             </Pulse>
           </div>
