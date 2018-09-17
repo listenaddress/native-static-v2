@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Fade from 'react-reveal/Fade'
 import TabNavigation from './tab-navigation';
 import TabPanel from './tab-panel';
 
@@ -28,7 +29,9 @@ class TabPanels extends Component {
           panels={panelNames}
           clickHandler={(i) => this.setActiveTab(i)}
         />
-        <TabPanel render={() => activePanel.render()} />
+        <Fade spy={activeTab} appear left={activeTab === 0} right={activeTab}>
+          <TabPanel render={() => activePanel.render()} />
+        </Fade>
       </div>
     );
   }
