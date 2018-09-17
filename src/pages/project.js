@@ -57,7 +57,7 @@ const SecondPage = () => (
       </div>
     </section>
     <section className="block project__community">
-      <h2>Our Community</h2>
+      <h3>Our Community</h3>
       <p>Lorem ipsum dolor sit amet, consectur elit sed varius nulla a lorem aliquam effectur.</p>
       <div className="members">
         <div className="member">
@@ -65,13 +65,6 @@ const SecondPage = () => (
         </div>
       </div>
       <p>Interested in working with us? <a href="mailto:hello@nativeproject.one">Shoot us an email!</a></p>
-    </section>
-    <section className="project__inspiration">
-      <InspirationCarousel />
-      <div className="recommendation">
-        <p>Got a recommendation?</p>
-        <a className="button">Submit</a>
-      </div>
     </section>
     <section className="block project__advisors">
       <h3>Trusted Advisors</h3>
