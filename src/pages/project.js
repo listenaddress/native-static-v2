@@ -5,6 +5,9 @@ import Link from 'gatsby-link'
 import InspirationCarousel from '../components/project/inspiration-carousel/inspiration-carousel'
 
 import './project.scss'
+import iconKey from '../assets/icons/ntv-key.png'
+import iconVision from '../assets/icons/ntv-vision.png'
+import iconGrowth from '../assets/icons/ntv-growth.png'
 
 const SecondPage = () => (
   <div>
@@ -28,22 +31,26 @@ const SecondPage = () => (
       </div>
     </section>
     <section className="block project__timeline">
+      <h4>Timeline</h4>
       <div className="contents">
-        <h6>Timeline</h6>
+        <p></p>
       </div>
     </section>
     <section className="block project__culture">
-      <h6>Our Culture</h6>
+      <h4>Our Culture</h4>
       <div className="contents">
         <div className="column">
+          <img src={iconKey} />
           <h6>Opportunity</h6>
           <p>Lorem ipsum dolor sit amet, consectur elit sed varius nulla a lorem aliquam effectur.</p>
         </div>
         <div className="column">
+          <img src={iconVision} />
           <h6>Purpose</h6>
           <p>Lorem ipsum dolor sit amet, consectur elit sed varius nulla a lorem aliquam effectur.</p>
         </div>
         <div className="column">
+          <img src={iconGrowth} />
           <h6>Humanity First</h6>
           <p>Lorem ipsum dolor sit amet, consectur elit sed varius nulla a lorem aliquam effectur.</p>
         </div>

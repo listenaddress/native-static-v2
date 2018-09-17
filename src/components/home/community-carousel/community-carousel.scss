@@ -48,6 +48,18 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  // gradient
+  .slick-slider {
+    background-size: 100%;
+    background: rgba(243, 242, 237, 1);
+    background: -moz-linear-gradient(left, rgba(243, 242, 237, 1) 0%, rgba(243, 242, 237, 1) 9%, rgba(249,249,244,0) 50%, rgba(243, 242, 237, 1) 95%, rgba(243, 242, 237, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(243, 242, 237, 1)), color-stop(9%, rgba(243, 242, 237, 1)), color-stop(50%, rgba(249,249,244,0)), color-stop(95%, rgba(243, 242, 237, 1)), color-stop(100%, rgba(243, 242, 237, 1)));
+    background: -webkit-linear-gradient(left, rgba(243, 242, 237, 1) 0%, rgba(243, 242, 237, 1) 9%, rgba(249,249,244,0) 50%, rgba(243, 242, 237, 1) 95%, rgba(243, 242, 237, 1) 100%);
+    background: -o-linear-gradient(left, rgba(243, 242, 237, 1) 0%, rgba(243, 242, 237, 1) 9%, rgba(249,249,244,0) 50%, rgba(243, 242, 237, 1) 95%, rgba(243, 242, 237, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(243, 242, 237, 1) 0%, rgba(243, 242, 237, 1) 9%, rgba(249,249,244,0) 50%, rgba(243, 242, 237, 1) 95%, rgba(243, 242, 237, 1) 100%);
+    background: linear-gradient(to right, rgba(243, 242, 237, 1) 0%, rgba(243, 242, 237, 1) 9%, rgba(249,249,244,0) 50%, rgba(243, 242, 237, 1) 95%, rgba(243, 242, 237, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f4', endColorstr='#f9f9f4', GradientType=1 );
+  }
   .slick-slide {
     outline: none;
   }
@@ -59,11 +71,15 @@ button.slick-arrow .slick-prev {
 }
 
 .CommunityCard {
-  opacity: 0.45;
   background-color: rgba(255,255,255,1);
   margin: 0px 25px 0px 0px;
   cursor: pointer;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+
   .header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
     background-position: center center;
     background-size: cover;
     width: 100%;
@@ -117,19 +133,13 @@ button.slick-arrow .slick-prev {
     font-size: .75em;
     text-align: left;
   }
+  transform: scale(1);
+  transition: scale .1s linear;
 }
 
 .CommunityCard--center {
   opacity: 1;
-  .copy {
-    p {
-      font-size: 1.15em;
-    }
-  }
-}
-
-.CommunityCard--adjacent {
-  opacity: 0.75;
+  transform: scale(1.25);
 }
 
 .carousel--actions {

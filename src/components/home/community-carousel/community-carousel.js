@@ -30,22 +30,8 @@ class CommunityCarousel extends React.Component {
   }
 
   setDisplayClass = (middleItemIndex, i) => {
-    const itemCount = communityData[this.state.communityList].length - 1;
-    const lastItem = i === itemCount;
-    const lastItemMiddle = middleItemIndex === itemCount;
-    let previous = middleItemIndex - 1 === i;
-    if (!middleItemIndex && lastItem)  {
-      previous = true
-    }
-    let next = middleItemIndex + 1  === i;
-    if (!i && lastItemMiddle)  {
-      next = true
-    }
-
     if (middleItemIndex === i) {
       return 'CommunityCard CommunityCard--center';
-    } else if (previous || next) {
-      return 'CommunityCard CommunityCard--adjacent';
     } else {
       return 'CommunityCard';
     }
@@ -77,14 +63,16 @@ class CommunityCarousel extends React.Component {
     const settings = {
       arrows: false,
       infinite: true,
-      speed: 500,
+      speed: 300,
       slidesToShow: 5,
       slidesToScroll: 1,
       centerMode: true,
       centerPadding: '0px',
       focusOnSelect: true,
       initialSlide: 0,
-      beforeChange: (prev, current) => this.handleSlide(current),
+      draggable: false,
+      // beforeChange: (prev, current) => this.handleSlide(current),
+      afterChange: (current) => this.handleSlide(current),
       responsive: [
         {
           breakpoint: 1024,
