@@ -32,7 +32,7 @@ class Header extends React.Component {
 
         <div className="navbar--desktop">
           <div className="navbar--links">
-            <Link activeClassName="active" to="/">Home</Link>
+            <Link activeClassName="active" exact to="/">Home</Link>
             <Link activeClassName="active" to="/how-it-works">How it works</Link>
             <Link activeClassName="active" to="/project">Project</Link>
             <OutboundLink target="_blank" href="https://drive.google.com/file/d/1YXVOFl35AJcsYPz8aOjgfXm-ZpsHxZmk/view?usp=sharing">Whitepaper</OutboundLink>
