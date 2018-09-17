@@ -1,0 +1,57 @@
+@import '../layouts/variables.scss';
+
+
+//
+
+.project__start {
+  background-color: $ntv-cream-dark;
+}
+
+.project__culture {
+  background-color: $ntv-cream-dark;
+  flex-direction: column;
+  .contents {
+    .column {
+      flex-basis: 33%;
+    }
+  }
+}
+
+.project__community {
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.project__inspiration {
+  background-color: $ntv-cream-dark;
+  position: relative;
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  .recommendation {
+    padding: 20px 0px 20px 0px;
+    background-color: #E9EAE4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+  }
+}
+
+.project__advisors {
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.project__partners {
+  background-color: $ntv-cream-dark;
+  padding: 50px 0px 50px 0px;
+  flex-direction: column;
+}

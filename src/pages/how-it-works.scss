@@ -5,3 +5,20 @@
   .intro { }
 
 }
+
+.how-it-works__curator {
+  position: relative;
+  .white-paper {
+    background-color: $ntv-sky;
+    max-width: 600px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    padding: 35px;
+  }
+}
+
+.footer {
+  padding-top: 120px;
+}

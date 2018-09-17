@@ -1,0 +1,16 @@
+@import '../../../layouts/variables.scss';
+
+.slick-slide {
+  img {
+    margin: 0 auto;
+  }
+  text-align: center;
+}
+
+.inspiration-card p {
+  margin: 0 auto;
+  max-width: 170px;
+  background-color: $ntv-cream;
+  &:nth-child(1) { padding-bottom: 0px; }
+  &:nth-child(2) { padding-top: 0px; margin-top: 0px; padding-bottom: 15px; }
+}

@@ -10,7 +10,7 @@ const Footer = ({ siteTitle }) => (
       <LogoMono />
       <Link to="/">Home</Link>
       <Link to="/how-it-works">How it works</Link>
-      <Link to="/team">Team</Link>
+      <Link to="/project">Project</Link>
       <Link to="/">Get Native Tokens</Link>
     </div>
     <div className="spacer"></div>
