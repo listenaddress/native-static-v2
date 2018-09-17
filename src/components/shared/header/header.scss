@@ -17,18 +17,22 @@
  align-items: center;
  justify-content: center;
  a {
-   font-size: 1em;
+   font-size: .85em;
    text-transform: uppercase;
    letter-spacing: .1em;
    color: #333;
+   &:not(.button) {
+     border-bottom: 2px solid transparent;
+   }
    @media (min-width: 890px) {
      margin: 0px 25px;
    }
    @media (max-width: 889px) {
      margin: 25px 0px;
    }
-   &:hover {
+   &:hover, &.active {
      color: $ntv-primary;
+     border-bottom: 2px solid $ntv-primary;
    }
  }
 }

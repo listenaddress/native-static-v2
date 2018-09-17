@@ -11,7 +11,8 @@ const Footer = ({ siteTitle }) => (
       <Link to="/">Home</Link>
       <Link to="/how-it-works">How it works</Link>
       <Link to="/project">Project</Link>
-      <Link to="/">Get Native Tokens</Link>
+      <a target="_blank" href="https://drive.google.com/file/d/1YXVOFl35AJcsYPz8aOjgfXm-ZpsHxZmk/view?usp=sharing">Whitepaper</a>
+      <Link to="/">Join Native</Link>
     </div>
     <div className="spacer"></div>
     <div className="footer__socials">

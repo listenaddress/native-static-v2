@@ -19,7 +19,6 @@ class TabPanels extends Component {
     const { props, state } = this;
     const { panels } = props;
     const { activeTab } = state;
-    const lefty = activeTab === 0;
     const activePanel = (panels || []).find((panel, i) => i === activeTab);
     const panelNames = panels.map(panel => panel.name);
 
@@ -30,9 +29,7 @@ class TabPanels extends Component {
           panels={panelNames}
           clickHandler={(i) => this.setActiveTab(i)}
         />
-        <Fade spy={activeTab} appear left={lefty} right={!lefty}>
-          <TabPanel render={() => activePanel.render()} />
-        </Fade>
+        <TabPanel render={() => activePanel.render()} />
       </div>
     );
   }
