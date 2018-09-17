@@ -1,4 +1,5 @@
 import React from 'react'
+import Illustration11 from '../../../assets/illustrations/11_Native_Website_Home_Howitworks_JOIN_V02.png'
 
 import './panel.scss'
 
@@ -13,7 +14,7 @@ class DiscoverPanel extends React.Component {
             <p>Your first step is to explore an choose communities that align with your values or things you care about. Put your money where your heart is.</p>
           </div>
           <div className="column">
-            <p>image</p>
+            <img src={Illustration11} />
           </div>
           <div className="column">
             <p>image</p>
