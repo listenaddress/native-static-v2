@@ -88,6 +88,7 @@ const SecondPage = () => (
     </section>
     <section className="block how-it-works__curator">
       <CommunityForm />
+      <Fade left>
       <div className="white-paper">
         <div>
           <p>Nerding out? Learn more about the economics behind Native.</p>
@@ -96,8 +97,9 @@ const SecondPage = () => (
         <div>
         </div>
       </div>
+      </Fade>
     </section>
-    
+
   </div>
 )
 
