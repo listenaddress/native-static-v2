@@ -48,21 +48,36 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+
   // gradient
-  .slick-slider {
-    background-size: 100%;
-    background: rgba(243, 242, 237, 1);
-    background: -moz-linear-gradient(left, rgba(243, 242, 237, 1) 0%, rgba(243, 242, 237, 1) 9%, rgba(249,249,244,0) 50%, rgba(243, 242, 237, 1) 95%, rgba(243, 242, 237, 1) 100%);
-    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(243, 242, 237, 1)), color-stop(9%, rgba(243, 242, 237, 1)), color-stop(50%, rgba(249,249,244,0)), color-stop(95%, rgba(243, 242, 237, 1)), color-stop(100%, rgba(243, 242, 237, 1)));
-    background: -webkit-linear-gradient(left, rgba(243, 242, 237, 1) 0%, rgba(243, 242, 237, 1) 9%, rgba(249,249,244,0) 50%, rgba(243, 242, 237, 1) 95%, rgba(243, 242, 237, 1) 100%);
-    background: -o-linear-gradient(left, rgba(243, 242, 237, 1) 0%, rgba(243, 242, 237, 1) 9%, rgba(249,249,244,0) 50%, rgba(243, 242, 237, 1) 95%, rgba(243, 242, 237, 1) 100%);
-    background: -ms-linear-gradient(left, rgba(243, 242, 237, 1) 0%, rgba(243, 242, 237, 1) 9%, rgba(249,249,244,0) 50%, rgba(243, 242, 237, 1) 95%, rgba(243, 242, 237, 1) 100%);
-    background: linear-gradient(to right, rgba(243, 242, 237, 1) 0%, rgba(243, 242, 237, 1) 9%, rgba(249,249,244,0) 50%, rgba(243, 242, 237, 1) 95%, rgba(243, 242, 237, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f9f9f4', endColorstr='#f9f9f4', GradientType=1 );
+  .slick-slider:after {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3f2ed+0,f3f2ed+100&1+0,0+35,0+65,1+100 */
+    background: -moz-linear-gradient(left, rgba(243,242,237,1) 0%, rgba(243,242,237,0) 35%, rgba(243,242,237,0) 65%, rgba(243,242,237,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(243,242,237,1) 0%,rgba(243,242,237,0) 35%,rgba(243,242,237,0) 65%,rgba(243,242,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(243,242,237,1) 0%,rgba(243,242,237,0) 35%,rgba(243,242,237,0) 65%,rgba(243,242,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f2ed', endColorstr='#f3f2ed',GradientType=1 ); /* IE6-9 */
   }
   .slick-slide {
     outline: none;
   }
+
+  //--- slick-track
+
+  .slick-slider .slick-track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 }
 
 button.slick-arrow .slick-prev {
@@ -72,10 +87,15 @@ button.slick-arrow .slick-prev {
 
 .CommunityCard {
   background-color: rgba(255,255,255,1);
-  margin: 0px 25px 0px 0px;
+  margin: 25px 25px 25px 0px;
   cursor: pointer;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
+  transform: scale(1);
+  transition: scale .1s linear;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  min-height: 380px;
 
   .header {
     border-top-left-radius: 5px;
@@ -85,9 +105,9 @@ button.slick-arrow .slick-prev {
     width: 100%;
     height: 180px;
     position: relative;
-    &:before {
+    z-index: 0;
+    &:after {
       position: absolute;
-      z-index: 1;
       content: '';
       width: 100%;
       height: 100%;
@@ -95,11 +115,14 @@ button.slick-arrow .slick-prev {
       right: 0;
       bottom: 0;
       left: 0;
-      background: -webkit-gradient(linear,left bottom,left top, from(var(--transparent-black-100)), color-stop(60%,var(--transparent-black-0)));
-      background: -webkit-linear-gradient(bottom,var(--transparent-black-100),var(--transparent-black-0) 60%);
-      background: -o-linear-gradient(bottom,var(--transparent-black-100),var(--transparent-black-0) 60%);
-      background: linear-gradient(0deg,var(--transparent-black-100),var(--transparent-black-0) 60%);
+      /* http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+      background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+      z-index: -1;
     }
+
     .row {
       position: absolute;
       bottom: 0;
@@ -108,6 +131,8 @@ button.slick-arrow .slick-prev {
       padding: 15px;
       margin: 0;
       text-align: left;
+      width: 100%;
+
       .tag {
         font-size: .85em;
         padding: 3px 15px;
@@ -133,13 +158,12 @@ button.slick-arrow .slick-prev {
     font-size: .75em;
     text-align: left;
   }
-  transform: scale(1);
-  transition: scale .1s linear;
 }
 
 .CommunityCard--center {
   opacity: 1;
-  transform: scale(1.25);
+  transform: scale(1.1);
+  transition: scale .1s linear;
 }
 
 .carousel--actions {

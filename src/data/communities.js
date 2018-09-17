@@ -85,7 +85,7 @@ const communityData = {
       "location": "Decentralized",
       "subtitle": "Education",
       "dataImage": "static/media/line-03.png",
-      "tribeIntro": "Decentralized Open Learning Organization, built and run by its members, iterating towards smarter education.",
+      "tribeIntro": "Decentralized Open Learning Organization, built and run by its members, iterating towards a future of smarter education.",
       "tribePurpose": "To inspire the world to greatness by bringing filmmakers and audiences together in a film funding, sharing and viewing collective.",
       "quorum": 0.5,
       "createdAt": "2018-08-27T15:15:54.474Z",

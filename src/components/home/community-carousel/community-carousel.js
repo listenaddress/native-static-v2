@@ -67,7 +67,7 @@ class CommunityCarousel extends React.Component {
       slidesToShow: 5,
       slidesToScroll: 1,
       centerMode: true,
-      centerPadding: '0px',
+      centerPadding: '0',
       focusOnSelect: true,
       initialSlide: 0,
       draggable: false,
@@ -112,7 +112,7 @@ class CommunityCarousel extends React.Component {
             </a>
           </div>
         </div>
-        <div className="Communities__carousel contain">
+        <div className="Communities__carousel">
           <Zoom appear spy={this.state.communityList}>
             <Slider ref={c => (this.slider = c)} {...settings}>
               {this.state.communityData}
