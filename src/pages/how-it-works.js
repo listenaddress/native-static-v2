@@ -88,7 +88,16 @@ const SecondPage = () => (
     </section>
     <section className="block how-it-works__curator">
       <CommunityForm />
+      <div className="white-paper">
+        <div>
+          <p>Nerding out? Learn more about the economics behind Native.</p>
+          <a className="button">Download White Paper</a>
+        </div>
+        <div>
+        </div>
+      </div>
     </section>
+    
   </div>
 )
 

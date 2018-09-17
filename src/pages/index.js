@@ -75,18 +75,34 @@ const IndexPage = () => (
             <h6>STEP THREE</h6>
             <h3>Thrive</h3>
             <p>The Tribe is the economy. Projects are funded and visions are realized at this level. Tribe token price is reflective of activity and interest levels.</p>
-            </Fade>
-            <Pulse>
             <div>
+              <Pulse>
               <Link to="/how-it-works" className="button">Take a deeper dive</Link>
+              </Pulse>
             </div>
-            </Pulse>
+            </Fade>
           </div>
         </div>
       </div>
     </section>
-    <section>
+    <section className="home__community-carousel">
       <CommunityCarousel />
+    </section>
+    <section className="block">
+      <div className="contents">
+        <div className="column">
+          <p></p>
+        </div>
+        <div className="column">
+          <Fade right>
+          <h3>Create your Community</h3>
+          <p>The Tribe is the economy. Projects are funded and visions are realized at this level. Tribe token price is reflective of activity and interest levels.</p>
+          <div>
+            <a className="button">Start a Community</a>
+          </div>
+          </Fade>
+        </div>
+      </div>
     </section>
   </div>
 )
