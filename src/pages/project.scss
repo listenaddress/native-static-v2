@@ -65,3 +65,68 @@
   padding: 50px 0px 50px 0px;
   flex-direction: column;
 }
+
+// Team Member Lists
+
+.members {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  .member {
+    width: 100%;
+    height: 300px;
+    flex-basis: 30%;
+    margin-bottom: 3%;
+    position: relative;
+    flex-direction: column;
+    @media (max-width: $tablet) {
+      flex-basis: 47%;
+    }
+    @media (max-width: $phone) {
+      flex-basis: 100%;
+    }
+    .member-photo {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+    }
+    .contents {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: all .15s linear;
+      background-color: rgba(166,191,76,0);
+      color: #fff;
+      &:hover {
+        opacity: 1;
+        background-color: rgba(166,191,76,.8);
+      }
+      h5 {
+        text-align: center;
+        width: 100%;
+        font-size: 1.25em;
+        margin: 0;
+        font-weight: 400;
+        margin-bottom: 5px;
+      }
+      h6 {
+        font-size: 1em;
+        font-weight: 100;
+        text-align: center;
+        width: 100%;
+        margin: 5px 0;
+        text-transform: none;
+      }
+    }
+  }
+}
