@@ -13,7 +13,6 @@ const CommunityCard = ({ community, displayClass }) => (
     </div>
     <div className="copy">
       <p>{community.tribeIntro}</p>
-
     </div>
   </div>
 )
