@@ -13,8 +13,8 @@ class DiscoverPanel extends React.Component {
         <div className="contents contain">
           <div className="column">
             <Fade left>
-            <h3>Discover your community</h3>
-            <p>Your first step is to explore an choose communities that align with your values or things you care about. Put your money where your heart is.</p>
+            <h3>Discover your people</h3>
+            <p>Your first step is to explore and choose communities that align with the things you care about. Want to conserve energy? Save the Earth? Join flash mobs around the world? Or maybe even join a lemonade loving community? You can put your money where your heart is.</p>
             </Fade>
           </div>
           <div className="column">
@@ -29,8 +29,8 @@ class DiscoverPanel extends React.Component {
           </div>
           <div className="column">
             <Fade right>
-            <h3>Your new currency</h3>
-            <p>Now that you are part of the lemonade community, you can track particapte in building the value of your Lemon Tokens. You can also use tokens to create tasks and fund projects.</p>
+            <h3>You have new currency!</h3>
+            <p>Now that you are part of the Lemonade Community, you can track and participate in building the value of the community. You will be able to help fund projects and earn currency by doing tasks.</p>
             </Fade>
           </div>
         </div>

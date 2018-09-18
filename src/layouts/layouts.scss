@@ -15,8 +15,9 @@
   background-color: $ntv-cream;
   background-image: url('../assets/home__hero.png');
   background-size: cover;
-  background-position: center center;
-  min-height: 720px;
+  background-position: center top;
+  min-height: 540px;
+  background-repeat: no-repeat;
   .contents {
     padding-top: 150px;
     padding-left: 150px;

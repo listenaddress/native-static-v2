@@ -1,8 +1,14 @@
 @import '../layouts/variables.scss';
 
+.home__hero {
+  background-image: url('../assets/illustrations/01_HOME_BANNER_V08_Edited.png');
+}
+
 .home__how-it-works {
-  background-image: url('../assets/home__how-it-works--launch.png');
+  background-image: url('../assets/illustrations/05_Native_Website_ROCKET_Banner_cl_v05.png');
   background-color: $ntv-sky;
+  background-position: center top;
+  background-size: 100%;
   .launch {
     width: 100%;
     .contents {
@@ -18,7 +24,7 @@
     margin-top: 75px;
     .contents {
       .column:nth-child(1) {
-        background-image: url('../assets/home__how--one.png');
+        background-image: url('../assets/illustrations/11_Native_Website_Home_Howitworks_JOIN_V02.png');
       }
       .column:nth-child(2) {
         @media (max-width: $tablet) {
@@ -40,7 +46,7 @@
         }
       }
       .column:nth-child(2) {
-        background-image: url('../assets/home__how--two.png');
+        background-image: url('../assets/illustrations/12_Native_Website_Home_Howitworks_PARTICIPATE_V02.png');
       }
     }
   }
@@ -55,6 +61,19 @@
           margin-top: -50px;
         }
       }
+    }
+  }
+}
+
+.home__creator {
+  .contents {
+    .column:nth-child(1) {
+      background-image: url('../assets/illustrations/03_Native_Website_Home_MasterCreator_V06.png');
+      width: 50%;
+      background-size: contain;
+      background-position: center center;
+      background-repeat: no-repeat;
+      height: 550px;
     }
   }
 }
