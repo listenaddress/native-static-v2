@@ -11,23 +11,27 @@ class CreatePanel extends React.Component {
       <div className="tab-panel block">
 
         <div className="contents contain">
-          <Fade left>
           <div className="column">
+            <Fade left>
             <h3>Create your community</h3>
             <p>Your first step is to explore an choose communities that align with your values or things you care about. Put your money where your heart is.</p>
+            </Fade>
           </div>
-          </Fade>
-          <Fade right>
           <div className="column">
+            <Fade right>
             <img src={Illustration13} />
+            </Fade>
           </div>
-          </Fade>
           <div className="column">
+            <Fade left>
             <p>image</p>
+            </Fade>
           </div>
           <div className="column">
+            <Fade right>
             <h3>Your new currency</h3>
             <p>Now that you are part of the lemonade community, you can track particapte in building the value of your Lemon Tokens. You can also use tokens to create tasks and fund projects.</p>
+            </Fade>
           </div>
         </div>
       </div>
