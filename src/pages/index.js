@@ -10,11 +10,11 @@ import './home.scss'
 
 const IndexPage = () => (
   <div>
-    <div className="hero">
+    <div className="hero home__hero">
       <div className="contents">
         <Fade up>
         <h1>Build Prosperous Communities</h1>
-        <p>Native is a place to create and participate in community-based economics. We enable communities to realize their inherent value through local currency and set of governance.</p>
+        <p>Native is a platform for communities to realize their inherent value.</p>
         </Fade>
       </div>
     </div>
@@ -23,7 +23,7 @@ const IndexPage = () => (
         <div className="contents">
           <Fade up>
           <h2>And we're off!</h2>
-          <p>Native beta is launching this fall. Sign up for launch notifications and other awesome updates. We promise we don’t spam.</p>
+          <p>Native Alpha is launching this fall. Sign up for launch notifications and other awesome updates. We promise we don’t spam.</p>
           <EmailListForm />
           </Fade>
         </div>
@@ -44,7 +44,7 @@ const IndexPage = () => (
             <Fade right>
             <h6>STEP ONE</h6>
             <h3>Join</h3>
-            <p>The first step to participate in Native is to convert to Native Tokens. Native tokens are used to join tribes.</p>
+            <p>Find communities that care about the the things you do, like movies </p>
             </Fade>
           </div>
         </div>
@@ -55,7 +55,7 @@ const IndexPage = () => (
               <Fade left>
               <h6>STEP TWO</h6>
               <h3>Participate</h3>
-              <p>Find communities who’s values align with your own. Where do you want to put your value into the world? Once you find your tribes, you and your community can get to work on your common goals and activities.</p>
+              <p>Choose, fund and work on community projects, donate your mad skills, like cinematography</p>
               </Fade>
             </div>
           <Fade right>
@@ -74,7 +74,7 @@ const IndexPage = () => (
             <Fade right>
             <h6>STEP THREE</h6>
             <h3>Thrive</h3>
-            <p>The Tribe is the economy. Projects are funded and visions are realized at this level. Tribe token price is reflective of activity and interest levels.</p>
+            <p>Help your community to realize its vision. The community's value is derived from its growth and success.</p>
             <div>
               <Pulse>
               <Link to="/how-it-works" className="button">Take a deeper dive</Link>
@@ -88,17 +88,16 @@ const IndexPage = () => (
     <section className="home__community-carousel">
       <CommunityCarousel />
     </section>
-    <section className="block">
+    <section className="block home__creator">
       <div className="contents">
         <div className="column">
-          <p></p>
         </div>
         <div className="column">
           <Fade right>
-          <h3>Create your Community</h3>
-          <p>The Tribe is the economy. Projects are funded and visions are realized at this level. Tribe token price is reflective of activity and interest levels.</p>
+          <h3>Follow our journey? Want to start a community?</h3>
+          <p>Join us as we reinvent community economics.</p>
           <div>
-            <a className="button">Start a Community</a>
+            <a className="button">Email sign up?</a>
           </div>
           </Fade>
         </div>

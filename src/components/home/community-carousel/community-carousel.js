@@ -96,9 +96,7 @@ class CommunityCarousel extends React.Component {
         <div className="Communities__header contain">
           <div className="Communities__header--text">
             <h3>Find Your Community</h3>
-            <p>Native is a collective of Communities comprised of Curators and Contributors.
-              Communities are governed by their members who make decisions about how to best achieve the Community's goals.
-              Native is an antirivalrous ecosystem - when one Community grows, all Communities benefit.</p>
+            <p>We empower the collective dreams of the communities built on the Native platform.</p>
           </div>
           <div className="spacer"><p></p></div>
           <div className="Communities__header--links">

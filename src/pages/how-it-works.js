@@ -22,11 +22,11 @@ const tabs = [
 
 const SecondPage = () => (
   <div>
-    <div className="hero">
+    <div className="hero hiw__hero">
       <div className="contents">
         <Fade up>
-        <h1>Launch your own community economy.</h1>
-        <p>What's important to you? We believe in putting our money into ourvalues. Choose your focus, set some rules and launch your community.</p>
+        <h1>Welcome to Native</h1>
+        <p>Are you looking to find communities that join or are you interested in starting your own community? Let's take a deeper dive into Native and show you how it all works.</p>
         </Fade>
       </div>
     </div>
@@ -48,7 +48,7 @@ const SecondPage = () => (
             <Fade right>
             <h6>Projects</h6>
             <h3>Create and support projects</h3>
-            <p>Projects are one of the main fucntions of Native. Community leaders can create projects for the members to support and get stuff done.</p>
+            <p>Projects are one of the main functions of Native.  Community curators and members can create and support projects to get stuff done in the world.</p>
             </Fade>
           </div>
         </div>

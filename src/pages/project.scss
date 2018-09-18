@@ -3,6 +3,10 @@
 
 //
 
+.project__hero {
+  background-image: url('../assets/illustrations/06_Native_Website_SpaceStation_Banner_v09.png');
+}
+
 .project__start {
   background-color: $ntv-cream-dark;
 }
@@ -31,6 +35,7 @@
   flex-direction: column;
   padding-top: 50px;
   padding-bottom: 50px;
+  p { max-width: 600px; text-align: center;}
 }
 
 .project__inspiration {
