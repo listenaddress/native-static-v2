@@ -4,6 +4,11 @@ import imaginalIcon from '../../src/assets/communities/imaginal__icon.png';
 import doloBanner from '../../src/assets/communities/dolo__banner.png';
 import doloIcon from '../../src/assets/communities/dolo__icon.png';
 
+import earthBanner from '../../src/assets/communities/earth__banner.jpg';
+import humanityBanner from '../../src/assets/communities/humanity__banner.jpg';
+import peaceBanner from '../../src/assets/communities/peace__banner.jpg';
+import nativeBanner from '../../src/assets/communities/native__banner.jpg';
+
 const communityData = {
   "current": [
     {
@@ -12,7 +17,7 @@ const communityData = {
       "address": "0x3imaginalfilms",
       "tokenAddress": "0x3imaginalfilms",
       "loggerAddress": "0x3imaginalfilms",
-      "image": imaginalBanner,
+      "image": earthBanner,
       "icon": imaginalIcon,
       "location": "Boulder, CO",
       "subtitle": "Impact",
@@ -46,7 +51,7 @@ const communityData = {
       "address": "0x3imaginalfilms",
       "tokenAddress": "0x3imaginalfilms",
       "loggerAddress": "0x3imaginalfilms",
-      "image": imaginalBanner,
+      "image": humanityBanner,
       "icon": imaginalIcon,
       "location": "New York, NY",
       "subtitle": "Impact",
@@ -63,7 +68,7 @@ const communityData = {
       "address": "0x3imaginalfilms",
       "tokenAddress": "0x3imaginalfilms",
       "loggerAddress": "0x3imaginalfilms",
-      "image": imaginalBanner,
+      "image": peaceBanner,
       "icon": imaginalIcon,
       "location": "Boulder, CO",
       "subtitle": "Impact",
@@ -97,7 +102,7 @@ const communityData = {
       "address": "0x3imaginalfilms",
       "tokenAddress": "0x3imaginalfilms",
       "loggerAddress": "0x3imaginalfilms",
-      "image": imaginalBanner,
+      "image": nativeBanner,
       "icon": imaginalIcon,
       "location": "Denver, CO",
       "subtitle": "Platform",

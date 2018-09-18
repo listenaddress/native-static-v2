@@ -75,5 +75,8 @@
       background-repeat: no-repeat;
       height: 550px;
     }
+    .column:nth-child(2) {
+      width: 50%;
+    }
   }
 }
