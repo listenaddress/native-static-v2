@@ -11,6 +11,7 @@
     "gatsby-plugin-sass": "^1.0.26",
     "hamburgers": "^0.9.3",
     "react-helmet": "^5.2.0",
+    "react-lottie": "^1.2.3",
     "react-reveal": "^1.2.2",
     "react-slick": "^0.23.1",
     "react-typeform-embed": "^0.1.6",
