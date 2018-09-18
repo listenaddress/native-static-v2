@@ -8,6 +8,15 @@ import './project.scss'
 import iconKey from '../assets/icons/ntv-key.png'
 import iconVision from '../assets/icons/ntv-vision.png'
 import iconGrowth from '../assets/icons/ntv-growth.png'
+import teamJake from '../assets/team/team__jake.jpg'
+import teamMSC from '../assets/team/team__msc.jpg'
+import teamHeidi from '../assets/team/team__heidi.jpg'
+import teamAlex from '../assets/team/team__alex.jpg'
+import teamMike from '../assets/team/team__mike.jpg'
+import teamTyler from '../assets/team/team__tyler.jpg'
+import teamVen from '../assets/team/team__ven.jpg'
+import teamDekan from '../assets/team/team__dekan.jpg'
+import teamSam from '../assets/team/team__sam.jpg'
 
 const SecondPage = () => (
   <div>
@@ -59,9 +68,78 @@ const SecondPage = () => (
     <section className="block project__community">
       <h3>Our Community</h3>
       <p>Lorem ipsum dolor sit amet, consectur elit sed varius nulla a lorem aliquam effectur.</p>
-      <div className="members">
+      <div className="members contain">
         <div className="member">
-          <p>image</p>
+          <div className="member-photo" style={{backgroundImage: "url(" + teamJake + ")"}}></div>
+          <div className="contents">
+            <h5>Jake Vartanian</h5>
+            <h6>Native</h6>
+            <h6>Curator</h6>
+          </div>
+        </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
+          <div className="contents">
+            <h5>Michael Shaun Conaway</h5>
+            <h6>Storyworks</h6>
+            <h6>Strategy & Development</h6>
+          </div>
+        </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamAlex + ")"}}></div>
+          <div className="contents">
+            <h5>Alex Melnyk</h5>
+            <h6>Storyworks</h6>
+            <h6>Brand & Marketing</h6>
+          </div>
+        </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamTyler + ")"}}></div>
+          <div className="contents">
+            <h5>Tyler Wallace</h5>
+            <h6>Storyworks</h6>
+            <h6>Onboarding</h6>
+          </div>
+        </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamHeidi + ")"}}></div>
+          <div className="contents">
+            <h5>Heidi Cuppari</h5>
+            <h6>Storyworks</h6>
+            <h6>Investor Relations</h6>
+          </div>
+        </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMike + ")"}}></div>
+          <div className="contents">
+            <h5>Mike Slavin</h5>
+            <h6>Storyworks</h6>
+            <h6>Social Media</h6>
+          </div>
+        </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamVen + ")"}}></div>
+          <div className="contents">
+            <h5>Ven Gist</h5>
+            <h6>Odyssy</h6>
+            <h6>Product + Design</h6>
+          </div>
+        </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamDekan + ")"}}></div>
+          <div className="contents">
+            <h5>Dekan Brown</h5>
+            <h6>Odyssy</h6>
+            <h6>Dapp Development / R&D</h6>
+          </div>
+        </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamSam + ")"}}></div>
+          <div className="contents">
+            <h5>Sam Kuhlmann</h5>
+            <h6>Odyssy</h6>
+            <h6>Full Stack Development</h6>
+          </div>
         </div>
       </div>
       <p>Interested in working with us? <a href="mailto:hello@nativeproject.one">Shoot us an email!</a></p>
