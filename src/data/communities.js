@@ -57,7 +57,7 @@ const communityData = {
       "subtitle": "Impact",
       "dataImage": "static/media/line-03.png",
       "tribeIntro": "Creating a new blueprint for the future of humanity",
-      "tribePurpose": "To inspire the world to greatness by bringing filmmakers and audiences together in a film funding, sharing and viewing collective.",
+      "tribePurpose": "Future of Humanity is a decentralized and distributed communities and technology stack for the United Nations SDGs.",
       "quorum": 0.5,
       "createdAt": "2018-08-27T15:15:54.474Z",
       "updatedAt": "2018-08-27T15:15:54.474Z"

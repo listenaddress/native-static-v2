@@ -4,10 +4,13 @@ import Link from 'gatsby-link'
 
 import InspirationCarousel from '../components/project/inspiration-carousel/inspiration-carousel'
 
+
+
 import './project.scss'
 import iconKey from '../assets/icons/ntv-key.png'
 import iconVision from '../assets/icons/ntv-vision.png'
 import iconGrowth from '../assets/icons/ntv-growth.png'
+import iconTimeline from '../assets/icons/ntv-timeline.png'
 import teamJake from '../assets/team/team__jake.jpg'
 import teamMSC from '../assets/team/team__msc.jpg'
 import teamHeidi from '../assets/team/team__heidi.jpg'
@@ -23,8 +26,8 @@ const SecondPage = () => (
     <div className="hero project__hero">
       <div className="contents">
         <Fade up>
-        <h1>Power to the people!</h1>
-        <p>What's important to you? We believe in putting our money into ourvalues. Choose your focus, set some rules and launch your community.</p>
+        <h1>Mission Control to Native</h1>
+        <p>Our Alpha App is launching October 1st.  Come with us as we take five communites live on the platform.</p>
         </Fade>
       </div>
     </div>
@@ -32,7 +35,7 @@ const SecondPage = () => (
       <div className="contents">
         <div className="column">
           <h2>Get ready. Get set. Go!</h2>
-          <p>What's important to you? We believe in putting our money into our values. Choose your focus, set some rules and launch your community.</p>
+          <p>We're excited to share our Alpha App. While it is an early realease with lots of growing to do, we're eager for you to try it out and help us improve.</p>
           <Link to="/" className="button">Try our Alpha</Link>
         </div>
         <div className="column">
@@ -41,7 +44,9 @@ const SecondPage = () => (
     </section>
     <section className="block project__timeline">
       <h4>Timeline</h4>
+      <img src={iconTimeline} />
       <div className="contents">
+
         <p></p>
       </div>
     </section>
