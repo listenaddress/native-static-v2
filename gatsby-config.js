@@ -25,7 +25,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: "./src/assets/ntv__logo--primary.png",
+        logo: "./src/assets/favicon.png",
         injectHTML: true,
         icons: {
           android: true,
@@ -49,7 +49,7 @@ module.exports = {
         background_color: "#f9f8f4",
         theme_color: "#a6bf4c",
         display: "minimal-ui",
-        icon: "src/assets/ntv__logo--primary.png",
+        icon: "src/assets/favicon.png",
       },
     },
   ],
