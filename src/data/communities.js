@@ -30,6 +30,7 @@ const communityData = {
       "tribeIntro": "Creating a new blueprint for the future of humanity",
       "tribePurpose": "To inspire the world to greatness by bringing filmmakers and audiences together in a film funding, sharing and viewing collective.",
       "quorum": 0.5,
+      "tickerSymbol": "EGT",
       "createdAt": "2018-08-27T15:15:54.474Z",
       "updatedAt": "2018-08-27T15:15:54.474Z"
     },
@@ -47,6 +48,7 @@ const communityData = {
       "tribeIntro": "Creating a new blueprint for the future of humanity",
       "tribePurpose": "To inspire the world to greatness by bringing filmmakers and audiences together in a film funding, sharing and viewing collective.",
       "quorum": 0.5,
+      "tickerSymbol": "IFT",
       "createdAt": "2018-08-27T15:15:54.474Z",
       "updatedAt": "2018-08-27T15:15:54.474Z"
     },
@@ -64,6 +66,7 @@ const communityData = {
       "tribeIntro": "Creating a new blueprint for the future of humanity",
       "tribePurpose": "Future of Humanity is a decentralized and distributed communities and technology stack for the United Nations SDGs.",
       "quorum": 0.5,
+      "tickerSymbol": "SDG",
       "createdAt": "2018-08-27T15:15:54.474Z",
       "updatedAt": "2018-08-27T15:15:54.474Z"
     },
@@ -81,6 +84,7 @@ const communityData = {
       "tribeIntro": "Creating a new blueprint for the future of humanity",
       "tribePurpose": "To inspire the world to greatness by bringing filmmakers and audiences together in a film funding, sharing and viewing collective.",
       "quorum": 0.5,
+      "tickerSymbol": "PAT",
       "createdAt": "2018-08-27T15:15:54.474Z",
       "updatedAt": "2018-08-27T15:15:54.474Z"
     },
@@ -98,6 +102,7 @@ const communityData = {
       "tribeIntro": "Decentralized Open Learning Organization, built and run by its members, iterating towards a future of smarter education.",
       "tribePurpose": "To inspire the world to greatness by bringing filmmakers and audiences together in a film funding, sharing and viewing collective.",
       "quorum": 0.5,
+      "tickerSymbol": "DOLO",
       "createdAt": "2018-08-27T15:15:54.474Z",
       "updatedAt": "2018-08-27T15:15:54.474Z"
     },
@@ -115,6 +120,7 @@ const communityData = {
       "tribeIntro": "Creating a new blueprint for the future of humanity",
       "tribePurpose": "To inspire the world to greatness by bringing filmmakers and audiences together in a film funding, sharing and viewing collective.",
       "quorum": 0.5,
+      "tickerSymbol": "NTV",
       "createdAt": "2018-08-27T15:15:54.474Z",
       "updatedAt": "2018-08-27T15:15:54.474Z"
     }
