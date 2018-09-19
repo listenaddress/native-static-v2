@@ -3,8 +3,7 @@ import Fade from 'react-reveal/Fade'
 import Link from 'gatsby-link'
 
 import InspirationCarousel from '../components/project/inspiration-carousel/inspiration-carousel'
-
-
+import EmailListForm from '../components/home/email-list-form/email-list-form'
 
 import './project.scss'
 import iconKey from '../assets/icons/ntv-key.png'
@@ -36,7 +35,8 @@ const SecondPage = () => (
         <div className="column">
           <h2>Get ready. Get set. Go!</h2>
           <p>We're excited to share our Alpha App. While it is an early realease with lots of growing to do, we're eager for you to try it out and help us improve.</p>
-          <Link to="/" className="button">Try our Alpha</Link>
+          {/* <Link to="/" className="button">Try our Alpha</Link> */}
+          <EmailListForm />
         </div>
         <div className="column">
         </div>
