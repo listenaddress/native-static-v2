@@ -13,7 +13,7 @@ const Footer = ({ siteTitle }) => (
       <Link to="/project">Project</Link>
       <a target="_blank" href="https://drive.google.com/file/d/1YXVOFl35AJcsYPz8aOjgfXm-ZpsHxZmk/view?usp=sharing">Whitepaper</a>
       <a target="_blank" href="">Press</a>
-      <Link to="/">Join Native</Link>
+      {/* <Link to="/">Join Native</Link> */}
     </div>
     <div className="spacer"></div>
     <div className="footer__socials">
