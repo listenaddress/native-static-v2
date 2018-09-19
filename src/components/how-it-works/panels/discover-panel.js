@@ -2,6 +2,7 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 
 import Illustration11 from '../../../assets/illustrations/11_Native_Website_Home_Howitworks_JOIN_V02.png'
+import Illustration7 from '../../../assets/illustrations/07_token_v01.png'
 
 import './panel.scss'
 
@@ -24,7 +25,7 @@ class DiscoverPanel extends React.Component {
           </div>
           <div className="column">
             <Fade left>
-            <p>image</p>
+            <img src={Illustration7} />
             </Fade>
           </div>
           <div className="column">

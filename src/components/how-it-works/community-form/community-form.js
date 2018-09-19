@@ -11,21 +11,21 @@ class CommunityForm extends React.Component {
   openForm = () => {
     this.typeformEmbed.typeform.open();
   }
- 
+
   render () {
     return (
       <div>
         <div className="contents contain">
           <div className="column">
             <h2>What kind of community will you create?</h2>
-            <p>The world is your oyster We enourage you to create new communities with ideas you're passionate about.</p>
+            <p>The world is your oyster We enourage you to create new communities with ideas you are passionate about.</p>
             <a className="button" onClick={this.openForm}>Start a Community</a>
           </div>
           <div className="column">
           </div>
         </div>
         <div className="contents contain">
-          <ReactTypeformEmbed 
+          <ReactTypeformEmbed
             url={'https://nativeproject.typeform.com/to/U3ZeE6'}
             popup={true}
             autoOpen={false}

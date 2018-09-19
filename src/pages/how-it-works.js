@@ -59,7 +59,7 @@ const SecondPage = () => (
               <Fade left>
               <h6>Voting</h6>
               <h3>Your vote matters</h3>
-              <p>Help shape your community by voting on important topics, like the very pressing issue of choosing flavors for you lemonade stand.</p>
+              <p>Help shape your community by voting on important topics, like the pressing issue of choosing the flavors of lemonade you want to offer at the stand.</p>
               </Fade>
             </div>
           <Fade right>
@@ -78,7 +78,7 @@ const SecondPage = () => (
             <Fade right>
             <h6>Tasks</h6>
             <h3>Claim tasks, earn money!</h3>
-            <p>When you complete tasks for your community the overall value of the community goes up. You can also get paid in community currency for completing tasks.</p>
+            <p>When you complete tasks for your community, the overall value of the community goes up. You get paid in community tokens for each task you complete.</p>
             </Fade>
           </div>
         </div>
