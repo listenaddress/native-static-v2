@@ -99,7 +99,7 @@ class CommunityCarousel extends React.Component {
             <p>We empower the collective dreams of the communities built on the Native platform.</p>
           </div>
           <div className="spacer"><p></p></div>
-          <div className="Communities__header--links">
+          {/* <div className="Communities__header--links">
             <a onClick={() => this.swapCommunityList('current')}
               className={activeCurrent}>
               CURRENT COMMUNITIES
@@ -108,7 +108,7 @@ class CommunityCarousel extends React.Component {
               className={activeFuture}>
                 FUTURE COMMUNITIES
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="Communities__carousel">
           <Zoom appear spy={this.state.communityList}>
