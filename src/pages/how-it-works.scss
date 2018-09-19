@@ -1,7 +1,29 @@
 @import '../layouts/variables.scss';
 
+.hiw__hero {
+  background-image: url('../assets/illustrations/04_Native_Website_Howitworks_Banner_V5.png');
+}
+
 .how-it-works__steps {
   background-color: $ntv-cream;
   .intro { }
 
+}
+
+.how-it-works__curator {
+  position: relative;
+  .white-paper {
+    color: #fff;
+    background-color: $ntv-sky;
+    max-width: 600px;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    padding: 35px;
+  }
+}
+
+.footer {
+  padding-top: 120px;
 }

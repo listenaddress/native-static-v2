@@ -5,6 +5,8 @@ $ntv-primary: rgba(166,191,76,1);
 $ntv-cream: rgba(249,248,244,1);
 $ntv-action: rgba(248, 128, 115,1);
 $ntv-sky: rgba(132,206,200,1);
+$ntv-cream-dark: rgba(243, 242, 237, 1);
+$ntv-cream-darker: rgba(237,232,226,1);
 
 
 // Typography
@@ -12,8 +14,13 @@ $ntv-sky: rgba(132,206,200,1);
 // --- Import Fonts
 @import url('https://fonts.googleapis.com/css?family=Rubik:100,200,300,400,500,700,900');
 
+// --- Typekit
+@import url('https://use.typekit.net/ltg0xwv.css');
+
+
 // --- Set Fonts
-$base-font: 'Rubik', sans-serif;
+$base-font: 'tk-azo-sans', sans-serif;
+$heading-font: 'tk-omnes-pro', sans-serif;
 
 
 // Layout

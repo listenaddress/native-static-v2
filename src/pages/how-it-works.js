@@ -3,6 +3,7 @@ import React from 'react'
 import TabPanels from '../components/shared/tab-panels/tab-panels';
 import DiscoverPanel from '../components/how-it-works/panels/discover-panel';
 import CreatePanel from '../components/how-it-works/panels/create-panel';
+import CommunityForm from '../components/how-it-works/community-form/community-form';
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse'
 
@@ -21,11 +22,11 @@ const tabs = [
 
 const SecondPage = () => (
   <div>
-    <div className="hero">
+    <div className="hero hiw__hero">
       <div className="contents">
         <Fade up>
-        <h1>Launch your own community economy.</h1>
-        <p>What's important to you? We believe in putting our money into ourvalues. Choose your focus, set some rules and launch your community.</p>
+        <h1>Welcome to Native</h1>
+        <p>Are you looking to find communities that join or are you interested in starting your own community? Let's take a deeper dive into Native and show you how it all works.</p>
         </Fade>
       </div>
     </div>
@@ -47,7 +48,7 @@ const SecondPage = () => (
             <Fade right>
             <h6>Projects</h6>
             <h3>Create and support projects</h3>
-            <p>Projects are one of the main fucntions of Native. Community leaders can create projects for the members to support and get stuff done.</p>
+            <p>Projects are one of the main functions of Native.  Community curators and members can create and support projects to get stuff done in the world.</p>
             </Fade>
           </div>
         </div>
@@ -86,16 +87,19 @@ const SecondPage = () => (
       </div>
     </section>
     <section className="block how-it-works__curator">
-      <div className="contents contain">
-        <div className="column">
-          <h2>What kind of community will you create?</h2>
-          <p>The world is your oyster We enourage you to create new communities with ideas you're passionate about.</p>
-          <a className="button">Start a Community</a>
+      <CommunityForm />
+      <Fade left>
+      <div className="white-paper">
+        <div>
+          <p>Nerding out? Learn more about the economics behind Native.</p>
+          <a className="button">Download White Paper</a>
         </div>
-        <div className="column">
+        <div>
         </div>
       </div>
+      </Fade>
     </section>
+
   </div>
 )
 

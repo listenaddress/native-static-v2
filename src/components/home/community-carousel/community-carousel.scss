@@ -5,7 +5,7 @@
 .Communities {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-color: $ntv-cream;
+  background-color: $ntv-cream-dark;
 }
 
 .Communities__header {
@@ -48,6 +48,36 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+
+  // gradient
+  .slick-slider:after {
+    pointer-events: none;
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f3f2ed+0,f3f2ed+100&1+0,0+35,0+65,1+100 */
+    background: -moz-linear-gradient(left, rgba(243,242,237,1) 0%, rgba(243,242,237,0) 35%, rgba(243,242,237,0) 65%, rgba(243,242,237,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(243,242,237,1) 0%,rgba(243,242,237,0) 35%,rgba(243,242,237,0) 65%,rgba(243,242,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(243,242,237,1) 0%,rgba(243,242,237,0) 35%,rgba(243,242,237,0) 65%,rgba(243,242,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f2ed', endColorstr='#f3f2ed',GradientType=1 ); /* IE6-9 */
+  }
+  .slick-slide {
+    outline: none;
+  }
+
+  //--- slick-track
+
+  .slick-slider .slick-track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 }
 
 button.slick-arrow .slick-prev {
@@ -56,22 +86,85 @@ button.slick-arrow .slick-prev {
 }
 
 .CommunityCard {
-  opacity: 0.45;
   background-color: rgba(255,255,255,1);
-  margin: 0px 25px 0px 0px;
-  padding: 25px;
+  margin: 25px 25px 25px 0px;
   cursor: pointer;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  transform: scale(1);
+  transition: scale .1s linear;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  min-height: 380px;
+
+  .header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-position: center center;
+    background-size: cover;
+    width: 100%;
+    height: 180px;
+    position: relative;
+    z-index: 0;
+    &:after {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      /* http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,1+100 */
+      background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+      background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+      background: linear-gradient(to bottom, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+      z-index: -1;
+    }
+
+    .row {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      color: #fff;
+      padding: 15px;
+      margin: 0;
+      text-align: left;
+      width: 100%;
+
+      .tag {
+        font-size: .85em;
+        padding: 3px 15px;
+        margin: 0px 0px 5px 0px;
+        background-color: $ntv-sky;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-top-right-radius: 25px;
+        border-bottom-right-radius: 25px;
+        display: inline-block;
+      }
+      h4 {
+        margin: 0;
+        font-size: 1.5em;
+      }
+      .location {
+        font-size: .85em;
+        margin: 0;
+      }
+    }
+  }
+  .copy {
+    padding: 15px;
+    font-size: .75em;
+    text-align: left;
+  }
 }
 
 .CommunityCard--center {
   opacity: 1;
-  p {
-    font-size: 1.35em;
-  }
-}
-
-.CommunityCard--adjacent {
-  opacity: 0.75;
+  transform: scale(1.1);
+  transition: scale .1s linear;
 }
 
 .carousel--actions {

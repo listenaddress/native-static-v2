@@ -56,10 +56,30 @@ class InspirationCarousel extends React.Component {
       centerPadding: '0px',
       focusOnSelect: true,
       initialSlide: 0,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 400,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
     }
 
     return (
-      <div >
+      <div>
         <div>
           <h3>We Love Knowledge</h3>
           <p>Here are some things that left us inspired.</p>
@@ -70,7 +90,6 @@ class InspirationCarousel extends React.Component {
               {this.state.inspirationList}
             </Slider>
           </Zoom>
-
           <div>
             <button onClick={this.previous}>PREV</button>
             <button onClick={this.next}>NEXT</button>

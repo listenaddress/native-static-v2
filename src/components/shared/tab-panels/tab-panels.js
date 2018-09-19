@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Fade from 'react-reveal/Fade'
 import TabNavigation from './tab-navigation';
 import TabPanel from './tab-panel';
 

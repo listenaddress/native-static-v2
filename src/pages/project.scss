@@ -1,0 +1,137 @@
+@import '../layouts/variables.scss';
+
+
+//
+
+.project__hero {
+  background-image: url('../assets/illustrations/06_Native_Website_SpaceStation_Banner_v09.png');
+}
+
+.project__start {
+  background-color: $ntv-cream-dark;
+}
+
+.project__culture {
+  background-color: $ntv-cream-dark;
+  flex-direction: column;
+  padding: 50px 0px;
+  .contents {
+    padding: 0px 25px;
+    .column {
+      text-align: center;
+      flex-basis: 33%;
+      img {
+        max-width: 140px;
+        height: auto;
+      }
+      h6 {
+        color: $ntv-primary;
+      }
+    }
+  }
+}
+
+.project__community {
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  p { max-width: 600px; text-align: center;}
+}
+
+.project__inspiration {
+  background-color: $ntv-cream-dark;
+  position: relative;
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  .recommendation {
+    padding: 20px 0px 20px 0px;
+    background-color: $ntv-cream-darker;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
+  }
+}
+
+.project__advisors {
+  flex-direction: column;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+.project__partners {
+  background-color: $ntv-cream-dark;
+  padding: 50px 0px 50px 0px;
+  flex-direction: column;
+}
+
+// Team Member Lists
+
+.members {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  .member {
+    width: 100%;
+    height: 300px;
+    flex-basis: 30%;
+    margin-bottom: 3%;
+    position: relative;
+    flex-direction: column;
+    @media (max-width: $tablet) {
+      flex-basis: 47%;
+    }
+    @media (max-width: $phone) {
+      flex-basis: 100%;
+    }
+    .member-photo {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+    }
+    .contents {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      transition: all .15s linear;
+      background-color: rgba(166,191,76,0);
+      color: #fff;
+      &:hover {
+        opacity: 1;
+        background-color: rgba(166,191,76,.8);
+      }
+      h5 {
+        text-align: center;
+        width: 100%;
+        font-size: 1.25em;
+        margin: 0;
+        font-weight: 400;
+        margin-bottom: 5px;
+      }
+      h6 {
+        font-size: 1em;
+        font-weight: 100;
+        text-align: center;
+        width: 100%;
+        margin: 5px 0;
+        text-transform: none;
+      }
+    }
+  }
+}

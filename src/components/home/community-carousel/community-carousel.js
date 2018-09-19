@@ -30,22 +30,8 @@ class CommunityCarousel extends React.Component {
   }
 
   setDisplayClass = (middleItemIndex, i) => {
-    const itemCount = communityData[this.state.communityList].length - 1;
-    const lastItem = i === itemCount;
-    const lastItemMiddle = middleItemIndex === itemCount;
-    let previous = middleItemIndex - 1 === i;
-    if (!middleItemIndex && lastItem)  {
-      previous = true
-    }
-    let next = middleItemIndex + 1  === i;
-    if (!i && lastItemMiddle)  {
-      next = true
-    }
-
     if (middleItemIndex === i) {
       return 'CommunityCard CommunityCard--center';
-    } else if (previous || next) {
-      return 'CommunityCard CommunityCard--adjacent';
     } else {
       return 'CommunityCard';
     }
@@ -77,14 +63,30 @@ class CommunityCarousel extends React.Component {
     const settings = {
       arrows: false,
       infinite: true,
-      speed: 500,
+      speed: 300,
       slidesToShow: 5,
       slidesToScroll: 1,
       centerMode: true,
-      centerPadding: '0px',
+      centerPadding: '0',
       focusOnSelect: true,
       initialSlide: 0,
-      beforeChange: (prev, current) => this.handleSlide(current),
+      draggable: false,
+      // beforeChange: (prev, current) => this.handleSlide(current),
+      afterChange: (current) => this.handleSlide(current),
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
     }
     const activeCurrent = this.state.communityList === 'current' ? 'active--current' : '';
     const activeFuture = this.state.communityList === 'future' ? 'active--future' : '';;
@@ -94,12 +96,10 @@ class CommunityCarousel extends React.Component {
         <div className="Communities__header contain">
           <div className="Communities__header--text">
             <h3>Find Your Community</h3>
-            <p>Native is a collective of Communities comprised of Curators and Contributors.
-              Communities are governed by their members who make decisions about how to best achieve the Community's goals.
-              Native is an antirivalrous ecosystem - when one Community grows, all Communities benefit.</p>
+            <p>We empower the collective dreams of the communities built on the Native platform.</p>
           </div>
           <div className="spacer"><p></p></div>
-          <div className="Communities__header--links">
+          {/* <div className="Communities__header--links">
             <a onClick={() => this.swapCommunityList('current')}
               className={activeCurrent}>
               CURRENT COMMUNITIES
@@ -108,9 +108,9 @@ class CommunityCarousel extends React.Component {
               className={activeFuture}>
                 FUTURE COMMUNITIES
             </a>
-          </div>
+          </div> */}
         </div>
-        <div className="Communities__carousel contain">
+        <div className="Communities__carousel">
           <Zoom appear spy={this.state.communityList}>
             <Slider ref={c => (this.slider = c)} {...settings}>
               {this.state.communityData}

@@ -1,4 +1,7 @@
 import React from 'react'
+import Fade from 'react-reveal/Fade'
+
+import Illustration11 from '../../../assets/illustrations/11_Native_Website_Home_Howitworks_JOIN_V02.png'
 
 import './panel.scss'
 
@@ -6,16 +9,31 @@ class DiscoverPanel extends React.Component {
 
   render () {
     return (
-      <div className="block">
-        <div className="contents">
+      <div className="tab-panel block">
+        <div className="contents contain">
           <div className="column">
-            <h2>HELLO Discover</h2>
+            <Fade left>
+            <h3>Discover your people</h3>
+            <p>Your first step is to explore and choose communities that align with the things you care about. Want to conserve energy? Save the Earth? Join flash mobs around the world? Or maybe even join a lemonade loving community? You can put your money where your heart is.</p>
+            </Fade>
           </div>
           <div className="column">
-            <h2>image</h2>
+            <Fade right>
+            <img src={Illustration11} />
+            </Fade>
+          </div>
+          <div className="column">
+            <Fade left>
+            <p>image</p>
+            </Fade>
+          </div>
+          <div className="column">
+            <Fade right>
+            <h3>You have new currency!</h3>
+            <p>Now that you are part of the Lemonade Community, you can track and participate in building the value of the community. You will be able to help fund projects and earn currency by doing tasks.</p>
+            </Fade>
           </div>
         </div>
-
       </div>
     )
   }

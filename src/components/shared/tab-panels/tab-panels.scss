@@ -1,3 +1,5 @@
+@import '../../../layouts/variables.scss';
+
 .tab__navigation {
   list-style: none;
   margin: 0;
@@ -6,11 +8,20 @@
   align-items: center;
   justify-content: space-around;
   max-width: 600px;
-  margin: -70px auto 0px;
+  margin: -56px auto 0px;
   .item {
+    margin-bottom: 0;
     button {
-
+      color: #fff;
+      background-color: $ntv-action;
+      border-radius: 0;
+      width: 220px;
+      -webkit-clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+      clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
     }
-
+    &.active button {
+      background-color: $ntv-cream-dark;
+      color: $ntv-primary;
+    }
   }
 }
