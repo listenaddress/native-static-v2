@@ -22,5 +22,35 @@ module.exports = {
         alwaysSendReferrer: true,
       },
     },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: "./src/assets/ntv__logo--primary.png",
+        injectHTML: true,
+        icons: {
+          android: true,
+          appleIcon: true,
+          appleStartup: true,
+          coast: false,
+          favicons: true,
+          firefox: true,
+          twitter: false,
+          yandex: false,
+          windows: false
+        }
+      }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "native",
+        short_name: "native",
+        start_url: "/",
+        background_color: "#f9f8f4",
+        theme_color: "#a6bf4c",
+        display: "minimal-ui",
+        icon: "src/assets/ntv__logo--primary.png",
+      },
+    },
   ],
 }
