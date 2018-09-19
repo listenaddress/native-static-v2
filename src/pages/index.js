@@ -6,11 +6,14 @@ import CommunityCarousel from '../components/home/community-carousel/community-c
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse'
 
+import heroIllustration from '../assets/illustrations/01_HOME_BANNER_V08_Edited.png'
+
 import './home.scss'
 
 const IndexPage = () => (
   <div>
     <div className="hero home__hero">
+      <img src={heroIllustration} />
       <div className="contents">
         <Fade up>
         <h1>Build Prosperous Communities</h1>

@@ -4,7 +4,23 @@
 //
 
 .project__hero {
-  background-image: url('../assets/illustrations/06_Native_Website_SpaceStation_Banner_v09.png');
+  // background-image: url('../assets/illustrations/06_Native_Website_SpaceStation_Banner_v09.png');
+  .contents {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 0px;
+    padding-left: 0px;
+    color: #fff;
+    max-width: 33%;
+    @media (max-width: $tablet) {
+      max-width: 50%;
+    }
+    @media (max-width: $phone) {
+      max-width: 100%;
+    }
+  }
 }
 
 .project__start {

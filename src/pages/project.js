@@ -4,6 +4,8 @@ import Link from 'gatsby-link'
 
 import InspirationCarousel from '../components/project/inspiration-carousel/inspiration-carousel'
 
+import heroIllustration from '../assets/illustrations/06_Native_Website_SpaceStation_Banner_v09.png'
+
 
 
 import './project.scss'
@@ -24,6 +26,7 @@ import teamSam from '../assets/team/team__sam.jpg'
 const SecondPage = () => (
   <div>
     <div className="hero project__hero">
+      <img src={heroIllustration} />
       <div className="contents">
         <Fade up>
         <h1>Mission Control to Native</h1>

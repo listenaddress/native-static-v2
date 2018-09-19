@@ -7,6 +7,8 @@ import CommunityForm from '../components/how-it-works/community-form/community-f
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse'
 
+import heroIllustration from '../assets/illustrations/04_Native_Website_Howitworks_Banner_V5.png'
+
 import './how-it-works.scss'
 
 const tabs = [
@@ -23,6 +25,7 @@ const tabs = [
 const SecondPage = () => (
   <div>
     <div className="hero hiw__hero">
+      <img src={heroIllustration} />
       <div className="contents">
         <Fade up>
         <h1>Welcome to Native</h1>
