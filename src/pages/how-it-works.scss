@@ -2,12 +2,79 @@
 
 .hiw__hero {
   // background-image: url('../assets/illustrations/04_Native_Website_Howitworks_Banner_V5.png');
+  .contents {
+    right: 150px;
+    padding-top: 0px;
+    padding-left: 0px;
+    top: 120px;
+    max-width: 33%;
+    text-align: right;
+  }
 }
 
 .how-it-works__steps {
   background-color: $ntv-cream;
-  .intro { }
-
+  .intro {
+    padding-top: 50px;
+  }
+  .step-one {
+    margin-top: 0px;
+    .contents {
+      .column:nth-child(1) {
+        padding: 50px;
+        @media (max-width: $tablet) {
+          padding-top: 0px;
+          margin-top: -50px;
+        }
+      }
+      .column:nth-child(2) {
+        background-image: url('../assets/illustrations/10_Native_Website_Howitworks_Vote_Build_stand_v01_OL.png');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 550px;
+      }
+    }
+  }
+  .step-two {
+    .contents {
+      @media (max-width: $tablet) {
+        flex-direction: column-reverse;
+      }
+      .column:nth-child(1) {
+        background-image: url('../assets/illustrations/09_Native_Website_Howitworks_Vote_What_flavor_v03_OL.png');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 550px;
+      }
+      .column:nth-child(2) {
+        padding: 50px;
+        @media (max-width: $tablet) {
+          padding-top: 0px;
+          margin-top: -50px;
+        }
+      }
+    }
+  }
+  .step-three {
+    .contents {
+      .column:nth-child(1) {
+        padding: 50px;
+        @media (max-width: $tablet) {
+          padding-top: 0px;
+          margin-top: -50px;
+        }
+      }
+      .column:nth-child(2) {
+        background-image: url('../assets/illustrations/08_Native_Website_Howitworks_DesigntheStand_v02_OL.png');
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        height: 550px;
+      }
+    }
+  }
 }
 
 .how-it-works__curator {
@@ -22,8 +89,4 @@
     bottom: -60px;
     padding: 35px;
   }
-}
-
-.footer {
-  padding-top: 120px;
 }

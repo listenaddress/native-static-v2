@@ -167,6 +167,22 @@ const SecondPage = () => (
             <h6>Full Stack Development</h6>
           </div>
         </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
+          <div className="contents">
+            <h5>Harrison Neff</h5>
+            <h6>Ideas by Nature</h6>
+            <h6>Project Management</h6>
+          </div>
+        </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
+          <div className="contents">
+            <h5>Jeffrey Vier</h5>
+            <h6>Ideas by Nature</h6>
+            <h6>Operations</h6>
+          </div>
+        </div>
       </div>
       <p>Interested in working with us? <a href="mailto:hello@nativeproject.one">Shoot us an email!</a></p>
     </section>
@@ -175,7 +191,7 @@ const SecondPage = () => (
       <p>Our Advisors are key community members who are guiding us in the development of Native.</p>
       <div className="members contain">
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" +  + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
           <div className="contents">
             <h5>Dimitri De Jonghe</h5>
             <h6>Ocean Protocol</h6>
@@ -183,7 +199,7 @@ const SecondPage = () => (
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" +  + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
           <div className="contents">
             <h5>Evan Caron</h5>
             <h6>Swytch</h6>
@@ -191,7 +207,7 @@ const SecondPage = () => (
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" +  + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
           <div className="contents">
             <h5>Matt McKibbin</h5>
             <h6>Decentranet</h6>
@@ -199,7 +215,7 @@ const SecondPage = () => (
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" +  + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
           <div className="contents">
             <h5>Micah Spruill</h5>
             <h6>XSquared Ventures</h6>
@@ -207,14 +223,14 @@ const SecondPage = () => (
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" +  + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
           <div className="contents">
             <h5>Brad Mills</h5>
             <h6>Alphabit</h6>
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" +  + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
           <div className="contents">
             <h5>Dean Eigenmann</h5>
             <h6>ZK-Labs</h6>
@@ -222,7 +238,7 @@ const SecondPage = () => (
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" +  + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
           <div className="contents">
             <h5>Eyal Hertzog</h5>
             <h6>Bancor</h6>
