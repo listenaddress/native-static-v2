@@ -15,7 +15,7 @@ const CommunityCard = ({ community, displayClass }) => (
       <p>{community.tribeIntro}</p>
       <div className="token">
           <img src={community.icon} />
-          <p>NTV</p>
+          <p>{community.tickerSymbol}</p>
       </div>
     </div>
   </div>
