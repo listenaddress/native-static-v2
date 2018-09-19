@@ -45,9 +45,27 @@ const SecondPage = () => (
     <section className="block project__timeline">
       <h4>Timeline</h4>
       <img src={iconTimeline} />
-      <div className="contents">
-
-        <p></p>
+      <div className="contents contain">
+        <div className="item">
+          <h6>Dec 2017</h6>
+          <p>Project Initation</p>
+        </div>
+        <div className="item">
+          <h6>May 2018</h6>
+          <p>Demo Complete</p>
+        </div>
+        <div className="item">
+          <h6>Oct 2018</h6>
+          <p>Alpha Launch / Native Token Launch</p>
+        </div>
+        <div className="item">
+          <h6>Jan 2018</h6>
+          <p>Beta Launch</p>
+        </div>
+        <div className="item">
+          <h6>Jan 2019</h6>
+          <p>V1.0 Launch</p>
+        </div>
       </div>
     </section>
     <section className="block project__culture">
@@ -151,8 +169,8 @@ const SecondPage = () => (
     </section>
     <section className="block project__advisors">
       <h3>Trusted Advisors</h3>
-      <p>Lorem ipsum dolor sit amet, consectur elit sed varius nulla a lorem aliquam effectur.</p>
-      <div className="members">
+      <p>Our Advisors are key community members who are guiding us in the development of Native.</p>
+      <div className="members contain">
         <div className="member">
           <div className="member-photo" style={{backgroundImage: "url(" +  + ")"}}></div>
           <div className="contents">

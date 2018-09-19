@@ -158,6 +158,19 @@ button.slick-arrow .slick-prev {
     padding: 15px;
     font-size: .75em;
     text-align: left;
+    flex-wrap: wrap;
+    .token {
+      display: inline-block;
+      img { float: left; height: 40px; width: 40px; }
+      p {
+        font-size: 1.35em;
+        font-weight: 400;
+        float: left;
+        margin-top: 5px;
+        margin-left: 5px;
+      }
+    }
+
   }
 }
 

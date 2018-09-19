@@ -11,6 +11,30 @@
   background-color: $ntv-cream-dark;
 }
 
+.project__timeline {
+  display: block;
+  flex-wrap: wrap;
+  padding: 50px 0px;
+  h4 { flex-basis: 100%; text-align: center; }
+  img { display: block; margin: 0 auto; }
+  .contents {
+    max-width: 792px;
+    padding: 45px;
+    margin: 0 auto;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    .item {
+      width: 20%;
+      text-align: center;
+      font-size: .85em;
+      margin: 0;
+      padding: 0px;
+      h6 { color: $ntv-primary; margin: 0;}
+      p { line-height: 1.25em;}
+    }
+  }
+}
+
 .project__culture {
   background-color: $ntv-cream-dark;
   flex-direction: column;
@@ -31,42 +55,22 @@
   }
 }
 
-.project__community {
+.project__community, .project__advisors {
   flex-direction: column;
   padding-top: 50px;
   padding-bottom: 50px;
   p { max-width: 600px; text-align: center;}
 }
 
-.project__inspiration {
-  background-color: $ntv-cream-dark;
-  position: relative;
-  padding: 50px 0px 50px 0px;
-  text-align: center;
-  .recommendation {
-    padding: 20px 0px 20px 0px;
-    background-color: $ntv-cream-darker;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 800px;
-
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -50px;
-  }
-}
-
 .project__advisors {
   flex-direction: column;
   padding-top: 100px;
   padding-bottom: 50px;
+  background-color: $ntv-cream-dark;
 }
 
 .project__partners {
-  background-color: $ntv-cream-dark;
+  background-color: $ntv-cream;
   padding: 50px 0px 50px 0px;
   flex-direction: column;
 }
@@ -133,5 +137,29 @@
         text-transform: none;
       }
     }
+  }
+}
+
+
+// Project Inspiration
+
+.project__inspiration {
+  background-color: $ntv-cream-dark;
+  position: relative;
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  .recommendation {
+    padding: 20px 0px 20px 0px;
+    background-color: $ntv-cream-darker;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
   }
 }

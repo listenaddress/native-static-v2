@@ -1,13 +1,18 @@
+// banners
 import imaginalBanner from '../../src/assets/communities/imaginal__banner.png';
-import imaginalIcon from '../../src/assets/communities/imaginal__icon.png';
-
 import doloBanner from '../../src/assets/communities/dolo__banner.png';
-import doloIcon from '../../src/assets/communities/dolo__icon.png';
-
 import earthBanner from '../../src/assets/communities/earth__banner.jpg';
 import humanityBanner from '../../src/assets/communities/humanity__banner.jpg';
 import peaceBanner from '../../src/assets/communities/peace__banner.jpg';
 import nativeBanner from '../../src/assets/communities/native__banner.jpg';
+
+// token icons
+import imaginalIcon from '../../src/assets/communities/ift.svg';
+import earthIcon from '../../src/assets/communities/egt.svg';
+import humanityIcon from '../../src/assets/communities/sdg.svg';
+import peaceIcon from '../../src/assets/communities/pat.svg';
+import nativeIcon from '../../src/assets/communities/ntv.svg';
+import doloIcon from '../../src/assets/communities/dolo.svg';
 
 const communityData = {
   "current": [
@@ -18,7 +23,7 @@ const communityData = {
       "tokenAddress": "0x3imaginalfilms",
       "loggerAddress": "0x3imaginalfilms",
       "image": earthBanner,
-      "icon": imaginalIcon,
+      "icon": earthIcon,
       "location": "Boulder, CO",
       "subtitle": "Impact",
       "dataImage": "static/media/line-03.png",
@@ -52,7 +57,7 @@ const communityData = {
       "tokenAddress": "0x3imaginalfilms",
       "loggerAddress": "0x3imaginalfilms",
       "image": humanityBanner,
-      "icon": imaginalIcon,
+      "icon": humanityIcon,
       "location": "New York, NY",
       "subtitle": "Impact",
       "dataImage": "static/media/line-03.png",
@@ -69,7 +74,7 @@ const communityData = {
       "tokenAddress": "0x3imaginalfilms",
       "loggerAddress": "0x3imaginalfilms",
       "image": peaceBanner,
-      "icon": imaginalIcon,
+      "icon": peaceIcon,
       "location": "Boulder, CO",
       "subtitle": "Impact",
       "dataImage": "static/media/line-03.png",
@@ -103,7 +108,7 @@ const communityData = {
       "tokenAddress": "0x3imaginalfilms",
       "loggerAddress": "0x3imaginalfilms",
       "image": nativeBanner,
-      "icon": imaginalIcon,
+      "icon": nativeIcon,
       "location": "Denver, CO",
       "subtitle": "Platform",
       "dataImage": "static/media/line-03.png",
