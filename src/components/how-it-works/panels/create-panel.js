@@ -1,6 +1,8 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
+
 import Illustration13 from '../../../assets/illustrations/13_Native_Website_Home_Howitworks_CREATE_TRIBE_V02.png'
+import Illustration7 from '../../../assets/illustrations/07_token_v01.png'
 
 import './panel.scss'
 
@@ -14,7 +16,7 @@ class CreatePanel extends React.Component {
           <div className="column">
             <Fade left>
             <h3>Create your community</h3>
-            <p>Your first step is to explore an choose communities that align with your values or things you care about. Put your money where your heart is.</p>
+            <p>The first step is to decide what your community is about.  Love art and want to support artists? Want to conserve energy? Save the Earth?  Make a lemonade stand?</p>
             </Fade>
           </div>
           <div className="column">
@@ -24,13 +26,13 @@ class CreatePanel extends React.Component {
           </div>
           <div className="column">
             <Fade left>
-            <p>image</p>
+            <img src={Illustration7} />
             </Fade>
           </div>
           <div className="column">
             <Fade right>
-            <h3>Your new currency</h3>
-            <p>Now that you are part of the lemonade community, you can track particapte in building the value of your Lemon Tokens. You can also use tokens to create tasks and fund projects.</p>
+            <h3>Your new local currency!</h3>
+            <p>Now that you've started the Lemonade Community, you can track and participate in building the value of the Lemon tokens. You use your tokens to create tasks and fund projects.</p>
             </Fade>
           </div>
         </div>

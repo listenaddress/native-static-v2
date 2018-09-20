@@ -13,6 +13,12 @@ const CommunityCard = ({ community, displayClass }) => (
     </div>
     <div className="copy">
       <p>{community.tribeIntro}</p>
+      <div className="token">
+        <p className="label">Currency</p>
+        <p>{community.tickerSymbol}</p>
+        <img src={community.icon} />
+
+      </div>
     </div>
   </div>
 )

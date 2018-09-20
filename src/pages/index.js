@@ -6,11 +6,16 @@ import CommunityCarousel from '../components/home/community-carousel/community-c
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse'
 
+import heroIllustration from '../assets/illustrations/04_Native_Website_Home_Banner_V08_Cropped.png'
+import launchIllustration from '../assets/illustrations/05_Native_Website_ROCKET_Banner_cl_v05.png'
+import finalStepIllustration from '../assets/illustrations/02_Native_Website_Home_Howitworks_Step3_Full_v05.png'
+
 import './home.scss'
 
 const IndexPage = () => (
   <div>
     <div className="hero home__hero">
+      <img src={heroIllustration} />
       <div className="contents">
         <Fade up>
         <h1>Build Prosperous Communities</h1>
@@ -20,6 +25,7 @@ const IndexPage = () => (
     </div>
     <section className="home__how-it-works steps">
       <div className="launch">
+        <img src={launchIllustration} />
         <div className="contents">
           <Fade up>
           <h2>And we're off!</h2>
@@ -36,6 +42,7 @@ const IndexPage = () => (
         </div>
       </div>
       <div className="step-one">
+
         <div className="contents">
           <Fade left>
           <div className="column"></div>
@@ -65,13 +72,14 @@ const IndexPage = () => (
         </div>
       </div>
       <div className="step-three">
+        <img src={finalStepIllustration} />
         <div className="contents">
           <Fade left>
           <div className="column">
           </div>
           </Fade>
           <div className="column">
-            <Fade right>
+            <Fade up>
             <h6>STEP THREE</h6>
             <h3>Thrive</h3>
             <p>Help your community to realize its vision. The community's value is derived from its growth and success.</p>
@@ -94,10 +102,10 @@ const IndexPage = () => (
         </div>
         <div className="column">
           <Fade right>
-          <h3>Follow our journey? Want to start a community?</h3>
-          <p>Join us as we reinvent community economics.</p>
+          <h3>Want to find out more?</h3>
+          <p>Find out more about how Native works.</p>
           <div>
-            <a className="button">Email sign up?</a>
+            <Link className="button" to="/how-it-works">Learn More</Link>
           </div>
           </Fade>
         </div>

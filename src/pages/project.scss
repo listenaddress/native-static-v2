@@ -4,17 +4,70 @@
 //
 
 .project__hero {
-  background-image: url('../assets/illustrations/06_Native_Website_SpaceStation_Banner_v09.png');
+  // background-image: url('../assets/illustrations/06_Native_Website_SpaceStation_Banner_v09.png');
+  .contents {
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 0px;
+    padding-left: 0px;
+    color: #fff;
+    max-width: 33%;
+    @media (max-width: $tablet) {
+      max-width: 50%;
+    }
+    @media (max-width: $phone) {
+      max-width: 100%;
+    }
+  }
 }
 
 .project__start {
   background-color: $ntv-cream-dark;
+  position: relative;
+  .devicesImage {
+    position: absolute;
+    right: 0;
+    top: -150px;
+    max-width: 45%;
+  }
+  input {
+    background-color: rgba(0,0,0,.05);
+    margin: 0px;
+    margin-right: 15px;
+  }
+}
+
+.project__timeline {
+  display: block;
+  flex-wrap: wrap;
+  padding: 100px 0px 50px;
+  h4 { flex-basis: 100%; text-align: center; }
+  img { display: block; margin: 0 auto; max-width: 1180px; }
+  .contents {
+    max-width: 1200px;
+    padding: 45px;
+    padding-right: 51px;
+    margin: 0 auto;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    .item {
+      width: 20%;
+      text-align: center;
+      font-size: .85em;
+      margin: 0;
+      padding: 0px;
+      h6 { color: $ntv-primary; margin: 0;}
+      p { line-height: 1.25em;}
+    }
+  }
 }
 
 .project__culture {
   background-color: $ntv-cream-dark;
   flex-direction: column;
-  padding: 50px 0px;
+  padding: 100px 0px 50px;
   .contents {
     padding: 0px 25px;
     .column {
@@ -31,44 +84,46 @@
   }
 }
 
-.project__community {
+.project__community, .project__advisors {
   flex-direction: column;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  p { max-width: 600px; text-align: center;}
+  padding-top: 100px;
+  padding-bottom: 100px;
+  p { max-width: 600px; text-align: center; padding-bottom: 50px;}
 }
 
-.project__inspiration {
-  background-color: $ntv-cream-dark;
-  position: relative;
-  padding: 50px 0px 50px 0px;
-  text-align: center;
-  .recommendation {
-    padding: 20px 0px 20px 0px;
-    background-color: $ntv-cream-darker;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    max-width: 800px;
+.project__community .members .member:nth-child(10) {
+  margin-left: auto;
+}
 
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: -50px;
-  }
+.project__community .members .member:nth-child(11) {
+  margin-right: auto;
+    padding-left: 3%;
 }
 
 .project__advisors {
   flex-direction: column;
   padding-top: 100px;
   padding-bottom: 50px;
+  background-color: $ntv-cream-dark;
 }
 
 .project__partners {
-  background-color: $ntv-cream-dark;
-  padding: 50px 0px 50px 0px;
+  background-color: $ntv-cream;
+  padding: 100px 0px 100px 0px;
   flex-direction: column;
+  h3 {
+    margin-bottom: 100px;
+  }
+  .items {
+    position: relative;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    img {
+      display: inline-block;
+      padding: 0px 25px;
+    }
+  }
 }
 
 // Team Member Lists
@@ -80,7 +135,7 @@
   justify-content: space-around;
   .member {
     width: 100%;
-    height: 300px;
+    height: 360px;
     flex-basis: 30%;
     margin-bottom: 3%;
     position: relative;
@@ -98,8 +153,8 @@
       background-size: cover;
       background-position: center top;
       background-repeat: no-repeat;
-      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-      filter: grayscale(100%);
+      // -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      // filter: grayscale(100%);
     }
     .contents {
       display: flex;
@@ -133,5 +188,29 @@
         text-transform: none;
       }
     }
+  }
+}
+
+
+// Project Inspiration
+
+.project__inspiration {
+  background-color: $ntv-cream-dark;
+  position: relative;
+  padding: 50px 0px 50px 0px;
+  text-align: center;
+  .recommendation {
+    padding: 20px 0px 20px 0px;
+    background-color: $ntv-cream-darker;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -50px;
   }
 }

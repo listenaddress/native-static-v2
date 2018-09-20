@@ -1,13 +1,17 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 import Link from 'gatsby-link'
-
 import InspirationCarousel from '../components/project/inspiration-carousel/inspiration-carousel'
+
+import heroIllustration from '../assets/illustrations/06_Native_Website_SpaceStation_Banner_v09.png'
+
+import EmailListForm from '../components/home/email-list-form/email-list-form'
 
 import './project.scss'
 import iconKey from '../assets/icons/ntv-key.png'
 import iconVision from '../assets/icons/ntv-vision.png'
 import iconGrowth from '../assets/icons/ntv-growth.png'
+import iconTimeline from '../assets/icons/ntv-timeline.png'
 import teamJake from '../assets/team/team__jake.jpg'
 import teamMSC from '../assets/team/team__msc.jpg'
 import teamHeidi from '../assets/team/team__heidi.jpg'
@@ -17,32 +21,73 @@ import teamTyler from '../assets/team/team__tyler.jpg'
 import teamVen from '../assets/team/team__ven.jpg'
 import teamDekan from '../assets/team/team__dekan.jpg'
 import teamSam from '../assets/team/team__sam.jpg'
+import teamJeff from '../assets/team/team__jeff.jpg'
+import teamHarrison from '../assets/team/team__harrison.jpg'
+
+// project__partners
+
+import bancorLogo from '../assets/partners/bancor_logo.png'
+import citrincoopermanLogo from '../assets/partners/citrincooperman_logo.png'
+import decentranetLogo from '../assets/partners/decentranet_logo.png'
+import genesisblockLogo from '../assets/partners/genesisblock_logo.png'
+import ideasbynatureLogo from '../assets/partners/ideasbynature_logo.png'
+import odyssyLogo from '../assets/partners/odyssy_logo.png'
+import sewardKisselLogo from '../assets/partners/seward_kissel_logo.png'
+import storyworksLogo from '../assets/partners/storyworks_logo.png'
+
+// images
+import devicesImage from '../assets/product/Native_Website_App_Devices_large.png'
 
 const SecondPage = () => (
   <div>
     <div className="hero project__hero">
+      <img src={heroIllustration} />
       <div className="contents">
         <Fade up>
-        <h1>Power to the people!</h1>
-        <p>What's important to you? We believe in putting our money into ourvalues. Choose your focus, set some rules and launch your community.</p>
+        <h1>Mission Control to Native</h1>
+        <p>Our Alpha App is launching October 1st.  Come with us as we take five communites live on the platform.</p>
         </Fade>
       </div>
     </div>
     <section className="block project__start">
-      <div className="contents">
+      <div className="contents contain">
         <div className="column">
           <h2>Get ready. Get set. Go!</h2>
-          <p>What's important to you? We believe in putting our money into our values. Choose your focus, set some rules and launch your community.</p>
-          <Link to="/" className="button">Try our Alpha</Link>
+          <p>We're excited to share our Alpha App. While it is an early realease with lots of growing to do, we're eager for you to try it out and help us improve.</p>
+          {/* <Link to="/" className="button">Try our Alpha</Link> */}
+          <EmailListForm />
         </div>
         <div className="column">
         </div>
       </div>
+      <div className="devicesImage">
+        <img src={devicesImage} />
+      </div>
     </section>
     <section className="block project__timeline">
       <h4>Timeline</h4>
-      <div className="contents">
-        <p></p>
+      <img src={iconTimeline} />
+      <div className="contents contain">
+        <div className="item">
+          <h6>Dec 2017</h6>
+          <p>Project Initation</p>
+        </div>
+        <div className="item">
+          <h6>May 2018</h6>
+          <p>Demo Complete</p>
+        </div>
+        <div className="item">
+          <h6>Oct 2018</h6>
+          <p>Alpha Launch / Native Token Launch</p>
+        </div>
+        <div className="item">
+          <h6>Jan 2018</h6>
+          <p>Beta Launch</p>
+        </div>
+        <div className="item">
+          <h6>Jan 2019</h6>
+          <p>V1.0 Launch</p>
+        </div>
       </div>
     </section>
     <section className="block project__culture">
@@ -141,15 +186,31 @@ const SecondPage = () => (
             <h6>Full Stack Development</h6>
           </div>
         </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamHarrison + ")"}}></div>
+          <div className="contents">
+            <h5>Harrison Neff</h5>
+            <h6>Ideas by Nature</h6>
+            <h6>Project Management</h6>
+          </div>
+        </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamJeff + ")"}}></div>
+          <div className="contents">
+            <h5>Jeffrey Vier</h5>
+            <h6>Ideas by Nature</h6>
+            <h6>Operations</h6>
+          </div>
+        </div>
       </div>
       <p>Interested in working with us? <a href="mailto:hello@nativeproject.one">Shoot us an email!</a></p>
     </section>
     <section className="block project__advisors">
       <h3>Trusted Advisors</h3>
-      <p>Lorem ipsum dolor sit amet, consectur elit sed varius nulla a lorem aliquam effectur.</p>
-      <div className="members">
+      <p>Our Advisors are key community members who are guiding us in the development of Native.</p>
+      <div className="members contain">
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" +  + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
           <div className="contents">
             <h5>Dimitri De Jonghe</h5>
             <h6>Ocean Protocol</h6>
@@ -157,7 +218,7 @@ const SecondPage = () => (
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" +  + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
           <div className="contents">
             <h5>Evan Caron</h5>
             <h6>Swytch</h6>
@@ -165,7 +226,7 @@ const SecondPage = () => (
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" +  + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
           <div className="contents">
             <h5>Matt McKibbin</h5>
             <h6>Decentranet</h6>
@@ -173,7 +234,7 @@ const SecondPage = () => (
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" +  + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
           <div className="contents">
             <h5>Micah Spruill</h5>
             <h6>XSquared Ventures</h6>
@@ -181,14 +242,14 @@ const SecondPage = () => (
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" +  + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
           <div className="contents">
             <h5>Brad Mills</h5>
             <h6>Alphabit</h6>
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" +  + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
           <div className="contents">
             <h5>Dean Eigenmann</h5>
             <h6>ZK-Labs</h6>
@@ -196,7 +257,7 @@ const SecondPage = () => (
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" +  + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
           <div className="contents">
             <h5>Eyal Hertzog</h5>
             <h6>Bancor</h6>
@@ -206,12 +267,17 @@ const SecondPage = () => (
       <p>Interested in working with us? <a href="mailto:hello@nativeproject.one">Shoot us an email!</a></p>
     </section>
     <section className="block project__partners">
-      <h5>We're proud to partner up with these leading forces.</h5>
-      <div className="members">
-        <div className="member">
-          <p>Logo</p>
+      <h3>We're proud to partner up with these leading forces.</h3>
+      <div className="items">
+          <img src={bancorLogo} />
+          <img src={citrincoopermanLogo} />
+          <img src={decentranetLogo} />
+          <img src={genesisblockLogo} />
+          <img src={ideasbynatureLogo} />
+          <img src={odyssyLogo} />
+          <img src={sewardKisselLogo} />
+          <img src={storyworksLogo} />
         </div>
-      </div>
     </section>
   </div>
 )

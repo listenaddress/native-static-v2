@@ -3,6 +3,8 @@ import { ReactTypeformEmbed } from 'react-typeform-embed';
 
 import './community-form.scss'
 
+import badges from '../../../assets/icons/ntv-badges.png'
+
 class CommunityForm extends React.Component {
   state = {
     open: false,
@@ -11,21 +13,22 @@ class CommunityForm extends React.Component {
   openForm = () => {
     this.typeformEmbed.typeform.open();
   }
- 
+
   render () {
     return (
-      <div>
+      <div className="community-form">
         <div className="contents contain">
           <div className="column">
             <h2>What kind of community will you create?</h2>
-            <p>The world is your oyster We enourage you to create new communities with ideas you're passionate about.</p>
+            <p>The world is your oyster We enourage you to create new communities with ideas you are passionate about.</p>
             <a className="button" onClick={this.openForm}>Start a Community</a>
           </div>
           <div className="column">
+            <img src={badges} />
           </div>
         </div>
         <div className="contents contain">
-          <ReactTypeformEmbed 
+          <ReactTypeformEmbed
             url={'https://nativeproject.typeform.com/to/U3ZeE6'}
             popup={true}
             autoOpen={false}

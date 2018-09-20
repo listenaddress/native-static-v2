@@ -3,8 +3,8 @@
 @import "../../../layouts/variables.scss";
 
 .Communities {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   background-color: $ntv-cream-dark;
 }
 
@@ -65,6 +65,9 @@
     background: -webkit-linear-gradient(left, rgba(243,242,237,1) 0%,rgba(243,242,237,0) 35%,rgba(243,242,237,0) 65%,rgba(243,242,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, rgba(243,242,237,1) 0%,rgba(243,242,237,0) 35%,rgba(243,242,237,0) 65%,rgba(243,242,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f3f2ed', endColorstr='#f3f2ed',GradientType=1 ); /* IE6-9 */
+    @media (max-width: $tablet) {
+      display: none;
+    }
   }
   .slick-slide {
     outline: none;
@@ -134,9 +137,9 @@ button.slick-arrow .slick-prev {
       width: 100%;
 
       .tag {
-        font-size: .85em;
-        padding: 3px 15px;
-        margin: 0px 0px 5px 0px;
+        font-size: .75em;
+        padding: 0px 10px;
+        margin: 0px 0px 10px 0px;
         background-color: $ntv-sky;
         border-top-left-radius: 25px;
         border-bottom-left-radius: 25px;
@@ -155,9 +158,35 @@ button.slick-arrow .slick-prev {
     }
   }
   .copy {
-    padding: 15px;
+    padding: 25px 25px 0px 25px;
     font-size: .75em;
+    line-height: 1.35em;
+    font-weight: 400;
     text-align: left;
+    flex-wrap: wrap;
+    .token {
+      border-top: 1px solid #ecebe4;
+      padding-top: 15px;
+      width: 100%;
+      display: inline-block;
+      img { float: right; height: 40px; width: 40px; }
+      p {
+        font-size: 1.35em;
+        font-weight: 400;
+        float: left;
+        margin-top: 12px;
+        margin-left: 0px;
+        &.label {
+          font-size: .75em;
+          text-transform: uppercase;
+          color: #ecebe4;
+          float: left;
+          margin-right: 15px;
+          margin-left: auto;
+        }
+      }
+    }
+
   }
 }
 

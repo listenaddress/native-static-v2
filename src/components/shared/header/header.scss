@@ -10,6 +10,8 @@
   justify-content: flex-start;
   font-family: $base-font;
   padding: 0 25px;
+  position: relative;
+  z-index: 1;
 }
 
 .navbar--links {
@@ -56,11 +58,13 @@
   opacity: 0;
   z-index: -1;
   transition: all .1s linear;
+  pointer-events: none;
 }
 
 .navbar--mobile.navbar--mobile--collapsed {
   opacity: 1;
   z-index: 1;
+  pointer-events: all;
 }
 
 .navbar--mobile .navbar--links {
