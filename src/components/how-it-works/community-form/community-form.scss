@@ -1,0 +1,13 @@
+@import '../../../layouts/variables.scss';
+
+.community-form {
+  background-color: $ntv-cream-dark;
+  width: 100%;
+  padding-bottom: 50px;
+  @media (max-width: $phone) {
+    .contents {
+      width: 100%;
+      padding: 50px 0px 50px 0px;
+    }
+  }
+}

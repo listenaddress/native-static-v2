@@ -81,6 +81,12 @@ class CommunityCarousel extends React.Component {
           }
         },
         {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+          }
+        },
+        {
           breakpoint: 480,
           settings: {
             slidesToShow: 1,

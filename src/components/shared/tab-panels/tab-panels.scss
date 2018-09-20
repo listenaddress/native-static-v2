@@ -9,8 +9,13 @@
   justify-content: space-around;
   max-width: 600px;
   margin: -56px auto 0px;
+  @media (max-width: $phone) {
+    margin: -54px auto 0px;
+    width: 100%;
+  }
   .item {
     margin-bottom: 0;
+    padding-bottom: 0px;
     button {
       color: #fff;
       background-color: $ntv-action;
@@ -18,6 +23,11 @@
       width: 220px;
       -webkit-clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
       clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%);
+      @media (max-width: $phone) {
+        width: 160px;
+        margin-bottom: 0px;
+
+      }
     }
     &.active button {
       background-color: $ntv-cream-dark;

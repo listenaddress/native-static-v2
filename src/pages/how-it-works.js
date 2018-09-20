@@ -6,8 +6,10 @@ import CreatePanel from '../components/how-it-works/panels/create-panel';
 import CommunityForm from '../components/how-it-works/community-form/community-form';
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse'
-
+// Images
 import heroIllustration from '../assets/illustrations/04_Native_Website_Howitworks_Banner_V5.png'
+import badges from '../assets/icons/ntv-badges.png'
+import whitepaperIcon from '../assets/icons/ntv-whitepaper.png'
 
 import './how-it-works.scss'
 
@@ -91,12 +93,11 @@ const SecondPage = () => (
       <CommunityForm />
       <Fade left>
       <div className="white-paper">
-        <div>
+        <div className="column">
           <p>Nerding out? Learn more about the economics behind Native.</p>
           <a className="button">Download White Paper</a>
         </div>
-        <div>
-        </div>
+        <img src={whitepaperIcon} />
       </div>
       </Fade>
     </section>

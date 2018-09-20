@@ -3,6 +3,8 @@ import { ReactTypeformEmbed } from 'react-typeform-embed';
 
 import './community-form.scss'
 
+import badges from '../../../assets/icons/ntv-badges.png'
+
 class CommunityForm extends React.Component {
   state = {
     open: false,
@@ -14,7 +16,7 @@ class CommunityForm extends React.Component {
 
   render () {
     return (
-      <div>
+      <div className="community-form">
         <div className="contents contain">
           <div className="column">
             <h2>What kind of community will you create?</h2>
@@ -22,6 +24,7 @@ class CommunityForm extends React.Component {
             <a className="button" onClick={this.openForm}>Start a Community</a>
           </div>
           <div className="column">
+            <img src={badges} />
           </div>
         </div>
         <div className="contents contain">
