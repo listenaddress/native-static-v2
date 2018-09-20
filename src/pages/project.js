@@ -21,6 +21,22 @@ import teamTyler from '../assets/team/team__tyler.jpg'
 import teamVen from '../assets/team/team__ven.jpg'
 import teamDekan from '../assets/team/team__dekan.jpg'
 import teamSam from '../assets/team/team__sam.jpg'
+import teamJeff from '../assets/team/team__jeff.jpg'
+import teamHarrison from '../assets/team/team__harrison.jpg'
+
+// project__partners
+
+import bancorLogo from '../assets/partners/bancor_logo.png'
+import citrincoopermanLogo from '../assets/partners/citrincooperman_logo.png'
+import decentranetLogo from '../assets/partners/decentranet_logo.png'
+import genesisblockLogo from '../assets/partners/genesisblock_logo.png'
+import ideasbynatureLogo from '../assets/partners/ideasbynature_logo.png'
+import odyssyLogo from '../assets/partners/odyssy_logo.png'
+import sewardKisselLogo from '../assets/partners/seward_kissel_logo.png'
+import storyworksLogo from '../assets/partners/storyworks_logo.png'
+
+// images
+import devicesImage from '../assets/product/Native_Website_App_Devices_large.png'
 
 const SecondPage = () => (
   <div>
@@ -34,7 +50,7 @@ const SecondPage = () => (
       </div>
     </div>
     <section className="block project__start">
-      <div className="contents">
+      <div className="contents contain">
         <div className="column">
           <h2>Get ready. Get set. Go!</h2>
           <p>We're excited to share our Alpha App. While it is an early realease with lots of growing to do, we're eager for you to try it out and help us improve.</p>
@@ -43,6 +59,9 @@ const SecondPage = () => (
         </div>
         <div className="column">
         </div>
+      </div>
+      <div className="devicesImage">
+        <img src={devicesImage} />
       </div>
     </section>
     <section className="block project__timeline">
@@ -168,7 +187,7 @@ const SecondPage = () => (
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + teamHarrison + ")"}}></div>
           <div className="contents">
             <h5>Harrison Neff</h5>
             <h6>Ideas by Nature</h6>
@@ -176,7 +195,7 @@ const SecondPage = () => (
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + teamJeff + ")"}}></div>
           <div className="contents">
             <h5>Jeffrey Vier</h5>
             <h6>Ideas by Nature</h6>
@@ -248,12 +267,17 @@ const SecondPage = () => (
       <p>Interested in working with us? <a href="mailto:hello@nativeproject.one">Shoot us an email!</a></p>
     </section>
     <section className="block project__partners">
-      <h5>We're proud to partner up with these leading forces.</h5>
-      <div className="members">
-        <div className="member">
-          <p>Logo</p>
+      <h3>We're proud to partner up with these leading forces.</h3>
+      <div className="items">
+          <img src={bancorLogo} />
+          <img src={citrincoopermanLogo} />
+          <img src={decentranetLogo} />
+          <img src={genesisblockLogo} />
+          <img src={ideasbynatureLogo} />
+          <img src={odyssyLogo} />
+          <img src={sewardKisselLogo} />
+          <img src={storyworksLogo} />
         </div>
-      </div>
     </section>
   </div>
 )

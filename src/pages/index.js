@@ -6,7 +6,7 @@ import CommunityCarousel from '../components/home/community-carousel/community-c
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse'
 
-import heroIllustration from '../assets/illustrations/01_HOME_BANNER_V08_Edited.png'
+import heroIllustration from '../assets/illustrations/04_Native_Website_Home_Banner_V08_Cropped.png'
 import launchIllustration from '../assets/illustrations/05_Native_Website_ROCKET_Banner_cl_v05.png'
 import finalStepIllustration from '../assets/illustrations/02_Native_Website_Home_Howitworks_Step3_Full_v05.png'
 
@@ -79,7 +79,7 @@ const IndexPage = () => (
           </div>
           </Fade>
           <div className="column">
-            <Fade right>
+            <Fade up>
             <h6>STEP THREE</h6>
             <h3>Thrive</h3>
             <p>Help your community to realize its vision. The community's value is derived from its growth and success.</p>
