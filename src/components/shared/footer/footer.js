@@ -12,7 +12,7 @@ const Footer = ({ siteTitle }) => (
       <Link to="/how-it-works">How it works</Link>
       <Link to="/project">Project</Link>
       <a target="_blank" href="https://drive.google.com/file/d/1YXVOFl35AJcsYPz8aOjgfXm-ZpsHxZmk/view?usp=sharing">Whitepaper</a>
-      <a target="_blank" href="">Press</a>
+      <a target="_blank" href="https://press.nativeproject.one/">Press</a>
       {/* <Link to="/">Join Native</Link> */}
     </div>
     <div className="spacer"></div>

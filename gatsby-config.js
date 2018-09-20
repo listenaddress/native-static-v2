@@ -47,7 +47,7 @@ module.exports = {
         short_name: "native",
         start_url: "/",
         background_color: "#f9f8f4",
-        theme_color: "#a6bf4c",
+        theme_color: "#f9f8f4",
         display: "minimal-ui",
         icon: "src/assets/favicon.png",
       },
