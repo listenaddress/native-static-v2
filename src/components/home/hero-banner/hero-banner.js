@@ -11,12 +11,15 @@ class HeroBanner extends React.Component {
     showEmpower: false,
   }
 
-  componentDidMount() {
-    window.setInterval(this.hideText, 4000)
+  componentDidMount = () => {
+    this.interval = window.setInterval(this.hideText, 4000)
+  }
+
+  componentWillUnmount = () => {
+    window.clearInterval(this.interval);
   }
 
   hideText = () => {
-    console.log(this.state.activePanel)
     switch(this.state.activePanel) {
       case 'build':
         this.setState({
@@ -45,18 +48,24 @@ class HeroBanner extends React.Component {
   render () {
     return (
       <div className="contents">
-        <Fade up collapse opposite when={this.state.showBuild} className="build__panel">
+        <div className="panel build__panel">
+        <Fade appear up collapse opposite when={this.state.showBuild}>
           <h1>Build Prosperous Communities</h1>
           <p>Native is a platform for communities to realize their inherent value.</p>
         </Fade>
-        <Fade up collapse opposite when={this.state.showLaunch} className="launch__panel">
+        </div>
+        <div className="panel launch__panel">
+        <Fade up collapse opposite when={this.state.showLaunch}>
           <h1>We launch community economies.</h1>
           <p>Use Native to create a digital community currency.  Put the currency to work to fund projects.</p>
         </Fade>
-        <Fade up collapse opposite when={this.state.showEmpower} className="empower__panel">
+        </div>
+        <div className="panel empower__panel">
+        <Fade up collapse opposite when={this.state.showEmpower}>
           <h1>We empower community decision making.</h1>
           <p>Use Native's voting tools to choose how to put your currency to work.</p>
         </Fade>
+      </div>
       </div>
     )
   }
