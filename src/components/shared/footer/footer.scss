@@ -77,11 +77,11 @@
        }
     }
     .footer__socials {
-      flex-direction: column;
+      flex-direction: row;
       align-items: flex-end;
       flex-wrap: wrap;
       .social-icon {
-        margin: 15px 0px;
+        margin: 15px auto;
         width: 100%;
       }
     }

@@ -53,6 +53,9 @@
   .step-one {
     margin-top: 0px;
     .contents {
+      @media (max-width: $tablet) {
+        flex-direction: column-reverse;
+      }
       .column:nth-child(1) {
         background-image: url('../assets/illustrations/11_Native_Website_Home_Howitworks_JOIN_V02.png');
         background-size: contain;
@@ -72,7 +75,7 @@
   .step-two {
     .contents {
       @media (max-width: $tablet) {
-        flex-direction: column-reverse;
+        flex-direction: column;
       }
       .column:nth-child(1) {
         padding: 50px;
