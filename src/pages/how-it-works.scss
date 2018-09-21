@@ -97,7 +97,7 @@
 
 .how-it-works__curator {
   position: relative;
-  padding: 100px 25px 25px;
+  padding: 100px 0px 0px 0px;
   .white-paper {
     color: #fff;
     background-color: $ntv-sky;
@@ -114,6 +114,8 @@
       @media (max-width: $phone) {
         width: 100%;
         float: none;
+        display: block;
+        text-align: center;
       }
     }
     img {
@@ -123,9 +125,11 @@
       padding-left: 25px;
       @media (max-width: $phone) {
         text-align: center;
-        margin: 0 auto;
-        margin-top: 40px;
+        margin: 0px auto;
         float: none;
+        position: relative;
+        display: block;
+        margin-top: 40px;
       }
     }
   }

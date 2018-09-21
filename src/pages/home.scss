@@ -13,7 +13,15 @@
       padding-top: 200px;
     }
     @media (max-width: $phone) {
-      padding-top: 250px;
+      padding-top: 300px;
+    }
+  }
+  .contents {
+    .panel {
+      width: 420px;
+      @media (max-width: $phone) {
+        width: 320px;
+      }
     }
   }
 }
@@ -39,13 +47,24 @@
       margin: 0 auto;
       text-align: center;
       color: #fff;
+      @media (max-width: $tablet) {
+        padding-top: 300px;
+        color: #333;
+      }
+      input {
+        background-color: rgba(0,0,0,.15);
+      }
     }
   }
   .intro {
     margin-top: 0px;
     .contents {
       @media (max-width: $tablet) {
-        padding-top: 250px;
+        padding-top: 450px;
+        padding-bottom: 25px;
+      }
+      @media (max-width: $phone) {
+        padding-top: 550px;
         padding-bottom: 25px;
       }
     }
@@ -53,6 +72,9 @@
   .step-one {
     margin-top: 0px;
     .contents {
+      @media (max-width: $tablet) {
+        flex-direction: column-reverse;
+      }
       .column:nth-child(1) {
         background-image: url('../assets/illustrations/11_Native_Website_Home_Howitworks_JOIN_V02.png');
         background-size: contain;
@@ -72,7 +94,7 @@
   .step-two {
     .contents {
       @media (max-width: $tablet) {
-        flex-direction: column-reverse;
+        flex-direction: column;
       }
       .column:nth-child(1) {
         padding: 50px;
@@ -170,4 +192,19 @@
       }
     }
   }
+}
+
+.build__panel {
+  // z-index: 1;
+  position: absolute;
+}
+
+.launch__panel {
+  // z-index: 2;
+  position: absolute;
+}
+
+.empower__panel {
+  // z-index: 3;
+  position: absolute;
 }
