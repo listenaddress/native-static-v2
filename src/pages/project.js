@@ -62,7 +62,7 @@ const SecondPage = () => (
       <div className="contents contain">
         <div className="column">
           <h2>Ready, Set Go</h2>
-          <p>We’re excited to share our Alpha App. It our first release and we still have a lot of work to do. Give us your feedback to help us improve.</p>
+          <p>We’re excited to share our Alpha App. It's our first release and we still have a lot of work to do. Give us your feedback to help us improve.</p>
           {/* <Link to="/" className="button">Try our Alpha</Link> */}
           <EmailListForm />
         </div>
