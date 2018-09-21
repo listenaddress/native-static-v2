@@ -35,7 +35,7 @@ class Header extends React.Component {
             <Link activeClassName="active" exact to="/">Home</Link>
             <Link activeClassName="active" to="/how-it-works">How it works</Link>
             <Link activeClassName="active" to="/project">Project</Link>
-            <OutboundLink target="_blank" href="https://drive.google.com/file/d/1YXVOFl35AJcsYPz8aOjgfXm-ZpsHxZmk/view?usp=sharing">Whitepaper</OutboundLink>
+            <OutboundLink target="_blank" href="https://drive.google.com/file/d/13vedYkjzF-HpcC9I_JO6683bWls_uj4W/view?usp=sharing">Whitepaper</OutboundLink>
             {/* <OutboundLink href="/" className="button">
               Join Native
             </OutboundLink> */}
@@ -51,7 +51,7 @@ class Header extends React.Component {
             <Link to="/" onClick={this.toggleNav}>Home</Link>
             <Link to="/how-it-works" onClick={this.toggleNav}>How it works</Link>
             <Link to="/project" onClick={this.toggleNav}>Project</Link>
-            <a target="_blank" href="https://drive.google.com/file/d/1YXVOFl35AJcsYPz8aOjgfXm-ZpsHxZmk/view?usp=sharing">Whitepaper</a>
+            <OutboundLink target="_blank" href="https://drive.google.com/file/d/13vedYkjzF-HpcC9I_JO6683bWls_uj4W/view?usp=sharing">Whitepaper</OutboundLink>
             {/* <OutboundLink href="/" className="button" onClick={this.toggleNav}>
               Join Native
             </OutboundLink> */}

@@ -31,7 +31,7 @@ const SecondPage = () => (
       <div className="contents">
         <Fade up>
         <h1>Welcome to Native</h1>
-        <p>Are you looking to find communities that join or are you interested in starting your own community? Let's take a deeper dive into Native and show you how it all works.</p>
+        <p>Are you looking to find communities to join? Are you interested in starting your own community? Let’s take a deeper dive into Native and show you how it all works.</p>
         </Fade>
       </div>
     </div>
@@ -49,8 +49,8 @@ const SecondPage = () => (
           <div className="column">
             <Fade left>
             <h6>Projects</h6>
-            <h3>Create and support projects</h3>
-            <p>Projects are one of the main functions of Native.  Community curators and members can create and support projects to get stuff done in the world.</p>
+            <h3>Create and Support Projects</h3>
+            <p>Projects are one of the main features on Native. Decide which of your community’s projects are important and get stuff done in the world.</p>
             </Fade>
           </div>
           <Fade right>
@@ -66,8 +66,8 @@ const SecondPage = () => (
           <div className="column">
             <Fade right>
             <h6>Voting</h6>
-            <h3>Your vote matters</h3>
-            <p>Help shape your community by voting on important topics, like the pressing issue of choosing the flavors of lemonade you want to offer at the stand.</p>
+            <h3>Your Vote Matters</h3>
+            <p>Help shape your community by voting on important topics, like choosing which flavors of lemonade you want to offer at the stand.</p>
             </Fade>
           </div>
         </div>
@@ -77,7 +77,7 @@ const SecondPage = () => (
           <div className="column">
             <Fade left>
             <h6>Tasks</h6>
-            <h3>Claim tasks, earn money!</h3>
+            <h3>Claim Tasks, Earn Money!</h3>
             <p>When you complete tasks for your community, the overall value of the community goes up. You get paid in community tokens for each task you complete.</p>
             </Fade>
           </div>

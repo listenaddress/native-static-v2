@@ -51,14 +51,23 @@
 .project__start {
   background-color: $ntv-cream-dark;
   position: relative;
+  .contents {
+    padding: 25px;
+    @media (max-width: $tablet) {
+      padding-bottom: 420px;
+    }
+    @media (max-width: $phone) {
+      padding-bottom: 150px;
+    }
+  }
   .devicesImage {
     position: absolute;
     right: 0;
-    top: -150px;
+    bottom: -25px;
     max-width: 45%;
     @media (max-width: $tablet) {
-      top: 0;
-      bottom: 0;
+      bottom: -50px;
+      max-width: 100%;
     }
   }
   input {

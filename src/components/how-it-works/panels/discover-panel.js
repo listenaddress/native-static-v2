@@ -14,8 +14,8 @@ class DiscoverPanel extends React.Component {
         <div className="contents contain">
           <div className="column">
             <Fade left>
-            <h3>Discover your people</h3>
-            <p>Your first step is to explore and choose communities that align with the things you care about. Want to conserve energy? Save the Earth? Join flash mobs around the world? Or maybe even join a lemonade loving community? You can put your money where your heart is.</p>
+            <h3>Find your people</h3>
+            <p>Your first step is to explore and join communities that align with the things you care about. Want to conserve energy? Save the Earth? Join flash mobs around the world? Or maybe even join a lemonade loving community? Put your money where your heart is.</p>
             </Fade>
           </div>
           <div className="column">
