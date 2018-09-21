@@ -145,11 +145,18 @@
 
 .project__community .members .member:nth-child(10) {
   margin-left: auto;
+  @media (max-width: $tablet) {
+    margin-left: 0px;
+  }
 }
 
 .project__community .members .member:nth-child(11) {
   margin-right: auto;
     padding-left: 3%;
+    @media (max-width: $tablet) {
+      padding-left: 0px;
+      margin-right: 0px;
+    }
 }
 
 .project__advisors {
