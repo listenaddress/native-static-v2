@@ -174,3 +174,18 @@
     }
   }
 }
+
+.build__panel {
+  z-index: 1;
+  position: absolute;
+}
+
+.launch__panel {
+  z-index: 2;
+  position: absolute;
+}
+
+.empower__panel {
+  z-index: 3;
+  position: absolute;
+}
