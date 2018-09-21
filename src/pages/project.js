@@ -24,8 +24,16 @@ import teamSam from '../assets/team/team__sam.jpg'
 import teamJeff from '../assets/team/team__jeff.jpg'
 import teamHarrison from '../assets/team/team__harrison.jpg'
 
-// project__partners
+// project__advisors
+import advisorBrad from '../assets/team/advisor__brad.jpg'
+import advisorDean from '../assets/team/advisor__dean.jpg'
+import advisorDemitri from '../assets/team/advisor__demitri.jpg'
+import advisorEvan from '../assets/team/advisor__evan.jpg'
+import advisorEyal from '../assets/team/advisor__eyal.jpg'
+import advisorMicah from '../assets/team/advisor__micah.jpg'
+import advisorMatt from '../assets/team/advisor__matt.jpg'
 
+// project__partners
 import bancorLogo from '../assets/partners/bancor_logo.png'
 import citrincoopermanLogo from '../assets/partners/citrincooperman_logo.png'
 import decentranetLogo from '../assets/partners/decentranet_logo.png'
@@ -210,15 +218,15 @@ const SecondPage = () => (
       <p>Our Advisors are key community members who are guiding us in the development of Native.</p>
       <div className="members contain">
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + advisorDemitri + ")"}}></div>
           <div className="contents">
-            <h5>Dimitri De Jonghe</h5>
+            <h5>Demitri De Jonghe</h5>
             <h6>Ocean Protocol</h6>
             <h6>Co-founder</h6>
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + advisorEvan + ")"}}></div>
           <div className="contents">
             <h5>Evan Caron</h5>
             <h6>Swytch</h6>
@@ -226,7 +234,7 @@ const SecondPage = () => (
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + advisorMatt + ")"}}></div>
           <div className="contents">
             <h5>Matt McKibbin</h5>
             <h6>Decentranet</h6>
@@ -234,7 +242,7 @@ const SecondPage = () => (
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + advisorMicah + ")"}}></div>
           <div className="contents">
             <h5>Micah Spruill</h5>
             <h6>XSquared Ventures</h6>
@@ -242,14 +250,14 @@ const SecondPage = () => (
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + advisorBrad + ")"}}></div>
           <div className="contents">
             <h5>Brad Mills</h5>
             <h6>Alphabit</h6>
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + advisorDean + ")"}}></div>
           <div className="contents">
             <h5>Dean Eigenmann</h5>
             <h6>ZK-Labs</h6>
@@ -257,7 +265,7 @@ const SecondPage = () => (
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + teamMSC + ")"}}></div>
+          <div className="member-photo" style={{backgroundImage: "url(" + advisorEyal + ")"}}></div>
           <div className="contents">
             <h5>Eyal Hertzog</h5>
             <h6>Bancor</h6>

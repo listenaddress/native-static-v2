@@ -101,6 +101,8 @@ const SecondPage = () => (
       </div>
       </Fade>
     </section>
+    <section className="footer__spacer">
+    </section>
 
   </div>
 )

@@ -48,6 +48,9 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: $phone) {
+    padding: 25px;
+  }
 
   // gradient
   .slick-slider:after {

@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Link from 'gatsby-link'
+import HeroBanner from '../components/home/hero-banner/hero-banner'
 import EmailListForm from '../components/home/email-list-form/email-list-form'
 import CommunityCarousel from '../components/home/community-carousel/community-carousel'
 import Fade from 'react-reveal/Fade'
@@ -16,12 +17,7 @@ const IndexPage = () => (
   <div>
     <div className="hero home__hero">
       <img src={heroIllustration} />
-      <div className="contents">
-        <Fade up>
-        <h1>Build Prosperous Communities</h1>
-        <p>Native is a platform for communities to realize their inherent value.</p>
-        </Fade>
-      </div>
+      <HeroBanner />
     </div>
     <section className="home__how-it-works steps">
       <div className="launch">
