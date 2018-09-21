@@ -30,6 +30,7 @@ const Layout = ({ children, data }) => (
         { name: 'twitter:description', content: 'Native is a place to create and participate in community-based economics. We enable communities to realize their inherent value through local currency and set of governance.' },
         { name: 'twitter:image', content: 'https://nativeproject.one/ntv__logo--primary.png' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'google-site-verification', content: 'chEdznCYN3OA7ITzOMmfnOsWkTOjkX86VD8PiIC8LRA' },
       ]}
     />
 
