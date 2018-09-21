@@ -1,7 +1,7 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 
-import Illustration11 from '../../../assets/illustrations/11_Native_Website_Home_Howitworks_JOIN_V02.png'
+import Illustration11 from '../../../assets/product/Native_Website_Howitworks_TribeCards_Discover.png'
 import Illustration7 from '../../../assets/illustrations/07_token_v01.png'
 
 import './panel.scss'

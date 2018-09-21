@@ -48,6 +48,9 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
+  @media (max-width: $phone) {
+    padding: 25px;
+  }
 
   // gradient
   .slick-slider:after {
@@ -99,6 +102,9 @@ button.slick-arrow .slick-prev {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   min-height: 380px;
+  @media (max-width: $phone) {
+    margin: 0;
+  }
 
   .header {
     border-top-left-radius: 5px;
@@ -194,6 +200,10 @@ button.slick-arrow .slick-prev {
   opacity: 1;
   transform: scale(1.1);
   transition: scale .1s linear;
+  @media (max-width: $phone) {
+    transform: scale(1);
+
+  }
 }
 
 .carousel--actions {
