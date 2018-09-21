@@ -99,7 +99,6 @@ const IndexPage = () => (
         <div className="column">
           <Fade right>
           <h3>Want to find out more?</h3>
-          <p>Find out more about how Native works.</p>
           <div>
             <Link className="button" to="/how-it-works">Learn More</Link>
           </div>

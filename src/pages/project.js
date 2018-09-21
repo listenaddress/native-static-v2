@@ -1,6 +1,7 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
 import Link from 'gatsby-link'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import InspirationCarousel from '../components/project/inspiration-carousel/inspiration-carousel'
 
 import heroIllustration from '../assets/illustrations/06_Native_Website_SpaceStation_Banner_v09.png'
@@ -52,16 +53,16 @@ const SecondPage = () => (
       <img src={heroIllustration} />
       <div className="contents">
         <Fade up>
-        <h1>Mission Control to Native</h1>
-        <p>Our Alpha App is launching October 1st.  Come with us as we take five communites live on the platform.</p>
+        <h1>Native to Mission Control</h1>
+        <p>Our Alpha App is launching October 1st. Come with us as we take five communites live on the platform.</p>
         </Fade>
       </div>
     </div>
     <section className="block project__start">
       <div className="contents contain">
         <div className="column">
-          <h2>Get ready. Get set. Go!</h2>
-          <p>We're excited to share our Alpha App. While it is an early realease with lots of growing to do, we're eager for you to try it out and help us improve.</p>
+          <h2>Ready, Set Go</h2>
+          <p>We’re excited to share our Alpha App. It our first release and we still have a lot of work to do. Give us your feedback to help us improve.</p>
           {/* <Link to="/" className="button">Try our Alpha</Link> */}
           <EmailListForm />
         </div>
@@ -89,11 +90,11 @@ const SecondPage = () => (
           <p>Alpha Launch / Native Token Launch</p>
         </div>
         <div className="item">
-          <h6>Jan 2018</h6>
+          <h6>Jan 2019</h6>
           <p>Beta Launch</p>
         </div>
         <div className="item">
-          <h6>Jan 2019</h6>
+          <h6>Jan 2020</h6>
           <p>V1.0 Launch</p>
         </div>
       </div>
@@ -113,14 +114,15 @@ const SecondPage = () => (
         </div>
         <div className="column">
           <img src={iconGrowth} />
-          <h6>Humanity Flourishing</h6>
+          <h6>Human Flourishing</h6>
           <p>Native promises to provide communites with the tools they need to thrive.</p>
         </div>
       </div>
     </section>
     <section className="block project__community">
       <h3>Our Community</h3>
-      <p>Native is being built as a Native Community. We are made up of a collection of individuals and organizations with aligned values and incentives. Our mission is to create a platform where communities thrive. The organizaitons participating in building Native include, Storyworks - Strategy, Biz Dev, Brand, Marketing, Community Onboarding, Visual Design, Oddsy - Product Design & Management, Blockchain Prototyping, UX/UI, Web3 and Ideas by Nature - DAPP Dev, Web 3.0, Solidity, UX/UI.</p>
+      <p>Native is being built as the first Native Community. We are a collection of individuals and organizations with aligned values and incentives. Our mission is to create a platform that enables  communities thrive.</p>
+      <p>The organizations building Native include, <OutboundLink href="http://storyworks.com" target="_blank">STORYWORKS</OutboundLink> - Strategy, Biz Dev, Brand, Marketing, Community Onboarding, Visual Design, <a href="https://odyssy.io" target="_blank">ODYSSY</a> - Product Design & Management, Blockchain Prototyping, UX/UI, Web3 and <a href="http://ideasbynature.com/" target="_blank">IDEAS BY NATURE</a> - DAPP Dev, Web3, Solidity, UX/UI.</p>
       <div className="members contain">
         <div className="member">
           <div className="member-photo" style={{backgroundImage: "url(" + teamJake + ")"}}></div>

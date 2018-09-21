@@ -20,7 +20,7 @@ class CommunityForm extends React.Component {
         <div className="contents contain">
           <div className="column">
             <h2>What kind of community will you create?</h2>
-            <p>The world is your oyster We enourage you to create new communities with ideas you are passionate about.</p>
+            <p>TThe world is your oyster. We encourage you to create new communities you are passionate about.</p>
             <a className="button" onClick={this.openForm}>Start a Community</a>
           </div>
           <div className="column">
