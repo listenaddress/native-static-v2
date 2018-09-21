@@ -1,4 +1,5 @@
 import React from 'react'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import TabPanels from '../components/shared/tab-panels/tab-panels';
 import DiscoverPanel from '../components/how-it-works/panels/discover-panel';
@@ -95,7 +96,7 @@ const SecondPage = () => (
       <div className="white-paper">
         <div className="column">
           <p>Nerding out? Learn more about the economics behind Native.</p>
-          <a className="button">Download White Paper</a>
+          <OutboundLink className="button" target="_blank" href="https://drive.google.com/file/d/13vedYkjzF-HpcC9I_JO6683bWls_uj4W/view?usp=sharing">Download Whitepaper</OutboundLink>
         </div>
         <img src={whitepaperIcon} />
       </div>
