@@ -30,8 +30,8 @@ class DiscoverPanel extends React.Component {
           </div>
           <div className="column">
             <Fade right>
-            <h3>You have new currency!</h3>
-            <p>Now that you are part of the Lemonade Community, you can track and participate in building the value of the community. You will be able to help fund projects and earn currency by doing tasks.</p>
+            <h3>You’ve got tokens!</h3>
+            <p>Now that you are part of the Lemonade Community, you can track its value and participate in building the community. Fund relevant projects and earn by doing tasks.</p>
             </Fade>
           </div>
         </div>
