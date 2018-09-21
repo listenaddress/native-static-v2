@@ -56,14 +56,14 @@ class HeroBanner extends React.Component {
         </div>
         <div className="panel launch__panel">
         <Fade up collapse opposite when={this.state.showLaunch}>
-          <h1>We launch community economies.</h1>
-          <p>Use Native to create a digital community currency.  Put the currency to work to fund projects.</p>
+          <h1>Launch your community currency</h1>
+          <p>Launch your community currency. Use Native to create an economy for your community. Put the currency to work to fund projects.</p>
         </Fade>
         </div>
         <div className="panel empower__panel">
         <Fade up collapse opposite when={this.state.showEmpower}>
-          <h1>We empower community decision making.</h1>
-          <p>Use Native's voting tools to choose how to put your currency to work.</p>
+          <h1>We empower community decision making</h1>
+          <p>Use Native’s voting tools to choose how to put your community funds to work.</p>
         </Fade>
       </div>
       </div>
