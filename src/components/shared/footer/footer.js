@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import LogoMono from '../../shared/logo-mono/logo-mono'
 import './footer.scss'
 import { SocialIcon } from 'react-social-icons'
@@ -11,7 +12,7 @@ const Footer = ({ siteTitle }) => (
       <Link to="/">Home</Link>
       <Link to="/how-it-works">How it works</Link>
       <Link to="/project">Project</Link>
-      <a target="_blank" href="https://drive.google.com/file/d/1YXVOFl35AJcsYPz8aOjgfXm-ZpsHxZmk/view?usp=sharing">Whitepaper</a>
+      <OutboundLink target="_blank" href="https://drive.google.com/file/d/1yCIAnsQfiCmPU6h-_8PZewBoZ07RLMMr/view?usp=sharing">Whitepaper</OutboundLink>
       <a target="_blank" href="https://press.nativeproject.one/">Press</a>
       {/* <Link to="/">Join Native</Link> */}
     </div>
