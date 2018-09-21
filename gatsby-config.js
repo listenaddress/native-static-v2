@@ -18,7 +18,6 @@ module.exports = {
         head: false,
         anonymize: true,
         respectDNT: true,
-        exclude: ["/**"],
         alwaysSendReferrer: true,
       },
     },
