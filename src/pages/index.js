@@ -25,7 +25,7 @@ const IndexPage = () => (
         <div className="contents">
           <Fade up>
           <h2>And we're off!</h2>
-          <p>Native Alpha is launching this fall. Sign up for launch notifications and other awesome updates. We promise we don’t spam.</p>
+          <p>Native Alpha is launching this fall. Sign up for our awesome updates. We promise we don’t spam.</p>
           <EmailListForm />
           </Fade>
         </div>
@@ -33,7 +33,7 @@ const IndexPage = () => (
       <div className="intro">
         <div className="contents">
           <Fade top cascade>
-            <h2>How it works</h2>
+            <h2>Start Here</h2>
           </Fade>
         </div>
       </div>
@@ -58,7 +58,7 @@ const IndexPage = () => (
               <Fade left>
               <h6>STEP TWO</h6>
               <h3>Participate</h3>
-              <p>Choose, fund and work on community projects, donate your mad skills, like cinematography</p>
+              <p>Choose, fund and work on community projects.  Donate your mad skills, like cinematography</p>
               </Fade>
             </div>
           <Fade right>
