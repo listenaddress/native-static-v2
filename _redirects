@@ -1,0 +1,6 @@
+# Redirect domain aliases to primary domain
+https://www.nativetoken.io/* https://nativeproject.one/:splat 301!
+https://nativetoken.io/* https://nativeproject.one/:splat 301!
+
+# Optional: Redirect default Netlify subdomain to primary domain
+https://compassionate-haibt-25a003.netlify.com/* https://nativeproject.one/:splat 301!
