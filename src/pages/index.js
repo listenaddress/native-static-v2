@@ -17,9 +17,17 @@ const IndexPage = () => (
     <div className="hero home__hero">
       <img src={heroIllustration} />
       <div className="contents">
-        <Fade up>
+        <Fade up opposite collapse>
         <h1>Build Prosperous Communities</h1>
         <p>Native is a platform for communities to realize their inherent value.</p>
+        </Fade>
+        <Fade up opposite collapse delay={3000}>
+        <h1>We launch community economies.</h1>
+        <p>Use Native to create a digital community currency.  Put the currency to work to fund projects.</p>
+        </Fade>
+        <Fade up opposite collapse delay={6000}>
+        <h1>We empower community decision making.</h1>
+        <p>Use Native's voting tools to choose how to put your currency to work.</p>
         </Fade>
       </div>
     </div>

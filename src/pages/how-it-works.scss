@@ -97,6 +97,7 @@
 
 .how-it-works__curator {
   position: relative;
+  padding: 100px 25px 25px;
   .white-paper {
     color: #fff;
     background-color: $ntv-sky;
@@ -128,4 +129,12 @@
       }
     }
   }
+}
+
+.footer__spacer {
+  background-color: #333;
+  height: 60px;
+  width: 100%;
+  padding: 0px;
+  margin: 0;
 }
