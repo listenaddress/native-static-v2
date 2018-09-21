@@ -53,7 +53,7 @@ const SecondPage = () => (
       <img src={heroIllustration} />
       <div className="contents">
         <Fade up>
-        <h1>Native to Mission Control</h1>
+        <h1>Native to Ground Control</h1>
         <p>Our Alpha App is launching October 1st. Come with us as we take five communites live on the platform.</p>
         </Fade>
       </div>
