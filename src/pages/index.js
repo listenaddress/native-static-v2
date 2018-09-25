@@ -25,7 +25,7 @@ const IndexPage = () => (
         <div className="contents">
           <Fade up>
           <h2>And we're off!</h2>
-          <p>Native Alpha is launching this fall. Sign up for our awesome updates. We promise we don’t spam.</p>
+          <p>Native Alpha is launching October 1st. Sign up for our awesome updates. We promise we don’t spam.</p>
           <EmailListForm />
           </Fade>
         </div>
