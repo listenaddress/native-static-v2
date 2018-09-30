@@ -1,5 +1,6 @@
 import React from 'react'
 import { ReactTypeformEmbed } from 'react-typeform-embed';
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import './community-form.scss'
 
@@ -19,22 +20,13 @@ class CommunityForm extends React.Component {
       <div className="community-form">
         <div className="contents contain">
           <div className="column">
-            <h2>What kind of community will you create?</h2>
-            <p>The world is your oyster. We encourage you to create new communities you are passionate about.</p>
-            <a className="button" onClick={this.openForm}>Start a Community</a>
+            <h2>Find your Communities</h2>
+            <p>We encourage you to join communities you are passionate about.</p>
+            <OutboundLink className="button" href="/">Browse Communities</OutboundLink>
           </div>
           <div className="column">
             <img src={badges} />
           </div>
-        </div>
-        <div className="contents contain">
-          <ReactTypeformEmbed
-            url={'https://nativeproject.typeform.com/to/U3ZeE6'}
-            popup={true}
-            autoOpen={false}
-            style={{height: '0%'}}
-            ref={(tf => this.typeformEmbed = tf) }
-          />
         </div>
       </div>
     )

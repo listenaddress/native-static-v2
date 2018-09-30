@@ -1,6 +1,9 @@
 import React from 'react'
 
 import Link from 'gatsby-link'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { ReactTypeformEmbed } from 'react-typeform-embed';
+
 import HeroBanner from '../components/home/hero-banner/hero-banner'
 import EmailListForm from '../components/home/email-list-form/email-list-form'
 import CommunityCarousel from '../components/home/community-carousel/community-carousel'
@@ -9,11 +12,22 @@ import Pulse from 'react-reveal/Pulse'
 
 import heroIllustration from '../assets/illustrations/04_Native_Website_Home_Banner_V08_Cropped.png'
 import launchIllustration from '../assets/illustrations/05_Native_Website_ROCKET_Banner_cl_v05.png'
-import finalStepIllustration from '../assets/illustrations/02_Native_Website_Home_Howitworks_Step3_Full_v05.png'
+import finalStepIllustration from '../assets/illustrations/02_Native_Website_Home_Howitworks_Step3_Full_v04.png'
 
 import './home.scss'
 
-const IndexPage = () => (
+class IndexPage extends React.Component {
+  state = {
+    open: false,
+  }
+
+  openForm = () => {
+    this.typeformEmbed.typeform.open();
+  }
+
+  render () {
+    return (
+
   <div>
     <div className="hero home__hero">
       <img src={heroIllustration} />
@@ -25,8 +39,11 @@ const IndexPage = () => (
         <div className="contents">
           <Fade up>
           <h2>And we're off!</h2>
-          <p>Native Alpha is launching October 1st. Sign up for our awesome updates. We promise we don’t spam.</p>
-          <EmailListForm />
+          <p>The Native App is live. Join one of our communities.</p>
+          <div className="button-group">
+            <OutboundLink className="button" href="/" target="_blank">Launch App</OutboundLink>
+            <OutboundLink className="button quick-start" href="/" target="_blank">Quick Start Guide</OutboundLink>
+          </div>
           </Fade>
         </div>
       </div>
@@ -98,9 +115,16 @@ const IndexPage = () => (
         </div>
         <div className="column">
           <Fade right>
-          <h3>Want to find out more?</h3>
+          <h3>Create a Community</h3>
           <div>
-            <Link className="button" to="/how-it-works">Learn More</Link>
+            <a className="button" onClick={this.openForm}>Start Here</a>
+            <ReactTypeformEmbed
+              url={'https://nativeproject.typeform.com/to/U3ZeE6'}
+              popup={true}
+              autoOpen={false}
+              style={{height: '0%'}}
+              ref={(tf => this.typeformEmbed = tf) }
+            />
           </div>
           </Fade>
         </div>
@@ -108,5 +132,7 @@ const IndexPage = () => (
     </section>
   </div>
 )
+}
+}
 
 export default IndexPage

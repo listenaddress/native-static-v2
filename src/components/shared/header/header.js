@@ -5,6 +5,8 @@ import Link from 'gatsby-link'
 import './header.scss'
 import Logo from '../../shared/logo/logo'
 
+import Pulse from 'react-reveal/Pulse'
+
 class Header extends React.Component {
   state = {
     navOpen: false,
@@ -36,9 +38,11 @@ class Header extends React.Component {
             <Link activeClassName="active" to="/how-it-works">How it works</Link>
             <Link activeClassName="active" to="/project">Project</Link>
             <OutboundLink target="_blank" href="https://drive.google.com/file/d/13vedYkjzF-HpcC9I_JO6683bWls_uj4W/view?usp=sharing">Whitepaper</OutboundLink>
-            {/* <OutboundLink href="/" className="button">
-              Join Native
-            </OutboundLink> */}
+            <Pulse>
+            <OutboundLink href="/" className="button">
+              Launch App
+            </OutboundLink>
+            </Pulse>
           </div>
         </div>
         <button className={hamburgerClass} type="button" onClick={this.toggleNav}>
@@ -52,9 +56,9 @@ class Header extends React.Component {
             <Link to="/how-it-works" onClick={this.toggleNav}>How it works</Link>
             <Link to="/project" onClick={this.toggleNav}>Project</Link>
             <OutboundLink target="_blank" href="https://drive.google.com/file/d/13vedYkjzF-HpcC9I_JO6683bWls_uj4W/view?usp=sharing">Whitepaper</OutboundLink>
-            {/* <OutboundLink href="/" className="button" onClick={this.toggleNav}>
-              Join Native
-            </OutboundLink> */}
+            <OutboundLink href="/" className="button" onClick={this.toggleNav}>
+              Launch App
+            </OutboundLink>
           </div>
         </div>
       </div>

@@ -32,7 +32,7 @@
    @media (max-width: 889px) {
      margin: 25px 0px;
    }
-   &:hover, &.active {
+   &:not(.button):hover, &.active {
      color: $ntv-primary;
      border-bottom: 2px solid $ntv-primary;
    }
