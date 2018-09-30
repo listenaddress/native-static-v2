@@ -117,7 +117,7 @@ class IndexPage extends React.Component {
           <Fade right>
           <h3>Create a Community</h3>
           <div>
-            <Link className="button" onClick={this.openForm}>Start Here</Link>
+            <a className="button" onClick={this.openForm}>Start Here</a>
             <ReactTypeformEmbed
               url={'https://nativeproject.typeform.com/to/U3ZeE6'}
               popup={true}

@@ -54,17 +54,16 @@ const SecondPage = () => (
       <div className="contents">
         <Fade up>
         <h1>Native to Ground Control</h1>
-        <p>Our Alpha App is launching October 1st. Come with us as we take five communites live on the platform.</p>
+        <p>Our App is live. Join us as we redefine community economics.</p>
         </Fade>
       </div>
     </div>
     <section className="block project__start">
       <div className="contents contain">
         <div className="column">
-          <h2>Ready, Set Go</h2>
+          <h2>Ready, Set, Go!</h2>
           <p>We’re excited to share our Alpha App. It's our first release and we still have a lot of work to do. Give us your feedback to help us improve.</p>
-          {/* <Link to="/" className="button">Try our Alpha</Link> */}
-          <EmailListForm />
+          <OutboundLink href="/" target="_blank" className="button">Launch App</OutboundLink>
         </div>
         <div className="column">
         </div>
