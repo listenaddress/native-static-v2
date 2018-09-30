@@ -12,7 +12,7 @@ import Pulse from 'react-reveal/Pulse'
 
 import heroIllustration from '../assets/illustrations/04_Native_Website_Home_Banner_V08_Cropped.png'
 import launchIllustration from '../assets/illustrations/05_Native_Website_ROCKET_Banner_cl_v05.png'
-import finalStepIllustration from '../assets/illustrations/02_Native_Website_Home_Howitworks_Step3_Full_v05.png'
+import finalStepIllustration from '../assets/illustrations/02_Native_Website_Home_Howitworks_Step3_Full_v04.png'
 
 import './home.scss'
 
