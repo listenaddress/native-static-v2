@@ -1,6 +1,7 @@
 import React from 'react'
 
 import Link from 'gatsby-link'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import HeroBanner from '../components/home/hero-banner/hero-banner'
 import EmailListForm from '../components/home/email-list-form/email-list-form'
 import CommunityCarousel from '../components/home/community-carousel/community-carousel'
@@ -25,8 +26,11 @@ const IndexPage = () => (
         <div className="contents">
           <Fade up>
           <h2>And we're off!</h2>
-          <p>Native Alpha is launching October 1st. Sign up for our awesome updates. We promise we don’t spam.</p>
-          <EmailListForm />
+          <p>The Native App is live. Join one of our communities.</p>
+          <div className="button-group">
+            <OutboundLink className="button" href="/" target="_blank">Launch App</OutboundLink>
+            <OutboundLink className="button quick-start" href="/" target="_blank">Quick Start Guide</OutboundLink>
+          </div>
           </Fade>
         </div>
       </div>
