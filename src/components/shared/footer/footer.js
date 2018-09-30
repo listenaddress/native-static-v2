@@ -14,7 +14,7 @@ const Footer = ({ siteTitle }) => (
       <Link to="/project">Project</Link>
       <OutboundLink target="_blank" href="https://drive.google.com/file/d/13vedYkjzF-HpcC9I_JO6683bWls_uj4W/view?usp=sharing">Whitepaper</OutboundLink>
       <OutboundLink target="_blank" href="https://press.nativeproject.one/">Press</OutboundLink>
-      <OutboundLink href="/" target="_blank">Launch App</OutboundLink>
+      <OutboundLink href="https://app.nativeproject.one" target="_blank">Launch App</OutboundLink>
     </div>
     <div className="spacer"></div>
     <div className="footer__socials">

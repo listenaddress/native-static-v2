@@ -39,7 +39,7 @@ class Header extends React.Component {
             <Link activeClassName="active" to="/project">Project</Link>
             <OutboundLink target="_blank" href="https://drive.google.com/file/d/13vedYkjzF-HpcC9I_JO6683bWls_uj4W/view?usp=sharing">Whitepaper</OutboundLink>
             <Pulse>
-            <OutboundLink href="/" className="button">
+            <OutboundLink href="https://app.nativeproject.one" target="_blank" className="button">
               Launch App
             </OutboundLink>
             </Pulse>
@@ -56,7 +56,7 @@ class Header extends React.Component {
             <Link to="/how-it-works" onClick={this.toggleNav}>How it works</Link>
             <Link to="/project" onClick={this.toggleNav}>Project</Link>
             <OutboundLink target="_blank" href="https://drive.google.com/file/d/13vedYkjzF-HpcC9I_JO6683bWls_uj4W/view?usp=sharing">Whitepaper</OutboundLink>
-            <OutboundLink href="/" className="button" onClick={this.toggleNav}>
+            <OutboundLink href="https://app.nativeproject.one" className="button" onClick={this.toggleNav}>
               Launch App
             </OutboundLink>
           </div>
