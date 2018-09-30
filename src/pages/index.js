@@ -2,6 +2,8 @@ import React from 'react'
 
 import Link from 'gatsby-link'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { ReactTypeformEmbed } from 'react-typeform-embed';
+
 import HeroBanner from '../components/home/hero-banner/hero-banner'
 import EmailListForm from '../components/home/email-list-form/email-list-form'
 import CommunityCarousel from '../components/home/community-carousel/community-carousel'
@@ -14,7 +16,18 @@ import finalStepIllustration from '../assets/illustrations/02_Native_Website_Hom
 
 import './home.scss'
 
-const IndexPage = () => (
+class IndexPage extends React.Component {
+  state = {
+    open: false,
+  }
+
+  openForm = () => {
+    this.typeformEmbed.typeform.open();
+  }
+
+  render () {
+    return (
+
   <div>
     <div className="hero home__hero">
       <img src={heroIllustration} />
@@ -102,9 +115,16 @@ const IndexPage = () => (
         </div>
         <div className="column">
           <Fade right>
-          <h3>Want to find out more?</h3>
+          <h3>Create a Community</h3>
           <div>
-            <Link className="button" to="/how-it-works">Learn More</Link>
+            <Link className="button" onClick={this.openForm}>Start Here</Link>
+            <ReactTypeformEmbed
+              url={'https://nativeproject.typeform.com/to/U3ZeE6'}
+              popup={true}
+              autoOpen={false}
+              style={{height: '0%'}}
+              ref={(tf => this.typeformEmbed = tf) }
+            />
           </div>
           </Fade>
         </div>
@@ -112,5 +132,7 @@ const IndexPage = () => (
     </section>
   </div>
 )
+}
+}
 
 export default IndexPage
