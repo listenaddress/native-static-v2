@@ -22,7 +22,7 @@ class CommunityForm extends React.Component {
           <div className="column">
             <h2>Find your Communities</h2>
             <p>We encourage you to join communities you are passionate about.</p>
-            <OutboundLink className="button" href="/">Browse Communities</OutboundLink>
+            <OutboundLink className="button" href="https://app.nativeproject.one">Browse Communities</OutboundLink>
           </div>
           <div className="column">
             <img src={badges} />
