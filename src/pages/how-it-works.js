@@ -91,7 +91,7 @@ const SecondPage = () => (
       </div>
     </section>
     <section className="block how-it-works__curator">
-      {/* <CommunityForm /> */}
+      <CommunityForm />
       <Fade left>
       <div className="white-paper">
         <div className="column">
