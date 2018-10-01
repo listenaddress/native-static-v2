@@ -40,12 +40,10 @@ class IndexPage extends React.Component {
               <Fade up>
               <h2>And we're off!</h2>
               <p>The Native App is live. Join one of our communities.</p>
-              {/* <p>The Native App is live. Join one of our communities.</p> */}
-              <p>Native Alpha is launching October 1st. Sign up for our awesome updates. We promise we don’t spam.</p>
-              <EmailListForm />
+              <p>The Native App is live. Join one of our communities.</p>
               <div className="button-group">
-                {/* <OutboundLink className="button" href="https://app.nativeproject.one" target="_blank">Launch App</OutboundLink> */}
-                {/* <OutboundLink className="button quick-start" href="https://native-project.gitbook.io/native-quick-start-guide/" target="_blank">Quick Start Guide</OutboundLink> */}
+                <OutboundLink className="button" href="https://app.nativeproject.one" target="_blank">Launch App</OutboundLink>
+                <OutboundLink className="button quick-start" href="https://native-project.gitbook.io/native-quick-start-guide/" target="_blank">Quick Start Guide</OutboundLink>
               </div>
               </Fade>
             </div>
