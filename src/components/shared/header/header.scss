@@ -3,6 +3,8 @@
 
 // Header
 
+
+
 .navbar {
   height: 100px;
   display: flex;
@@ -14,10 +16,15 @@
   z-index: 1;
 }
 
+.navbar--desktop {
+  flex: 1 1 auto;
+  margin-right: 0px;
+}
+
 .navbar--links {
  display: flex;
  align-items: center;
- justify-content: center;
+ justify-content: flex-end;
  a {
    font-size: .85em;
    text-transform: uppercase;
@@ -36,6 +43,24 @@
      color: $ntv-primary;
      border-bottom: 2px solid $ntv-primary;
    }
+
+ }
+ .launch-app.button {
+   margin: auto 0px;
+   display: inline-block;
+   width: 180px;
+   text-align: center;
+ }
+ a.join--telegram.button {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #0088cc;
+   svg { width: 20px; height: 20px; fill: #fff; margin-right:: 15px;}
+   scale: 0.75;
+   max-width: 240px;
+   margin: auto 0px;
  }
 }
 
