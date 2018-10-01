@@ -16,7 +16,7 @@ const CommunityCard = ({ community, displayClass }) => (
       <div className="token">
         <img src={community.icon} />
         <p>{community.tickerSymbol}</p>
-        {/* <a className="button" href="https://app.nativeproject.one" target="_blank">LAUNCH</a> */}
+        <a className="button" href="https://app.nativeproject.one" target="_blank">LAUNCH</a>
       </div>
     </div>
   </div>
