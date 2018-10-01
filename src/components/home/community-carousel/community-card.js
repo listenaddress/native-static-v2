@@ -1,4 +1,5 @@
 import React from 'react'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
 
 import './community-carousel.scss'
 
@@ -16,7 +17,7 @@ const CommunityCard = ({ community, displayClass }) => (
       <div className="token">
         <img src={community.icon} />
         <p>{community.tickerSymbol}</p>
-        <a className="button" href="https://app.nativeproject.one" target="_blank">LAUNCH</a>
+        <OutboundLink className="button" href={community.address} target="_blank">LAUNCH</OutboundLink>
       </div>
     </div>
   </div>

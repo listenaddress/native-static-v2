@@ -5,6 +5,7 @@ import earthBanner from '../../src/assets/communities/earth__banner.jpg';
 import humanityBanner from '../../src/assets/communities/humanity__banner.jpg';
 import peaceBanner from '../../src/assets/communities/peace__banner.jpg';
 import nativeBanner from '../../src/assets/illustrations/04_Native_Website_Howitworks_Banner_V5.png';
+import rmBanner from '../../src/assets/communities/rm__banner.png';
 
 // token icons
 import imaginalIcon from '../../src/assets/communities/ift.svg';
@@ -13,13 +14,14 @@ import humanityIcon from '../../src/assets/communities/sdg.svg';
 import peaceIcon from '../../src/assets/communities/pat.svg';
 import nativeIcon from '../../src/assets/communities/ntv.svg';
 import doloIcon from '../../src/assets/communities/dolo.svg';
+import rmIcon from '../../src/assets/communities/rm.svg';
 
 const communityData = {
   "current": [
     {
       "id": 1,
       "name": "Earth Guardians",
-      "address": "0x3imaginalfilms",
+      "address": "https://app.nativeproject.one/#earth-guardians",
       "tokenAddress": "0x3imaginalfilms",
       "loggerAddress": "0x3imaginalfilms",
       "image": earthBanner,
@@ -37,7 +39,7 @@ const communityData = {
     {
       "id": 2,
       "name": "Imaginal Films",
-      "address": "0x3imaginalfilms",
+      "address": "https://app.nativeproject.one/#imaginal-films",
       "tokenAddress": "0x3imaginalfilms",
       "loggerAddress": "0x3imaginalfilms",
       "image": imaginalBanner,
@@ -55,7 +57,7 @@ const communityData = {
     {
       "id": 3,
       "name": "SDG Futures",
-      "address": "0x3imaginalfilms",
+      "address": "https://app.nativeproject.one/#sdg-futures",
       "tokenAddress": "0x3imaginalfilms",
       "loggerAddress": "0x3imaginalfilms",
       "image": humanityBanner,
@@ -73,7 +75,7 @@ const communityData = {
     {
       "id": 4,
       "name": "Peace Accelerators",
-      "address": "0x3imaginalfilms",
+      "address": "https://app.nativeproject.one/#peace-accelerators",
       "tokenAddress": "0x3imaginalfilms",
       "loggerAddress": "0x3imaginalfilms",
       "image": peaceBanner,
@@ -91,7 +93,7 @@ const communityData = {
     {
       "id": 5,
       "name": "DOLO",
-      "address": "0x3imaginalfilms",
+      "address": "https://app.nativeproject.one/#dolo",
       "tokenAddress": "0x3imaginalfilms",
       "loggerAddress": "0x3imaginalfilms",
       "image": doloBanner,
@@ -109,7 +111,7 @@ const communityData = {
     {
       "id": 6,
       "name": "Native",
-      "address": "0x3imaginalfilms",
+      "address": "https://app.nativeproject.one",
       "tokenAddress": "0x3imaginalfilms",
       "loggerAddress": "0x3imaginalfilms",
       "image": nativeBanner,
@@ -121,6 +123,24 @@ const communityData = {
       "tribePurpose": "To inspire the world to greatness by bringing filmmakers and audiences together in a film funding, sharing and viewing collective.",
       "quorum": 0.5,
       "tickerSymbol": "NTV",
+      "createdAt": "2018-08-27T15:15:54.474Z",
+      "updatedAt": "2018-08-27T15:15:54.474Z"
+    },
+    {
+      "id": 7,
+      "name": "Rick & Morty Crew",
+      "address": "https://app.nativeproject.one/#the-rick-and-morty-crew",
+      "tokenAddress": "0x3imaginalfilms",
+      "loggerAddress": "0x3imaginalfilms",
+      "image": rmBanner,
+      "icon": rmIcon,
+      "location": "Decentralized",
+      "subtitle": "Wubba lubba dub dub!",
+      "dataImage": "static/media/line-03.png",
+      "tribeIntro": "“It’s about to get a whole lot weirder, Morty” Join our crew as we fight against all those people with their heads up their asses. We’ll either conquer all or we’ll throw some great parties and make the weirdest & fucking hard to get Rick & Morty collectibles the world has ever seen.",
+      "tribePurpose": "To inspire the world to greatness by bringing filmmakers and audiences together in a film funding, sharing and viewing collective.",
+      "quorum": 0.5,
+      "tickerSymbol": "R&M",
       "createdAt": "2018-08-27T15:15:54.474Z",
       "updatedAt": "2018-08-27T15:15:54.474Z"
     }
