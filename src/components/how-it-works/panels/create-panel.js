@@ -31,8 +31,8 @@ class CreatePanel extends React.Component {
           </div>
           <div className="column">
             <Fade right>
-            <h3>Your new local currency!</h3>
-            <p>Now that you've started the Lemonade Community, you can track and participate in building the value of the Lemon tokens. You use your tokens to create tasks and fund projects.</p>
+            <h3>Your new community token!</h3>
+            <p>Now that you've started the Lemonade Community, you can track and participate in building the value of the Lemon tokens. Use your tokens to create tasks and fund projects.</p>
             </Fade>
           </div>
         </div>

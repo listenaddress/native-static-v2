@@ -43,16 +43,43 @@
       top: 75px;
       left: 50%;
       transform: translateX(-50%);
-      max-width: 550px;
+      max-width: 800px;
       margin: 0 auto;
       text-align: center;
       color: #fff;
       @media (max-width: $tablet) {
         padding-top: 300px;
         color: #333;
+        width: calc(100% - 50px);
       }
-      input {
-        background-color: rgba(0,0,0,.15);
+      .button-group {
+        display: flex;
+        flex-wrap: wrap;
+        width: 550px;
+        position: relative;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-around;
+        @media (max-width: $tablet) {
+          width: 100%;
+        }
+        .button {
+         flex-basis: 45%;
+         @media (max-width: $tablet) {
+           flex-basis: 100%;
+           width: 100%;
+           margin: 15px auto;
+         }
+        }
+        .button.quick-start {
+          background-color: rgba(255,255,255,1);
+          color: $ntv-sky;
+          @media (max-width: $tablet) {
+            background-color: $ntv-sky;
+            color: rgba(255,255,255,1);
+          }
+        }
+
       }
     }
   }
@@ -83,9 +110,9 @@
         height: 550px;
       }
       .column:nth-child(2) {
-        padding: 50px;
+        padding: 100px;
         @media (max-width: $tablet) {
-          padding-top: 0px;
+          padding: 0px 50px 50px 50px;
           margin-top: -50px;
         }
       }
@@ -97,9 +124,9 @@
         flex-direction: column;
       }
       .column:nth-child(1) {
-        padding: 50px;
+        padding: 100px;
         @media (max-width: $tablet) {
-          padding-top: 0px;
+          padding: 0px 50px 50px 50px;
           margin-top: -50px;
         }
       }
@@ -166,7 +193,7 @@
       flex-direction: column-reverse;
     }
     .column:nth-child(1) {
-      background-image: url('../assets/illustrations/03_Native_Website_Home_MasterCreator_V06.png');
+      background-image: url('../assets/illustrations/03_Native_Website_Home_MasterCreator_V06_Gold_v2.png');
       width: 50%;
       background-size: contain;
       background-position: center bottom;

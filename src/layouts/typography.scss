@@ -5,35 +5,44 @@
 // --- baseline
 
 body {
+  font-family: $base-font;
   font-size: 16px;
 }
 
 // --- Headings
 
 h1 {
-
+ font-family: $heading-font;
+ font-weight: 300;
 }
 
 h2 {
+  font-family: $heading-font;
+  font-weight: 300;
   font-size: 2.75em;
 }
 
 h3 {
+  font-family: $heading-font;
+  font-weight: 300;
   font-size: 2em;
 }
 
 h4 {
-
+  font-family: $heading-font;
+  font-weight: 300;
 }
 
 h5 {
-
+  font-family: $heading-font;
+  font-weight: 300;
 }
 
 h6 {
+  font-family: $heading-font;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 // --- Paragraphs
@@ -41,6 +50,7 @@ h6 {
 p {
  font-weight: 100;
  letter-spacing: .05em;
+ line-height: 1.28em;
 }
 
 p.large {

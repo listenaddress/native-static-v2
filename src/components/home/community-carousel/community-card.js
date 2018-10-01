@@ -14,10 +14,9 @@ const CommunityCard = ({ community, displayClass }) => (
     <div className="copy">
       <p>{community.tribeIntro}</p>
       <div className="token">
-        <p className="label">Currency</p>
-        <p>{community.tickerSymbol}</p>
         <img src={community.icon} />
-
+        <p>{community.tickerSymbol}</p>
+        <a className="button" href="https://app.nativeproject.one" target="_blank">LAUNCH</a>
       </div>
     </div>
   </div>

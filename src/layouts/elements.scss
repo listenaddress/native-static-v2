@@ -5,14 +5,15 @@
 // ---  Buttons
 
 button, a.button {
-  color: rgba(255,255,255,.8);
+  color: rgba(255,255,255,.9);
   background-color: $ntv-action;
   border: none;
   border-radius: 100px;
   padding: 15px 30px;
   text-transform: uppercase;
   letter-spacing: .1em;
-  font-weight: 100;
+  font-size: 14px;
+  font-weight: 500;
   cursor: pointer;
   outline: none;
   &:hover {
