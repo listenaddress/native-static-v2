@@ -1,5 +1,27 @@
 // Footer
 
+.ico--telegram {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #0088cc;
+  border-radius: 50%;
+  svg { width: 20px; height: 20px; fill: #333;}
+}
+
+.ico--reddit {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff4500;
+  border-radius: 50%;
+  svg { width: 20px; height: 20px; fill: #333;}
+}
+
 .footer {
   padding: 50px 25px;
   background-color: #333;
