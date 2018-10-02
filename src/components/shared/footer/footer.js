@@ -7,17 +7,7 @@ import { SocialIcon } from 'react-social-icons'
 
 const Footer = ({ siteTitle }) => (
   <div className="footer">
-    <div className="footer__nav">
-      <LogoMono />
-      <Link to="/">Home</Link>
-      <Link to="/how-it-works">How it works</Link>
-      <Link to="/project">Project</Link>
-      <OutboundLink target="_blank" href="https://drive.google.com/file/d/13vedYkjzF-HpcC9I_JO6683bWls_uj4W/view?usp=sharing">Whitepaper</OutboundLink>
-      <OutboundLink target="_blank" href="https://press.nativeproject.one/">Press</OutboundLink>
-      <OutboundLink target="_blank" href="https://nativeproject.zendesk.com/hc/en-us">Help</OutboundLink>
-      <OutboundLink href="https://app.nativeproject.one" target="_blank">Launch App</OutboundLink>
-    </div>
-    <div className="spacer"></div>
+    <LogoMono />
     <div className="footer__socials">
       <OutboundLink className="social-icon ico--telegram" href="https://telegram.me/nativeproject" target="_blank" style={{ height: 40, width: 40 }} >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20">
@@ -35,6 +25,15 @@ const Footer = ({ siteTitle }) => (
         </svg>
       </OutboundLink>
       <SocialIcon url="https://www.youtube.com/channel/UCcezcAqMj48yFkXQDUZzOGQ?view_as=subscriber" style={{ height: 40, width: 40 }} />
+    </div>
+    <div className="footer__nav">
+      <Link to="/">Home</Link>
+      <Link to="/how-it-works">How it works</Link>
+      <Link to="/project">Project</Link>
+      <OutboundLink target="_blank" href="https://drive.google.com/file/d/13vedYkjzF-HpcC9I_JO6683bWls_uj4W/view?usp=sharing">Whitepaper</OutboundLink>
+      <OutboundLink target="_blank" href="https://press.nativeproject.one/">Press</OutboundLink>
+      <OutboundLink target="_blank" href="https://nativeproject.zendesk.com/hc/en-us">Help</OutboundLink>
+      <OutboundLink href="https://app.nativeproject.one" target="_blank">Launch App</OutboundLink>
     </div>
   </div>
 )
