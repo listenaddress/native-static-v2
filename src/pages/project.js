@@ -2,8 +2,6 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 import Link from 'gatsby-link'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
-import InspirationCarousel from '../components/project/inspiration-carousel/inspiration-carousel'
-
 import heroIllustration from '../assets/illustrations/06_Native_Website_SpaceStation_Banner_v09.png'
 
 import EmailListForm from '../components/home/email-list-form/email-list-form'
