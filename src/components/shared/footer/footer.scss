@@ -28,8 +28,10 @@
   color: rgba(255,255,255,0.8);
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  svg {
+  justify-content: center;
+  flex-wrap: wrap;
+  .logo-mono svg {
+    margin-right: 35px;
     .a {
       fill: rgba(255,255,255,1);
     }
@@ -40,10 +42,13 @@
   .footer__nav  {
     display: flex;
     align-items: center;
+    flex-basis: 100%;
+    justify-content: center;
     * {
-      margin: 0px 15px;
+      margin: 25px 15px;
     }
-    a {color: rgba(255,255,255,0.8);}
+    a { color: rgba(255,255,255,0.5); font-size: .9em; }
+    a:hover { color: rgba(255,255,255,0.8); }
   }
   .footer__socials {
     display: flex;
@@ -51,7 +56,6 @@
     .social-icon {
       margin: 0px 15px;
     }
-    a {color: rgba(255,255,255,0.8);}
   }
 }
 
@@ -67,7 +71,7 @@
       align-items: center;
       justify-content: center;
       * {
-        margin: 0px 15px;
+        margin: 35px 15px;
        }
     }
     .footer__socials {
