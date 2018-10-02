@@ -27,6 +27,7 @@ const Footer = ({ siteTitle }) => (
       <SocialIcon url="https://www.youtube.com/channel/UCcezcAqMj48yFkXQDUZzOGQ?view_as=subscriber" style={{ height: 40, width: 40 }} />
     </div>
     <div className="footer__nav">
+      <a>© 2018 Native</a>
       <Link to="/">Home</Link>
       <Link to="/how-it-works">How it works</Link>
       <Link to="/project">Project</Link>

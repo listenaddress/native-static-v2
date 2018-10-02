@@ -137,7 +137,7 @@ const communityData = {
       "location": "Decentralized",
       "subtitle": "Wubba lubba dub dub!",
       "dataImage": "static/media/line-03.png",
-      "tribeIntro": "“It’s about to get a whole lot weirder, Morty” Join our crew as we fight against all those people with their heads up their asses. We’ll either conquer all or we’ll throw some great parties and make the weirdest & fucking hard to get Rick & Morty collectibles the world has ever seen.",
+      "tribeIntro": "“It’s about to get a whole lot weirder, Morty” Join our crew as we fight against all those people with their heads up their asses. We’ll either conquer all or we’ll throw some great parties.",
       "tribePurpose": "To inspire the world to greatness by bringing filmmakers and audiences together in a film funding, sharing and viewing collective.",
       "quorum": 0.5,
       "tickerSymbol": "R&M",

@@ -75,7 +75,7 @@ class CommunityCarousel extends React.Component {
       afterChange: (current) => this.handleSlide(current),
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 1200,
           settings: {
             slidesToShow: 3,
           }
