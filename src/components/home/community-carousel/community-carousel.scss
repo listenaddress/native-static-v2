@@ -105,9 +105,17 @@ button.slick-arrow .slick-prev {
   transition: scale .1s linear;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  min-height: 380px;
+  @media (min-width: 1201px) {
+    height: 440px;
+  }
+  @media (max-width: 1000px) {
+    height: 420px;
+  }
+  @media (max-width: $tablet) {
+    margin: 25px;
+  }
   @media (max-width: $phone) {
-    margin: 0;
+    margin: 0px;
   }
 
   .header {
@@ -205,7 +213,7 @@ button.slick-arrow .slick-prev {
   opacity: 1;
   transform: scale(1.1);
   transition: scale .1s linear;
-  @media (max-width: $phone) {
+  @media (max-width: $tablet) {
     transform: scale(1);
 
   }
