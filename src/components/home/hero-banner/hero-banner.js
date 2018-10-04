@@ -17,19 +17,19 @@ class HeroBanner extends React.Component {
       this.setState({
         showBuild: false,
       })
-    }, 6000)
+    }, 5000)
 
     window.setTimeout(() => {
       this.setState({
         showLaunch: true,
       })
-    }, 12000)
+    }, 10000)
 
     window.setTimeout(() => {
       this.setState({
         showLaunch: false,
       })
-    }, 17500)
+    }, 15000)
 
   }
 
@@ -49,7 +49,7 @@ class HeroBanner extends React.Component {
         </Fade>
         </div>
         <div className="panel empower__panel">
-        <Fade up collapse opposite delay={23000}>
+        <Fade up collapse opposite delay={20000}>
           <h1>We empower community decision making</h1>
           <p>Use Native’s voting tools to choose how to put your community funds to work.</p>
         </Fade>
