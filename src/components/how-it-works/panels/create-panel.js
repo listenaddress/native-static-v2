@@ -1,5 +1,8 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
+// Lottie
+import LottieControl from "../../../components/shared/lottie-control/lottie-control"
+import * as createAnimation from "../../../assets/animations/13_Native_Website_Home_Howitworks_CREATE_TRIBE_V01.json"
 
 import Illustration13 from '../../../assets/illustrations/13_Native_Website_Home_Howitworks_CREATE_TRIBE_V02.png'
 import Illustration7 from '../../../assets/illustrations/07_token_v01.png'
@@ -7,6 +10,14 @@ import Illustration7 from '../../../assets/illustrations/07_token_v01.png'
 import './panel.scss'
 
 class CreatePanel extends React.Component {
+
+  state = {
+    showAnimation: false
+  }
+
+  playAnimation = () => {
+    this.setState({ showAnimation: true })
+  }
 
   render () {
     return (
@@ -20,8 +31,13 @@ class CreatePanel extends React.Component {
             </Fade>
           </div>
           <div className="column">
-            <Fade right>
-            <img src={Illustration13} />
+            <Fade right wait={0} onReveal={ () => this.playAnimation()}>
+            {
+              this.state.showAnimation &&
+              <LottieControl
+                  animationData={createAnimation}
+                  loop={false} />
+            }
             </Fade>
           </div>
           <div className="column">

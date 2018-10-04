@@ -12,37 +12,25 @@ class HeroBanner extends React.Component {
   }
 
   componentDidMount = () => {
-    this.interval = window.setInterval(this.hideText, 4000)
-  }
+    // this.interval = window.setInterval(this.hideText, 12000)
+    window.setTimeout(() => {
+      this.setState({
+        showBuild: false,
+      })
+    }, 6000)
 
-  componentWillUnmount = () => {
-    window.clearInterval(this.interval);
-  }
+    window.setTimeout(() => {
+      this.setState({
+        showLaunch: true,
+      })
+    }, 12000)
 
-  hideText = () => {
-    switch(this.state.activePanel) {
-      case 'build':
-        this.setState({
-          activePanel: 'launch',
-          showBuild: false,
-          showLaunch: true,
-        });
-        break;
-      case 'launch':
-        this.setState({
-          activePanel: 'empower',
-          showLaunch: false,
-          showEmpower: true,
-        });
-        break;
-      case 'empower':
-        this.setState({
-          activePanel: 'build',
-          showEmpower: false,
-          showBuild: true,
-        });
-        break;
-    }
+    window.setTimeout(() => {
+      this.setState({
+        showLaunch: false,
+      })
+    }, 17500)
+
   }
 
   render () {
@@ -61,7 +49,7 @@ class HeroBanner extends React.Component {
         </Fade>
         </div>
         <div className="panel empower__panel">
-        <Fade up collapse opposite when={this.state.showEmpower}>
+        <Fade up collapse opposite delay={23000}>
           <h1>We empower community decision making</h1>
           <p>Use Native’s voting tools to choose how to put your community funds to work.</p>
         </Fade>
