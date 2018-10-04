@@ -9,7 +9,7 @@ import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse'
 // Lottie
 import LottieControl from "../components/shared/lottie-control/lottie-control"
-import * as bannerAnimation from "../assets/animations/04_Native_Website_Howitworks_Banner_V5.json"
+import * as bannerAnimation from "../assets/animations/04_Native_Website_Howitworks_Banner_V10.json"
 import * as step2Animation from "../assets/animations/09_Native_Website_Howitworks_Vote_What_flavor_v01.json"
 
 // Images

@@ -8,7 +8,7 @@ import { ReactTypeformEmbed } from 'react-typeform-embed';
 import LottieControl from "../components/shared/lottie-control/lottie-control"
 import * as bannerAnimation from "../assets/animations/01_HOME_BANNER_ANIM_v05.json"
 import * as step1Animation from "../assets/animations/11_join_v06.json"
-import * as step2Animation from "../assets/animations/12_participate_v04.json"
+import * as step2Animation from "../assets/animations/12_participate_v05.json"
 import * as step3Animation from "../assets/animations/02_Native_Website_Home_Howitworks_Step3_Full_v03.json"
 
 import HeroBanner from '../components/home/hero-banner/hero-banner'
@@ -44,7 +44,7 @@ class IndexPage extends React.Component {
         <div className="hero home__hero">
           <LottieControl
               animationData={bannerAnimation}
-              loop={true} />
+              loop={false} />
           <HeroBanner />
         </div>
         <section className="home__how-it-works steps">
@@ -113,7 +113,7 @@ class IndexPage extends React.Component {
             </div>
           </div>
           <div className="step-three">
-            <Fade wait={0} onReveal={ () => this.playAnimation()}>
+            <Fade wait={3000} onReveal={ () => this.playAnimation()}>
             {
               this.state.showAnimation &&
               <LottieControl
@@ -122,10 +122,8 @@ class IndexPage extends React.Component {
             }
             </Fade>
             <div className="contents">
-              <Fade left>
               <div className="column">
               </div>
-              </Fade>
               <div className="column">
                 <Fade up>
                 <h6>STEP THREE</h6>
