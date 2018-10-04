@@ -12,7 +12,7 @@ class HeroBanner extends React.Component {
   }
 
   componentDidMount = () => {
-    this.interval = window.setInterval(this.hideText, 4000)
+    this.interval = window.setInterval(this.hideText, 12000)
   }
 
   componentWillUnmount = () => {

@@ -2,7 +2,7 @@
 
 .home__hero {
   left: 0px;
-  img {
+  svg {
     max-width: 100%;
     width: 100%;
     max-height: 100%;
@@ -103,11 +103,8 @@
         flex-direction: column-reverse;
       }
       .column:nth-child(1) {
-        background-image: url('../assets/illustrations/11_Native_Website_Home_Howitworks_JOIN_V02.png');
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
         height: 550px;
+        svg {}
       }
       .column:nth-child(2) {
         padding: 100px;
@@ -131,11 +128,8 @@
         }
       }
       .column:nth-child(2) {
-        background-image: url('../assets/illustrations/12_Native_Website_Home_Howitworks_PARTICIPATE_V02.png');
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
         height: 550px;
+        svg { }
       }
     }
   }
@@ -144,7 +138,7 @@
     @media (max-width: $tablet) {
       padding-top: 200px;
     }
-    img {
+    svg {
       width: 100%;
       display: block;
       padding-top: 150px;

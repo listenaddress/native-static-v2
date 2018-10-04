@@ -4,6 +4,13 @@ import Link from 'gatsby-link'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
 import { ReactTypeformEmbed } from 'react-typeform-embed';
 
+// Lottie
+import LottieControl from "../components/shared/lottie-control/lottie-control"
+import * as bannerAnimation from "../assets/animations/01_HOME_BANNER_ANIM_v05.json"
+import * as step1Animation from "../assets/animations/11_join_v06.json"
+import * as step2Animation from "../assets/animations/12_participate_v04.json"
+import * as step3Animation from "../assets/animations/02_Native_Website_Home_Howitworks_Step3_Full_v03.json"
+
 import HeroBanner from '../components/home/hero-banner/hero-banner'
 import EmailListForm from '../components/home/email-list-form/email-list-form'
 import CommunityCarousel from '../components/home/community-carousel/community-carousel'
@@ -19,10 +26,15 @@ import './home.scss'
 class IndexPage extends React.Component {
   state = {
     open: false,
+    showAnimation: false
   }
 
   openForm = () => {
     this.typeformEmbed.typeform.open();
+  }
+
+  playAnimation = () => {
+    this.setState({ showAnimation: true })
   }
 
   render () {
@@ -30,7 +42,9 @@ class IndexPage extends React.Component {
 
       <div>
         <div className="hero home__hero">
-          <img src={heroIllustration} />
+          <LottieControl
+              animationData={bannerAnimation}
+              loop={true} />
           <HeroBanner />
         </div>
         <section className="home__how-it-works steps">
@@ -58,9 +72,16 @@ class IndexPage extends React.Component {
           <div className="step-one">
 
             <div className="contents">
-              <Fade left>
-              <div className="column"></div>
-              </Fade>
+              <div className="column">
+                <Fade left wait={0} onReveal={ () => this.playAnimation()}>
+                {
+                  this.state.showAnimation &&
+                  <LottieControl
+                      animationData={step1Animation}
+                      loop={false} />
+                }
+                </Fade>
+              </div>
               <div className="column">
                 <Fade right>
                 <h6>STEP ONE</h6>
@@ -79,14 +100,27 @@ class IndexPage extends React.Component {
                   <p>Choose, fund and work on community projects.  Donate your mad skills, like cinematography</p>
                   </Fade>
                 </div>
-              <Fade right>
               <div className="column">
+                <Fade right wait={0} onReveal={ () => this.playAnimation()}>
+                {
+                  this.state.showAnimation &&
+                  <LottieControl
+                      animationData={step2Animation}
+                      loop={false} />
+                }
+                </Fade>
               </div>
-              </Fade>
             </div>
           </div>
           <div className="step-three">
-            <img src={finalStepIllustration} />
+            <Fade wait={0} onReveal={ () => this.playAnimation()}>
+            {
+              this.state.showAnimation &&
+              <LottieControl
+                  animationData={step3Animation}
+                  loop={false} />
+            }
+            </Fade>
             <div className="contents">
               <Fade left>
               <div className="column">

@@ -2,6 +2,9 @@ import React from 'react'
 import Fade from 'react-reveal/Fade'
 import Link from 'gatsby-link'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
+// Lottie
+import LottieControl from "../components/shared/lottie-control/lottie-control"
+import * as bannerAnimation from "../assets/animations/06_Native_Website_SpaceStation_Banner_v10.json"
 import heroIllustration from '../assets/illustrations/06_Native_Website_SpaceStation_Banner_v09.png'
 
 import EmailListForm from '../components/home/email-list-form/email-list-form'
@@ -48,7 +51,9 @@ import devicesImage from '../assets/product/Native_Website_App_Devices_large.png
 const SecondPage = () => (
   <div>
     <div className="hero project__hero">
-      <img src={heroIllustration} />
+    <LottieControl
+        animationData={bannerAnimation}
+        loop={true} />
       <div className="contents">
         <Fade up>
         <h1>Native to Ground Control</h1>
