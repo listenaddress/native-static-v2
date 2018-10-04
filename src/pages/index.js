@@ -11,15 +11,12 @@ import * as step1Animation from "../assets/animations/11_join_v06.json"
 import * as step2Animation from "../assets/animations/12_participate_v05.json"
 import * as step3Animation from "../assets/animations/02_Native_Website_Home_Howitworks_Step3_Full_v03.json"
 
-import HeroBanner from '../components/home/hero-banner/hero-banner'
 import EmailListForm from '../components/home/email-list-form/email-list-form'
 import CommunityCarousel from '../components/home/community-carousel/community-carousel'
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse'
 
-import heroIllustration from '../assets/illustrations/04_Native_Website_Home_Banner_V08_Cropped.png'
 import launchIllustration from '../assets/illustrations/05_Native_Website_ROCKET_Banner_cl_v05.png'
-import finalStepIllustration from '../assets/illustrations/02_Native_Website_Home_Howitworks_Step3_Full_v04.png'
 
 import './home.scss'
 
