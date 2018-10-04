@@ -11,6 +11,7 @@ import * as step1Animation from "../assets/animations/11_join_v06.json"
 import * as step2Animation from "../assets/animations/12_participate_v05.json"
 import * as step3Animation from "../assets/animations/02_Native_Website_Home_Howitworks_Step3_Full_v03.json"
 
+import HeroBanner from '../components/home/hero-banner/hero-banner'
 import EmailListForm from '../components/home/email-list-form/email-list-form'
 import CommunityCarousel from '../components/home/community-carousel/community-carousel'
 import Fade from 'react-reveal/Fade'
@@ -23,15 +24,25 @@ import './home.scss'
 class IndexPage extends React.Component {
   state = {
     open: false,
-    showAnimation: false
+    showStep1Animation: false,
+    showStep2Animation: false,
+    showStep3Animation: false
   }
 
   openForm = () => {
     this.typeformEmbed.typeform.open();
   }
 
-  playAnimation = () => {
-    this.setState({ showAnimation: true })
+  playStep1Animation = () => {
+    this.setState({ showStep1Animation: true })
+  }
+
+  playStep2Animation = () => {
+    this.setState({ showStep2Animation: true })
+  }
+
+  playStep3Animation = () => {
+    this.setState({ showStep3Animation: true })
   }
 
   render () {
@@ -70,12 +81,12 @@ class IndexPage extends React.Component {
 
             <div className="contents">
               <div className="column">
-                <Fade left wait={0} onReveal={ () => this.playAnimation()}>
+                <Fade left onReveal={ () => this.playStep1Animation()} wait={500}>
                 {
-                  this.state.showAnimation &&
+                  this.state.showStep1Animation &&
                   <LottieControl
                       animationData={step1Animation}
-                      loop={false} />
+                      loop={true} />
                 }
                 </Fade>
               </div>
@@ -98,9 +109,9 @@ class IndexPage extends React.Component {
                   </Fade>
                 </div>
               <div className="column">
-                <Fade right wait={0} onReveal={ () => this.playAnimation()}>
+                <Fade right onReveal={ () => this.playStep2Animation()} wait={0}>
                 {
-                  this.state.showAnimation &&
+                  this.state.showStep2Animation &&
                   <LottieControl
                       animationData={step2Animation}
                       loop={false} />
@@ -110,9 +121,9 @@ class IndexPage extends React.Component {
             </div>
           </div>
           <div className="step-three">
-            <Fade wait={3000} onReveal={ () => this.playAnimation()}>
+            <Fade onReveal={ () => this.playStep3Animation()} wait={500} >
             {
-              this.state.showAnimation &&
+              this.state.showStep3Animation &&
               <LottieControl
                   animationData={step3Animation}
                   loop={false} />
