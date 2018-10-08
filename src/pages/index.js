@@ -7,6 +7,7 @@ import { ReactTypeformEmbed } from 'react-typeform-embed';
 // Lottie
 import LottieControl from "../components/shared/lottie-control/lottie-control"
 import * as bannerAnimation from "../assets/animations/01_HOME_BANNER_ANIM_v06.json"
+import * as rocketAnimation from "../assets/animations/05_Native_Website_ROCKET_Banner_cl_v01.json"
 import * as step1Animation from "../assets/animations/11_join_v06.json"
 import * as step2Animation from "../assets/animations/12_participate_v05.json"
 import * as step3Animation from "../assets/animations/02_Native_Website_Home_Howitworks_Step3_Full_v03.json"
@@ -26,7 +27,9 @@ class IndexPage extends React.Component {
     open: false,
     showStep1Animation: false,
     showStep2Animation: false,
-    showStep3Animation: false
+    showStep3Animation: false,
+    showRocketAnimation: false,
+    rocketIsPaused: true
   }
 
   openForm = () => {
@@ -45,7 +48,13 @@ class IndexPage extends React.Component {
     this.setState({ showStep3Animation: true })
   }
 
+  playRocketAnimation = () => {
+    console.log('play the damn animation')
+    this.setState({rocketIsPaused: false})
+  }
+
   render () {
+    console.log(this.state.rocketIsPaused)
     return (
 
       <div>
@@ -57,7 +66,14 @@ class IndexPage extends React.Component {
         </div>
         <section className="home__how-it-works steps">
           <div className="launch">
-            <img src={launchIllustration} />
+            <Fade onReveal={ () => this.playRocketAnimation()} wait={500}>
+            {
+              <LottieControl
+                  animationData={rocketAnimation}
+                  loop={false}
+                  isPaused={this.state.rocketIsPaused}/>
+            }
+            </Fade>
             <div className="contents">
               <Fade up>
               <h2>And we're off!</h2>
@@ -67,7 +83,6 @@ class IndexPage extends React.Component {
                 <OutboundLink className="button" href="https://app.nativeproject.one" target="_blank">Launch App</OutboundLink>
                 <OutboundLink className="button quick-start" href="https://native-project.gitbook.io/native-quick-start-guide/" target="_blank">Quick Start Guide</OutboundLink>
               </div>
-
             </div>
           </div>
           <div className="intro">

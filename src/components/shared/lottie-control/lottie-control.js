@@ -7,7 +7,7 @@ class LottieControl extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { 
+    this.state = {
       defaultOptions: {
         loop: this.props.loop,
         autoplay: true,
@@ -39,9 +39,10 @@ class LottieControl extends React.Component {
   }
 
   render() {
+    console.log(this.props.isPaused)
     return (
       <div>
-        <Lottie options={this.state.defaultOptions} eventListeners={this.state.eventListeners} />
+        <Lottie options={this.state.defaultOptions} eventListeners={this.state.eventListeners} isPaused={this.props.isPaused}/>
       </div>
     )
   }
