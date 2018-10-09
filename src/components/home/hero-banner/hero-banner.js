@@ -17,19 +17,19 @@ class HeroBanner extends React.Component {
       this.setState({
         showBuild: false,
       })
-    }, 5000)
+    }, 6000)
 
     window.setTimeout(() => {
       this.setState({
         showLaunch: true,
       })
-    }, 10000)
+    }, 9000)
 
     window.setTimeout(() => {
       this.setState({
         showLaunch: false,
       })
-    }, 15000)
+    }, 14000)
 
   }
 

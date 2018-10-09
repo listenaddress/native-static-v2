@@ -53,7 +53,8 @@ const SecondPage = () => (
     <div className="hero project__hero">
     <LottieControl
         animationData={bannerAnimation}
-        loop={true} />
+        loop={true}
+        autoplay={true} />
       <div className="contents">
         <Fade up>
         <h1>Native to Ground Control</h1>
