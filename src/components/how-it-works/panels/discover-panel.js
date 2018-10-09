@@ -1,12 +1,21 @@
 import React from 'react'
 import Fade from 'react-reveal/Fade'
-
+// Lottie
+import LottieControl from "../../../components/shared/lottie-control/lottie-control"
 import Illustration11 from '../../../assets/product/Native_Website_Howitworks_TribeCards_Discover.png'
-import Illustration7 from '../../../assets/illustrations/07_token_v01.png'
+import * as tokenAnimation from "../../../assets/animations/07_token_v01.json"
 
 import './panel.scss'
 
 class DiscoverPanel extends React.Component {
+
+  state = {
+    tokenIsStopped: true
+  }
+
+  playTokenAnimation = () => {
+    this.setState({ tokenIsStopped: false })
+  }
 
   render () {
     return (
@@ -24,8 +33,11 @@ class DiscoverPanel extends React.Component {
             </Fade>
           </div>
           <div className="column">
-            <Fade left>
-            <img src={Illustration7} />
+            <Fade right onReveal={ () => this.playTokenAnimation()} wait={0}>
+              <LottieControl
+                  animationData={tokenAnimation}
+                  loop={false}
+                  isStopped={this.state.tokenIsStopped}/>
             </Fade>
           </div>
           <div className="column">

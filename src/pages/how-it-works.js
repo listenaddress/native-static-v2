@@ -33,11 +33,12 @@ const tabs = [
 class SecondPage extends React.Component {
 
   state = {
-    showAnimation: false
+    showAnimation: false,
+    step2IsStopped: true
   }
 
-  playAnimation = () => {
-    this.setState({ showAnimation: true })
+  playStep2Animation = () => {
+    this.setState({step2IsStopped: false})
   }
 
   render () {
@@ -47,7 +48,8 @@ class SecondPage extends React.Component {
       <div className="hero hiw__hero">
         <LottieControl
             animationData={bannerAnimation}
-            loop={true} />
+            loop={true}
+            autoplay={true} />
         <div className="contents">
           <Fade up>
           <h1>Welcome to Native</h1>
@@ -81,13 +83,13 @@ class SecondPage extends React.Component {
         <div className="step-two">
           <div className="contents contain">
             <div className="column">
-              <Fade left wait={0} onReveal={ () => this.playAnimation()}>
-              {
-                this.state.showAnimation &&
+              <Fade left onReveal={ () => this.playStep2Animation()} wait={500}>
                 <LottieControl
                     animationData={step2Animation}
-                    loop={false} />
-              }
+                    loop={false}
+                    autoplay={false}
+                    isStopped={this.state.step2IsStopped}
+                    />
               </Fade>
             </div>
             <div className="column">

@@ -3,20 +3,23 @@ import Fade from 'react-reveal/Fade'
 // Lottie
 import LottieControl from "../../../components/shared/lottie-control/lottie-control"
 import * as createAnimation from "../../../assets/animations/13_Native_Website_Home_Howitworks_CREATE_TRIBE_V01.json"
-
-import Illustration13 from '../../../assets/illustrations/13_Native_Website_Home_Howitworks_CREATE_TRIBE_V02.png'
-import Illustration7 from '../../../assets/illustrations/07_token_v01.png'
+import * as tokenAnimation from "../../../assets/animations/07_token_v01.json"
 
 import './panel.scss'
 
 class CreatePanel extends React.Component {
 
   state = {
-    showAnimation: false
+    createIsStopped: true,
+    tokenIsStopped: true
   }
 
-  playAnimation = () => {
-    this.setState({ showAnimation: true })
+  playCreateAnimation = () => {
+    this.setState({ createIsStopped: false })
+  }
+
+  playTokenAnimation = () => {
+    this.setState({ tokenIsStopped: false })
   }
 
   render () {
@@ -31,18 +34,19 @@ class CreatePanel extends React.Component {
             </Fade>
           </div>
           <div className="column">
-            <Fade right wait={0} onReveal={ () => this.playAnimation()}>
-            {
-              this.state.showAnimation &&
+            <Fade right onReveal={ () => this.playCreateAnimation()} wait={500}>
               <LottieControl
                   animationData={createAnimation}
-                  loop={false} />
-            }
+                  loop={false}
+                  isStopped={this.state.createIsStopped}/>
             </Fade>
           </div>
           <div className="column">
-            <Fade left>
-            <img src={Illustration7} />
+            <Fade right onReveal={ () => this.playTokenAnimation()} wait={0}>
+              <LottieControl
+                  animationData={tokenAnimation}
+                  loop={false}
+                  isStopped={this.state.tokenIsStopped}/>
             </Fade>
           </div>
           <div className="column">
