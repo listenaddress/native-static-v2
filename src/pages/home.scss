@@ -169,6 +169,8 @@
   }
   .step-two {
     .contents {
+      padding-top: 100px;
+      padding-bottom: 100px;
       @media (max-width: $tablet) {
         flex-direction: column;
       }

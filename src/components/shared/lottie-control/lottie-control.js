@@ -10,7 +10,7 @@ class LottieControl extends React.Component {
     this.state = {
       defaultOptions: {
         loop: this.props.loop,
-        autoplay: true,
+        autoplay: this.props.autoplay,
         animationData: this.props.animationData,
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice'
@@ -41,8 +41,8 @@ class LottieControl extends React.Component {
   render() {
     return (
       <div>
-        <Lottie options={this.state.defaultOptions} 
-                eventListeners={this.state.eventListeners} 
+        <Lottie options={this.state.defaultOptions}
+                eventListeners={this.state.eventListeners}
                 isStopped={this.props.isStopped}/>
       </div>
     )

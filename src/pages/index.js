@@ -25,31 +25,30 @@ import './home.scss'
 class IndexPage extends React.Component {
   state = {
     open: false,
-    showStep1Animation: false,
-    showStep2Animation: false,
-    showStep3Animation: false,
-    showRocketAnimation: false,
+    step1IsStopped: true,
+    step2IsStopped: true,
+    step3IsStopped: true,
     rocketIsStopped: true
-  }
-
-  openForm = () => {
-    this.typeformEmbed.typeform.open();
-  }
-
-  playStep1Animation = () => {
-    this.setState({ showStep1Animation: true })
-  }
-
-  playStep2Animation = () => {
-    this.setState({ showStep2Animation: true })
-  }
-
-  playStep3Animation = () => {
-    this.setState({ showStep3Animation: true })
   }
 
   playRocketAnimation = () => {
     this.setState({rocketIsStopped: false})
+  }
+
+  playStep1Animation = () => {
+    this.setState({step1IsStopped: false})
+  }
+
+  playStep2Animation = () => {
+    this.setState({step2IsStopped: false})
+  }
+
+  playStep3Animation = () => {
+    this.setState({step3IsStopped: false})
+  }
+
+  openForm = () => {
+    this.typeformEmbed.typeform.open();
   }
 
   render () {
@@ -59,18 +58,17 @@ class IndexPage extends React.Component {
         <div className="hero home__hero">
           <LottieControl
               animationData={bannerAnimation}
-              loop={false} />
+              loop={false}
+              autoplay={true}/>
           <HeroBanner />
         </div>
         <section className="home__how-it-works steps">
           <div className="launch">
-            <Fade onReveal={ () => this.playRocketAnimation()} wait={500}>
-            {!this.state.rocketIsStopped &&
+            <Fade onReveal={ () => this.playRocketAnimation()}>
               <LottieControl
                   animationData={rocketAnimation}
                   loop={false}
                   isStopped={this.state.rocketIsStopped}/>
-            }
             </Fade>
             <div className="contents">
               <Fade up>
@@ -95,12 +93,11 @@ class IndexPage extends React.Component {
             <div className="contents">
               <div className="column">
                 <Fade left onReveal={ () => this.playStep1Animation()} wait={500}>
-                {
-                  this.state.showStep1Animation &&
                   <LottieControl
                       animationData={step1Animation}
-                      loop={true} />
-                }
+                      loop={false}
+                      autoplay={false}
+                      isStopped={this.state.step1IsStopped} />
                 </Fade>
               </div>
               <div className="column">
@@ -122,25 +119,24 @@ class IndexPage extends React.Component {
                   </Fade>
                 </div>
               <div className="column">
-                <Fade right onReveal={ () => this.playStep2Animation()} wait={0}>
-                {
-                  this.state.showStep2Animation &&
+                <Fade right onReveal={ () => this.playStep2Animation()} wait={1000}>
                   <LottieControl
                       animationData={step2Animation}
-                      loop={false} />
-                }
+                      loop={false}
+                      autoplay={false}
+                      isStopped={this.state.step2IsStopped}
+                    />
                 </Fade>
               </div>
             </div>
           </div>
           <div className="step-three">
-            <Fade onReveal={ () => this.playStep3Animation()} wait={500} >
-            {
-              this.state.showStep3Animation &&
+            <Fade onReveal={ () => this.playStep3Animation()} wait={1000} >
               <LottieControl
                   animationData={step3Animation}
-                  loop={false} />
-            }
+                  loop={false}
+                  autoplay={false}
+                  isStopped={this.state.step3IsStopped} />
             </Fade>
             <div className="contents">
               <div className="column">
