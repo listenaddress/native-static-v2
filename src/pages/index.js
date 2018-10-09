@@ -19,7 +19,7 @@ import CommunityCarousel from '../components/home/community-carousel/community-c
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse'
 
-import launchIllustration from '../assets/illustrations/05_Native_Website_ROCKET_Banner_cl_v05.png'
+import { Parallax } from 'react-scroll-parallax';
 
 import './home.scss'
 
@@ -82,10 +82,16 @@ class IndexPage extends React.Component {
         <section className="home__how-it-works steps">
           <div className="launch">
             <Fade onReveal={ () => this.playRocketAnimation()}>
+              <Parallax
+                  className="rocket-parallax"
+                  offsetYMax={30}
+                  offsetYMin={-20}
+              >
               <LottieControl
                   animationData={rocketAnimation}
                   loop={false}
                   isStopped={this.state.rocketIsStopped}/>
+                  </Parallax>
             </Fade>
             <div className="contents">
               <Fade up>

@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
+import { ParallaxProvider } from 'react-scroll-parallax';
 
 import Header from '../components/shared/header/header'
 import Footer from '../components/shared/footer/footer'
@@ -35,9 +36,11 @@ const Layout = ({ children, data }) => (
     />
 
     <Header />
+    <ParallaxProvider>
     <div className="page__wrapper">
       {children()}
     </div>
+    </ParallaxProvider>
     <Footer />
   </div>
 )
