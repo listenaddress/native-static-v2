@@ -29,7 +29,7 @@ class IndexPage extends React.Component {
     showStep2Animation: false,
     showStep3Animation: false,
     showRocketAnimation: false,
-    rocketIsPaused: true
+    rocketIsStopped: true
   }
 
   openForm = () => {
@@ -49,12 +49,10 @@ class IndexPage extends React.Component {
   }
 
   playRocketAnimation = () => {
-    console.log('play the damn animation')
-    this.setState({rocketIsPaused: false})
+    this.setState({rocketIsStopped: false})
   }
 
   render () {
-    console.log(this.state.rocketIsPaused)
     return (
 
       <div>
@@ -67,11 +65,11 @@ class IndexPage extends React.Component {
         <section className="home__how-it-works steps">
           <div className="launch">
             <Fade onReveal={ () => this.playRocketAnimation()} wait={500}>
-            {
+            {!this.state.rocketIsStopped &&
               <LottieControl
                   animationData={rocketAnimation}
                   loop={false}
-                  isPaused={this.state.rocketIsPaused}/>
+                  isStopped={this.state.rocketIsStopped}/>
             }
             </Fade>
             <div className="contents">

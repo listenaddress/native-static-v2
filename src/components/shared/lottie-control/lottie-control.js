@@ -39,10 +39,11 @@ class LottieControl extends React.Component {
   }
 
   render() {
-    console.log(this.props.isPaused)
     return (
       <div>
-        <Lottie options={this.state.defaultOptions} eventListeners={this.state.eventListeners} isPaused={this.props.isPaused}/>
+        <Lottie options={this.state.defaultOptions} 
+                eventListeners={this.state.eventListeners} 
+                isStopped={this.props.isStopped}/>
       </div>
     )
   }
