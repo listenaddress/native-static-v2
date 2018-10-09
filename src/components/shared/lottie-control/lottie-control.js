@@ -16,10 +16,22 @@ class LottieControl extends React.Component {
           preserveAspectRatio: 'xMidYMid slice'
         }
       },
-      eventListeners: [{
-        eventName: 'complete',
-        callback: () => this.swapAnimation()
-      }]
+      eventListeners: [
+        {
+          eventName: 'complete',
+          callback: () => this.swapAnimation()
+        },
+        {
+          eventName: 'DOMLoaded',
+          callback: () => this.animationIsLoaded()
+        },
+      ]
+    }
+  }
+
+  animationIsLoaded = () => {
+    if (this.props.isLoadedListener) {
+      this.props.isLoadedListener()
     }
   }
 

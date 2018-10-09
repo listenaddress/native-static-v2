@@ -6,11 +6,12 @@ import { ReactTypeformEmbed } from 'react-typeform-embed';
 
 // Lottie
 import LottieControl from "../components/shared/lottie-control/lottie-control"
-import * as bannerAnimation from "../assets/animations/01_HOME_BANNER_ANIM_v06.json"
+import * as bannerAnimation from "../assets/animations/01_HOME_BANNER_ANIM_v07.json"
 import * as rocketAnimation from "../assets/animations/05_Native_Website_ROCKET_Banner_cl_v01.json"
 import * as step1Animation from "../assets/animations/11_join_v06.json"
 import * as step2Animation from "../assets/animations/12_participate_v05.json"
 import * as step3Animation from "../assets/animations/02_Native_Website_Home_Howitworks_Step3_Full_v03.json"
+import * as creatorAnimation from "../assets/animations/03_Native_Website_Home_MasterCreator_V04.json"
 
 import HeroBanner from '../components/home/hero-banner/hero-banner'
 import EmailListForm from '../components/home/email-list-form/email-list-form'
@@ -28,7 +29,9 @@ class IndexPage extends React.Component {
     step1IsStopped: true,
     step2IsStopped: true,
     step3IsStopped: true,
-    rocketIsStopped: true
+    rocketIsStopped: true,
+    creatorIsStopped: true,
+    bannerIsLoaded: false
   }
 
   playRocketAnimation = () => {
@@ -47,8 +50,17 @@ class IndexPage extends React.Component {
     this.setState({step3IsStopped: false})
   }
 
+  playCreatorAnimation = () => {
+    this.setState({creatorIsStopped: false})
+  }
+
   openForm = () => {
     this.typeformEmbed.typeform.open();
+  }
+
+  handleBannerIsLoaded = () => {
+    this.setState({bannerIsLoaded: true})
+    console.log('banner loaded')
   }
 
   render () {
@@ -56,10 +68,15 @@ class IndexPage extends React.Component {
 
       <div>
         <div className="hero home__hero">
+          { !this.state.bannerIsLoaded &&
+          <div className="preload-image"></div>
+          }
           <LottieControl
               animationData={bannerAnimation}
               loop={false}
-              autoplay={true}/>
+              autoplay={true}
+              isLoadedListener={this.handleBannerIsLoaded}
+            />
           <HeroBanner />
         </div>
         <section className="home__how-it-works steps">
@@ -162,6 +179,12 @@ class IndexPage extends React.Component {
         <section className="block home__creator">
           <div className="contents">
             <div className="column">
+            <Fade onReveal={ () => this.playCreatorAnimation()}>
+              <LottieControl
+                  animationData={creatorAnimation}
+                  loop={false}
+                  isStopped={this.state.creatorIsStopped}/>
+            </Fade>
             </div>
             <div className="column">
               <Fade right>
