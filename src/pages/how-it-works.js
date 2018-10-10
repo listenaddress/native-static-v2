@@ -13,7 +13,6 @@ import * as bannerAnimation from "../assets/animations/04_Native_Website_Howitwo
 import * as step2Animation from "../assets/animations/09_Native_Website_Howitworks_Vote_What_flavor_v01.json"
 
 // Images
-import heroIllustration from '../assets/illustrations/04_Native_Website_Howitworks_Banner_V5.png'
 import badges from '../assets/icons/ntv-badges.png'
 import whitepaperIcon from '../assets/icons/ntv-whitepaper.png'
 
