@@ -33,6 +33,12 @@ class IndexPage extends React.Component {
     bannerIsLoaded: false
   }
 
+  componentDidMount() {
+    window.onload = () => {
+      console.log('im loaded');
+    };
+  }
+
   playRocketAnimation = () => {
     this.setState({rocketIsStopped: false})
   }
