@@ -4,10 +4,10 @@ import Link from 'gatsby-link'
 import { ReactTypeformEmbed } from 'react-typeform-embed';
 import { Parallax } from 'react-scroll-parallax';
 import HeroBanner from '../components/home/hero-banner/hero-banner'
+import HeroLottie from '../components/home/hero-lottie/hero-lottie'
 
 // Lottie
 import LottieControl from "../components/shared/lottie-control/lottie-control"
-import * as bannerAnimation from "../assets/animations/01_HOME_BANNER_ANIM_v07.json"
 import * as rocketAnimation from "../assets/animations/05_Native_Website_ROCKET_Banner_cl_v01.json"
 import * as step1Animation from "../assets/animations/11_join_v09.json"
 import * as step2Animation from "../assets/animations/12_participate_v05.json"
@@ -18,8 +18,6 @@ import CommunityCarousel from '../components/home/community-carousel/community-c
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
-
-
 
 import './home.scss'
 
@@ -71,12 +69,7 @@ class IndexPage extends React.Component {
           { !this.state.bannerIsLoaded &&
           <div className="preload-image"></div>
           }
-          <LottieControl
-              animationData={bannerAnimation}
-              loop={false}
-              autoplay={true}
-              isLoadedListener={this.handleBannerIsLoaded}
-            />
+          <HeroLottie />
           <HeroBanner />
         </div>
         <section className="home__how-it-works steps">
