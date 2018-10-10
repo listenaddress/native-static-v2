@@ -1,11 +1,11 @@
 // banners
-import imaginalBanner from '../../src/assets/communities/imaginal__banner.png';
+import imaginalBanner from '../../src/assets/communities/imaginal__banner.jpg';
 import doloBanner from '../../src/assets/communities/dolo__banner.png';
 import earthBanner from '../../src/assets/communities/earth__banner.jpg';
 import humanityBanner from '../../src/assets/communities/humanity__banner.jpg';
 import peaceBanner from '../../src/assets/communities/peace__banner.jpg';
 import nativeBanner from '../../src/assets/illustrations/04_Native_Website_Howitworks_Banner_V5.png';
-import rmBanner from '../../src/assets/communities/rm__banner.png';
+import rmBanner from '../../src/assets/communities/rm__banner.jpg';
 
 // token icons
 import imaginalIcon from '../../src/assets/communities/ift.svg';
