@@ -19,6 +19,7 @@ module.exports = {
         anonymize: true,
         respectDNT: true,
         alwaysSendReferrer: true,
+        allowAdFeatures: false,
       },
     },
     {
