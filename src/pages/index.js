@@ -66,9 +66,9 @@ class IndexPage extends React.Component {
 
       <div>
         <div className="hero home__hero">
-          { !this.state.bannerIsLoaded &&
+          {/* { !this.state.bannerIsLoaded && */}
           <div className="preload-image"></div>
-          }
+          {/* } */}
           <HeroLottie />
           <HeroBanner />
         </div>
