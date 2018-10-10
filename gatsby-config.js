@@ -11,16 +11,16 @@ module.exports = {
         endpoint: 'https://nativetoken.us17.list-manage.com/subscribe/post?u=8cfe75a0d91b2c88008e62109&id=9ce9042fb0',
       },
     },
-    // {
-    //   resolve: 'gatsby-plugin-google-analytics',
-    //   options: {
-    //     trackingId: 'UA-125567970-1',
-    //     head: false,
-    //     anonymize: true,
-    //     respectDNT: true,
-    //     alwaysSendReferrer: true,
-    //   },
-    // },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: 'UA-125567970-1',
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        alwaysSendReferrer: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
