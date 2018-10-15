@@ -76,7 +76,7 @@ class IndexPage extends React.Component {
       <div>
         <div className="hero home__hero">
           { !this.state.bannerIsLoaded &&
-            <img src={preloadImage} />
+          <img src={preloadImage} />
           }
           <LottieControl
               animationData={bannerAnimation}
@@ -84,7 +84,7 @@ class IndexPage extends React.Component {
               autoplay={true}
               isLoadedListener={this.handleBannerIsLoaded}
             />
-          { this.state.windowIsLoaded && 
+          { this.state.bannerIsLoaded &&
           <HeroBanner />
           }
         </div>
@@ -219,7 +219,6 @@ class IndexPage extends React.Component {
           </div>
         </section>
       </div>
-
     )
   }
 }
