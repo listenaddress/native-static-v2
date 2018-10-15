@@ -24,6 +24,7 @@ import './home.scss'
 
 class IndexPage extends React.Component {
   state = {
+    windowIsLoaded: false,
     open: false,
     step1IsStopped: true,
     step2IsStopped: true,
@@ -36,6 +37,7 @@ class IndexPage extends React.Component {
   componentDidMount() {
     window.onload = () => {
       console.log('im loaded');
+      this.setState({windowIsLoaded: true})
     };
   }
 
@@ -72,7 +74,6 @@ class IndexPage extends React.Component {
     return (
 
       <div>
-
         <div className="hero home__hero">
           { !this.state.bannerIsLoaded &&
             <img src={preloadImage} />
@@ -83,7 +84,9 @@ class IndexPage extends React.Component {
               autoplay={true}
               isLoadedListener={this.handleBannerIsLoaded}
             />
+          { this.state.windowIsLoaded && 
           <HeroBanner />
+          }
         </div>
         <section className="home__how-it-works steps">
           <div className="launch">
@@ -216,6 +219,7 @@ class IndexPage extends React.Component {
           </div>
         </section>
       </div>
+
     )
   }
 }
