@@ -5,11 +5,11 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics'
 // Lottie
 import LottieControl from "../components/shared/lottie-control/lottie-control"
 import * as bannerAnimation from "../assets/animations/06_Native_Website_SpaceStation_Banner_v10.json"
-import heroIllustration from '../assets/illustrations/06_Native_Website_SpaceStation_Banner_v09.png'
+import devicesImage from '../assets/product/Native_Website_App_Devices_large.png'
 
 import EmailListForm from '../components/home/email-list-form/email-list-form'
 
-import './project.scss'
+import './about.scss'
 import iconKey from '../assets/icons/ntv-key.png'
 import iconVision from '../assets/icons/ntv-vision.png'
 import iconGrowth from '../assets/icons/ntv-growth.png'
@@ -44,9 +44,6 @@ import ideasbynatureLogo from '../assets/partners/ideasbynature_logo.png'
 import odyssyLogo from '../assets/partners/odyssy_logo.png'
 import sewardKisselLogo from '../assets/partners/seward_kissel_logo.png'
 import storyworksLogo from '../assets/partners/storyworks_logo.png'
-
-// images
-import devicesImage from '../assets/product/Native_Website_App_Devices_large.png'
 
 const SecondPage = () => (
   <div>
@@ -160,14 +157,6 @@ const SecondPage = () => (
           </div>
         </div>
         <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + teamHeidi + ")"}}></div>
-          <div className="contents">
-            <h5>Heidi Cuppari</h5>
-            <h6>Anastasia Finance</h6>
-            <h6>Investor Relations</h6>
-          </div>
-        </div>
-        <div className="member">
           <div className="member-photo" style={{backgroundImage: "url(" + teamMike + ")"}}></div>
           <div className="contents">
             <h5>Mike Slavin</h5>
@@ -244,21 +233,6 @@ const SecondPage = () => (
             <h5>Matt McKibbin</h5>
             <h6>Decentranet</h6>
             <h6>Founder</h6>
-          </div>
-        </div>
-        <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + advisorMicah + ")"}}></div>
-          <div className="contents">
-            <h5>Micah Spruill</h5>
-            <h6>XSquared Ventures</h6>
-            <h6>Partner</h6>
-          </div>
-        </div>
-        <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + advisorBrad + ")"}}></div>
-          <div className="contents">
-            <h5>Brad Mills</h5>
-            <h6>Alphabit</h6>
           </div>
         </div>
         <div className="member">

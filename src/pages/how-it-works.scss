@@ -82,11 +82,8 @@
         }
       }
       .column:nth-child(2) {
-        background-image: url('../assets/illustrations/08_Native_Website_Howitworks_DesigntheStand_v02_OL.png');
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
         height: 550px;
+        svg { width: 100%; }
       }
     }
   }
