@@ -5,14 +5,14 @@ import { ReactTypeformEmbed } from 'react-typeform-embed';
 
 // Lottie
 import LottieControl from "../components/shared/lottie-control/lottie-control"
-import * as bannerAnimation from "../assets/animations/01_HOME_BANNER_ANIM_v07.json"
+import * as bannerAnimation from "../assets/animations/01_HOME_BANNER_ANIM_v08.json"
 import preloadImage from "../assets/animations/01_HOME_BANNER_ANIM_1st_frame.png"
 import HeroBanner from '../components/home/hero-banner/hero-banner'
 import * as rocketAnimation from "../assets/animations/05_Native_Website_ROCKET_Banner_cl_v01.json"
 import * as step1Animation from "../assets/animations/11_join_v09.json"
 import * as step2Animation from "../assets/animations/12_participate_v05.json"
 import * as step3Animation from "../assets/animations/02_Native_Website_Home_Howitworks_Step3_Full_v03.json"
-import * as creatorAnimation from "../assets/animations/03_Native_Website_Home_MasterCreator_V04.json"
+import * as creatorAnimation from "../assets/animations/03_Native_Website_Home_MasterCreator_V05.json"
 
 import CommunityCarousel from '../components/home/community-carousel/community-carousel'
 import Fade from 'react-reveal/Fade'

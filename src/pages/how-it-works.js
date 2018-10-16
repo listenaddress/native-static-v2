@@ -11,6 +11,7 @@ import Pulse from 'react-reveal/Pulse'
 import LottieControl from "../components/shared/lottie-control/lottie-control"
 import * as bannerAnimation from "../assets/animations/04_Native_Website_Howitworks_Banner_V10.json"
 import * as step2Animation from "../assets/animations/09_Native_Website_Howitworks_Vote_What_flavor_v01.json"
+import * as step3Animation from "../assets/animations/08_Native_Website_Howitworks_DesigntheStand_v01.json"
 
 // Images
 import badges from '../assets/icons/ntv-badges.png'
@@ -33,11 +34,16 @@ class SecondPage extends React.Component {
 
   state = {
     showAnimation: false,
-    step2IsStopped: true
+    step2IsStopped: true,
+    step3IsStopped: true
   }
 
   playStep2Animation = () => {
     this.setState({step2IsStopped: false})
+  }
+
+  playStep3Animation = () => {
+    this.setState({step3IsStopped: false})
   }
 
   render () {
@@ -109,9 +115,16 @@ class SecondPage extends React.Component {
               <p>When you complete tasks for your community, the overall value of the community goes up. You get paid in community tokens for each task you complete.</p>
               </Fade>
             </div>
-            <Fade right>
-            <div className="column"></div>
-            </Fade>
+            <div className="column">
+              <Fade right onReveal={ () => this.playStep3Animation()} wait={500}>
+                <LottieControl
+                    animationData={step3Animation}
+                    loop={false}
+                    autoplay={false}
+                    isStopped={this.state.step3IsStopped}
+                    />
+              </Fade>
+            </div>
           </div>
         </div>
         <div className="steps--footer">
