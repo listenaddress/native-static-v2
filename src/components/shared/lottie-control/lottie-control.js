@@ -7,19 +7,31 @@ class LottieControl extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { 
+    this.state = {
       defaultOptions: {
         loop: this.props.loop,
-        autoplay: true,
+        autoplay: this.props.autoplay,
         animationData: this.props.animationData,
         rendererSettings: {
           preserveAspectRatio: 'xMidYMid slice'
         }
       },
-      eventListeners: [{
-        eventName: 'complete',
-        callback: () => this.swapAnimation()
-      }]
+      eventListeners: [
+        {
+          eventName: 'complete',
+          callback: () => this.swapAnimation()
+        },
+        {
+          eventName: 'DOMLoaded',
+          callback: () => this.animationIsLoaded()
+        },
+      ]
+    }
+  }
+
+  animationIsLoaded = () => {
+    if (this.props.isLoadedListener) {
+      this.props.isLoadedListener()
     }
   }
 
@@ -41,7 +53,9 @@ class LottieControl extends React.Component {
   render() {
     return (
       <div>
-        <Lottie options={this.state.defaultOptions} eventListeners={this.state.eventListeners} />
+        <Lottie options={this.state.defaultOptions}
+                eventListeners={this.state.eventListeners}
+                isStopped={this.props.isStopped}/>
       </div>
     )
   }

@@ -2,7 +2,7 @@
 
 .hiw__hero {
   // background-image: url('../assets/illustrations/04_Native_Website_Howitworks_Banner_V5.png');
-  img {
+  svg {
     @media (max-width: 1200px) {
       padding-top: 150px;
     }
@@ -59,11 +59,8 @@
         flex-direction: column-reverse;
       }
       .column:nth-child(1) {
-        background-image: url('../assets/illustrations/09_Native_Website_Howitworks_Vote_What_flavor_v03_OL.png');
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
         height: 550px;
+        svg { width: 100%; }
       }
       .column:nth-child(2) {
         padding: 50px;
@@ -85,11 +82,8 @@
         }
       }
       .column:nth-child(2) {
-        background-image: url('../assets/illustrations/08_Native_Website_Howitworks_DesigntheStand_v02_OL.png');
-        background-size: contain;
-        background-position: center center;
-        background-repeat: no-repeat;
         height: 550px;
+        svg { width: 100%; }
       }
     }
   }

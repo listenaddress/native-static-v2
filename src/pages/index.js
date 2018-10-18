@@ -1,28 +1,73 @@
 import React from 'react'
-
 import Link from 'gatsby-link'
-import { OutboundLink } from 'gatsby-plugin-google-analytics'
+
 import { ReactTypeformEmbed } from 'react-typeform-embed';
 
+// Lottie
+import LottieControl from "../components/shared/lottie-control/lottie-control"
+import * as bannerAnimation from "../assets/animations/01_HOME_BANNER_ANIM_v08.json"
+import preloadImage from "../assets/animations/01_HOME_BANNER_ANIM_1st_frame.png"
 import HeroBanner from '../components/home/hero-banner/hero-banner'
-import EmailListForm from '../components/home/email-list-form/email-list-form'
+import * as rocketAnimation from "../assets/animations/05_Native_Website_ROCKET_Banner_cl_v01.json"
+import * as step1Animation from "../assets/animations/11_join_v09.json"
+import * as step2Animation from "../assets/animations/12_participate_v05.json"
+import * as step3Animation from "../assets/animations/02_Native_Website_Home_Howitworks_Step3_Full_v03.json"
+import * as creatorAnimation from "../assets/animations/03_Native_Website_Home_MasterCreator_V05.json"
+
 import CommunityCarousel from '../components/home/community-carousel/community-carousel'
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse'
-
-import heroIllustration from '../assets/illustrations/04_Native_Website_Home_Banner_V08_Cropped.png'
-import launchIllustration from '../assets/illustrations/05_Native_Website_ROCKET_Banner_cl_v05.png'
-import finalStepIllustration from '../assets/illustrations/02_Native_Website_Home_Howitworks_Step3_Full_v04.png'
+import { OutboundLink } from 'gatsby-plugin-google-analytics'
+import { Parallax } from 'react-scroll-parallax';
 
 import './home.scss'
 
 class IndexPage extends React.Component {
   state = {
+    windowIsLoaded: false,
     open: false,
+    step1IsStopped: true,
+    step2IsStopped: true,
+    step3IsStopped: true,
+    rocketIsStopped: true,
+    creatorIsStopped: true,
+    bannerIsLoaded: false
+  }
+
+  componentDidMount() {
+    window.onload = () => {
+      console.log('im loaded');
+      this.setState({windowIsLoaded: true})
+    };
+  }
+
+  playRocketAnimation = () => {
+    this.setState({rocketIsStopped: false})
+  }
+
+  playStep1Animation = () => {
+    this.setState({step1IsStopped: false})
+  }
+
+  playStep2Animation = () => {
+    this.setState({step2IsStopped: false})
+  }
+
+  playStep3Animation = () => {
+    this.setState({step3IsStopped: false})
+  }
+
+  playCreatorAnimation = () => {
+    this.setState({creatorIsStopped: false})
   }
 
   openForm = () => {
     this.typeformEmbed.typeform.open();
+  }
+
+  handleBannerIsLoaded = () => {
+    this.setState({bannerIsLoaded: true})
+    console.log('banner loaded')
   }
 
   render () {
@@ -30,12 +75,33 @@ class IndexPage extends React.Component {
 
       <div>
         <div className="hero home__hero">
-          <img src={heroIllustration} />
+          { !this.state.bannerIsLoaded &&
+          <img src={preloadImage} />
+          }
+          <LottieControl
+              animationData={bannerAnimation}
+              loop={false}
+              autoplay={true}
+              isLoadedListener={this.handleBannerIsLoaded}
+            />
+          { this.state.bannerIsLoaded &&
           <HeroBanner />
+          }
         </div>
         <section className="home__how-it-works steps">
           <div className="launch">
-            <img src={launchIllustration} />
+            <Fade onReveal={ () => this.playRocketAnimation()}>
+              <Parallax
+                  className="rocket-parallax"
+                  offsetYMax={30}
+                  offsetYMin={-20}
+              >
+              <LottieControl
+                  animationData={rocketAnimation}
+                  loop={false}
+                  isStopped={this.state.rocketIsStopped}/>
+                  </Parallax>
+            </Fade>
             <div className="contents">
               <Fade up>
               <h2>And we're off!</h2>
@@ -45,7 +111,6 @@ class IndexPage extends React.Component {
                 <OutboundLink className="button" href="https://app.nativeproject.one" target="_blank">Launch App</OutboundLink>
                 <OutboundLink className="button quick-start" href="https://native-project.gitbook.io/native-quick-start-guide/" target="_blank">Quick Start Guide</OutboundLink>
               </div>
-
             </div>
           </div>
           <div className="intro">
@@ -58,9 +123,15 @@ class IndexPage extends React.Component {
           <div className="step-one">
 
             <div className="contents">
-              <Fade left>
-              <div className="column"></div>
-              </Fade>
+              <div className="column">
+                <Fade left onReveal={ () => this.playStep1Animation()} wait={500}>
+                  <LottieControl
+                      animationData={step1Animation}
+                      loop={false}
+                      autoplay={false}
+                      isStopped={this.state.step1IsStopped} />
+                </Fade>
+              </div>
               <div className="column">
                 <Fade right>
                 <h6>STEP ONE</h6>
@@ -79,19 +150,29 @@ class IndexPage extends React.Component {
                   <p>Choose, fund and work on community projects.  Donate your mad skills, like cinematography</p>
                   </Fade>
                 </div>
-              <Fade right>
               <div className="column">
+                <Fade right onReveal={ () => this.playStep2Animation()} wait={1000}>
+                  <LottieControl
+                      animationData={step2Animation}
+                      loop={false}
+                      autoplay={false}
+                      isStopped={this.state.step2IsStopped}
+                    />
+                </Fade>
               </div>
-              </Fade>
             </div>
           </div>
           <div className="step-three">
-            <img src={finalStepIllustration} />
+            <Fade onReveal={ () => this.playStep3Animation()} wait={1000} >
+              <LottieControl
+                  animationData={step3Animation}
+                  loop={false}
+                  autoplay={false}
+                  isStopped={this.state.step3IsStopped} />
+            </Fade>
             <div className="contents">
-              <Fade left>
               <div className="column">
               </div>
-              </Fade>
               <div className="column">
                 <Fade up>
                 <h6>STEP THREE</h6>
@@ -113,6 +194,12 @@ class IndexPage extends React.Component {
         <section className="block home__creator">
           <div className="contents">
             <div className="column">
+            <Fade onReveal={ () => this.playCreatorAnimation()}>
+              <LottieControl
+                  animationData={creatorAnimation}
+                  loop={false}
+                  isStopped={this.state.creatorIsStopped}/>
+            </Fade>
             </div>
             <div className="column">
               <Fade right>

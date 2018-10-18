@@ -35,7 +35,7 @@ class Header extends React.Component {
         <div className="navbar--desktop">
           <div className="navbar--links">
             <Link activeClassName="active" to="/how-it-works">How it works</Link>
-            <Link activeClassName="active" to="/project">Project</Link>
+            <Link activeClassName="active" to="/about">About</Link>
 
             <OutboundLink target="_blank" href="https://drive.google.com/file/d/13vedYkjzF-HpcC9I_JO6683bWls_uj4W/view?usp=sharing">Whitepaper</OutboundLink>
             <OutboundLink className="join--telegram" href="https://telegram.me/nativeproject" target="_blank">
@@ -61,7 +61,7 @@ class Header extends React.Component {
        <div className={mobileNavClass}>
           <div className="navbar--links">
             <Link to="/how-it-works" onClick={this.toggleNav}>How it works</Link>
-            <Link to="/project" onClick={this.toggleNav}>Project</Link>
+            <Link to="/about" onClick={this.toggleNav}>About</Link>
             <OutboundLink target="_blank" href="https://drive.google.com/file/d/13vedYkjzF-HpcC9I_JO6683bWls_uj4W/view?usp=sharing">Whitepaper</OutboundLink>
             <OutboundLink className="join--telegram" href="https://telegram.me/nativeproject" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20">
