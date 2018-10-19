@@ -30,7 +30,7 @@ const Footer = ({ siteTitle }) => (
       <a>© 2018 Native</a>
       <Link to="/">Home</Link>
       <Link to="/how-it-works">How it works</Link>
-      <Link to="/project">Project</Link>
+      <Link to="/about">About</Link>
       <OutboundLink target="_blank" href="https://drive.google.com/file/d/13vedYkjzF-HpcC9I_JO6683bWls_uj4W/view?usp=sharing">Whitepaper</OutboundLink>
       <OutboundLink target="_blank" href="https://press.nativeproject.one/">Press</OutboundLink>
       <OutboundLink target="_blank" href="https://nativeproject.zendesk.com/hc/en-us">Help</OutboundLink>
