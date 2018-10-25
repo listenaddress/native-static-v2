@@ -8,7 +8,9 @@ import LottieControl from "../components/shared/lottie-control/lottie-control"
 import * as bannerAnimation from "../assets/animations/01_HOME_BANNER_ANIM_v08.json"
 import preloadImage from "../assets/animations/01_HOME_BANNER_ANIM_1st_frame.png"
 import HeroBanner from '../components/home/hero-banner/hero-banner'
-import * as rocketAnimation from "../assets/animations/05_Native_Website_ROCKET_Banner_cl_v01.json"
+import launchStars from "../assets/illustrations/05_Native_Website_ROCKET_Banner_cl_v05_stars.png"
+import launchClouds from "../assets/illustrations/05_Native_Website_ROCKET_Banner_cl_v05_clouds.png"
+import launchRocket from "../assets/illustrations/05_Native_Website_ROCKET_Banner_cl_v05_rocket.png"
 import * as step1Animation from "../assets/animations/11_join_v09.json"
 import * as step2Animation from "../assets/animations/12_participate_v05.json"
 import * as step3Animation from "../assets/animations/02_Native_Website_Home_Howitworks_Step3_Full_v03.json"
@@ -29,7 +31,6 @@ class IndexPage extends React.Component {
     step1IsStopped: true,
     step2IsStopped: true,
     step3IsStopped: true,
-    rocketIsStopped: true,
     creatorIsStopped: true,
     bannerIsLoaded: false
   }
@@ -39,10 +40,6 @@ class IndexPage extends React.Component {
       console.log('im loaded');
       this.setState({windowIsLoaded: true})
     };
-  }
-
-  playRocketAnimation = () => {
-    this.setState({rocketIsStopped: false})
   }
 
   playStep1Animation = () => {
@@ -90,18 +87,25 @@ class IndexPage extends React.Component {
         </div>
         <section className="home__how-it-works steps">
           <div className="launch">
-            <Fade onReveal={ () => this.playRocketAnimation()}>
-              <Parallax
-                  className="rocket-parallax"
-                  offsetYMax={30}
-                  offsetYMin={-20}
-              >
-              <LottieControl
-                  animationData={rocketAnimation}
-                  loop={false}
-                  isStopped={this.state.rocketIsStopped}/>
-                  </Parallax>
-            </Fade>
+            <Parallax
+                className="launch-rocket"
+                offsetYMax={250}
+                offsetYMin={0}>
+              <img src={launchRocket} />
+            </Parallax>
+            <Parallax
+                className="launch-stars"
+                offsetYMax={25}
+                offsetYMin={0}>
+              <img src={launchStars} />
+            </Parallax>
+            <Parallax
+                  className="launch-clouds"
+                  offsetYMax={0}
+                  offsetYMin={0}>
+              <img src={launchClouds} />
+            </Parallax>
+
             <div className="contents">
               <Fade up>
               <h2>And we're off!</h2>
