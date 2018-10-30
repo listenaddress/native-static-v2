@@ -104,19 +104,27 @@
   position: relative;
   .launch {
     width: 100%;
+    height: 900px;
     position: relative;
+    overflow: hidden;
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#56c1b6+49,f9f8f4+51 */
     background: #56c1b6; /* Old browsers */
-    background: -moz-linear-gradient(top, #56c1b6 49%, #f9f8f4 51%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #56c1b6 49%,#f9f8f4 51%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #56c1b6 49%,#f9f8f4 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c1b6', endColorstr='#f9f8f4',GradientType=0 ); /* IE6-9 */
+    // background: -moz-linear-gradient(top, #56c1b6 49%, #f9f8f4 51%); /* FF3.6-15 */
+    // background: -webkit-linear-gradient(top, #56c1b6 49%,#f9f8f4 51%); /* Chrome10-25,Safari5.1-6 */
+    // background: linear-gradient(to bottom, #56c1b6 49%,#f9f8f4 51%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    // filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#56c1b6', endColorstr='#f9f8f4',GradientType=0 ); /* IE6-9 */
+    @media (max-width: $tablet) {
+      height: 800px;
+    }
+    @media (max-width: $phone) {
+      height: 600px;
+    }
     img {
-      width: 100%;
-      max-height: 100%;
+      max-width: 100%;
       height: auto;
       display: block;
-      margin-bottom: 0px;
+      margin: 0px auto;
+      position: relative;
     }
     svg {
       max-width: 100%;
@@ -124,6 +132,30 @@
       max-height: 100%;
       margin: 0px;
       display: block;
+    }
+    .launch-clouds {
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      img { width: 100%; }
+    }
+    .launch-stars {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      img { }
+    }
+    .launch-rocket {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      img { }
     }
     .contents {
       position: absolute;
@@ -135,7 +167,7 @@
       text-align: center;
       color: #fff;
       @media (max-width: $tablet) {
-        padding-top: 300px;
+        padding-top: 0px;
         color: #333;
         width: calc(100% - 50px);
       }
@@ -174,11 +206,11 @@
     margin-top: 0px;
     .contents {
       @media (max-width: $tablet) {
-        padding-top: 450px;
+        padding-top: 25px;
         padding-bottom: 25px;
       }
       @media (max-width: $phone) {
-        padding-top: 550px;
+        padding-top: 25px;
         padding-bottom: 25px;
       }
     }
@@ -225,7 +257,7 @@
   .step-three {
     position: relative;
     @media (max-width: $tablet) {
-      padding-top: 200px;
+      padding-top: 50px;
     }
     svg {
       width: 100%;
@@ -244,7 +276,11 @@
       transform: translateX(-50%);
       margin: 0 auto;
       @media (max-width: $tablet) {
-        top: 100px;
+        top: 50px;
+        width: 100%;
+      }
+      @media (max-width: $phone) {
+        top: -50px;
         width: 100%;
       }
 
