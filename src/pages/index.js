@@ -140,7 +140,7 @@ class IndexPage extends React.Component {
                 <Fade right>
                 <h6>STEP ONE</h6>
                 <h3>Join</h3>
-                <p>Find communities that care about the the things you do, like movies </p>
+                <p>Find communities that care about the things you do, like movies </p>
                 </Fade>
               </div>
             </div>
