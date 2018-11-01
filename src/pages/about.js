@@ -5,7 +5,6 @@ import { OutboundLink } from 'gatsby-plugin-google-analytics'
 // Lottie
 import LottieControl from "../components/shared/lottie-control/lottie-control"
 import * as bannerAnimation from "../assets/animations/06_Native_Website_SpaceStation_Banner_v10.json"
-import devicesImage from '../assets/product/Native_Website_App_Devices_large.png'
 
 import EmailListForm from '../components/home/email-list-form/email-list-form'
 
@@ -54,75 +53,44 @@ const SecondPage = () => (
         autoplay={true} />
       <div className="contents">
         <Fade up>
-        <h1>Native to Ground Control</h1>
-        <p>Our App is live. Join us as we redefine community economics.</p>
+        <h1>Our Mission</h1>
+        <p>Native's mission is to build the future of social networking and community engagement so communities can realize and control their actual value.</p>
         </Fade>
       </div>
     </div>
-    <section className="block project__start">
-      <div className="contents contain">
-        <div className="column">
-          <h2>Ready, Set, Go!</h2>
-          <p>We’re excited to share our Alpha App. It's our first release and we still have a lot of work to do. Give us your feedback to help us improve.</p>
-          <OutboundLink href="https://app.nativeproject.one" target="_blank" className="button">Launch App</OutboundLink>
-        </div>
-        <div className="column">
-        </div>
-      </div>
-      <div className="devicesImage">
-        <img src={devicesImage} />
-      </div>
-    </section>
     <section className="block project__timeline">
       <h4>Timeline</h4>
       <img src={iconTimeline} />
       <div className="contents contain">
         <div className="item">
           <h6>Dec 2017</h6>
-          <p>Project Initation</p>
+          <p>Project Conception</p>
         </div>
         <div className="item">
           <h6>May 2018</h6>
-          <p>Demo Complete</p>
+          <p>Prototype Launch</p>
         </div>
         <div className="item">
           <h6>Oct 2018</h6>
-          <p>Alpha Launch / Native Token Launch</p>
+          <p>Alpha Launch / Native Token Deployed</p>
         </div>
         <div className="item">
           <h6>Jan 2019</h6>
           <p>Beta Launch</p>
         </div>
         <div className="item">
-          <h6>Jan 2020</h6>
+          <h6>Jun 2019</h6>
           <p>V1.0 Launch</p>
-        </div>
-      </div>
-    </section>
-    <section className="block project__culture">
-      <h4>Our Culture</h4>
-      <div className="contents">
-        <div className="column">
-          <img src={iconKey} />
-          <h6>Opportunity</h6>
-          <p>To create a new social commons where communities can share values aligned economics.</p>
-        </div>
-        <div className="column">
-          <img src={iconVision} />
-          <h6>Purpose</h6>
-          <p>To enable communities to realize the value they inherently hold.</p>
-        </div>
-        <div className="column">
-          <img src={iconGrowth} />
-          <h6>Human Flourishing</h6>
-          <p>Native promises to provide communites with the tools they need to thrive.</p>
         </div>
       </div>
     </section>
     <section className="block project__community">
       <h3>Our Community</h3>
-      <p>Native is being built as the first Native Community. We are a collection of individuals and organizations with aligned values and incentives. Our mission is to create a platform that enables  communities thrive.</p>
-      <p>The organizations building Native include, <OutboundLink href="http://storyworks.com" target="_blank">STORYWORKS</OutboundLink> - Strategy, Biz Dev, Brand, Marketing, Community Onboarding, Visual Design, <a href="https://odyssy.io" target="_blank">ODYSSY</a> - Product Design & Management, Blockchain Prototyping, UX/UI, Web3 and <a href="http://ideasbynature.com/" target="_blank">IDEAS BY NATURE</a> - DAPP Dev, Web3, Solidity, UX/UI.</p>
+      <p>Native is one of the first communities deployed on the network. We are a group of individuals and organizations who have set out to build the Native platform</p>
+      <p>The organizations building Native include:</p>
+      <p><OutboundLink href="http://ideasbynature.com/" target="_blank">IDEAS BY NATURE</OutboundLink> - DAPP Dev, Web3, Solidity, UX/UI - Built Shapeshift, Coincap, worked on SALT</p>
+      <p><OutboundLink href="https://odyssy.io" target="_blank">ODYSSY</OutboundLink> - Product Design & Management, Blockchain Prototyping, UX/UI, Web3 - Decentralized Product Design & Development</p>
+      <p><OutboundLink href="http://storyworks.com" target="_blank">STORYWORKS</OutboundLink> - Branding, Marketing, Community Support</p>
       <div className="members contain">
         <div className="member">
           <div className="member-photo" style={{backgroundImage: "url(" + teamJake + ")"}}></div>
@@ -130,6 +98,46 @@ const SecondPage = () => (
             <h5>Jake Vartanian</h5>
             <h6>Native</h6>
             <h6>Curator</h6>
+          </div>
+        </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamJeff + ")"}}></div>
+          <div className="contents">
+            <h5>Jeffrey Vier</h5>
+            <h6>Ideas by Nature</h6>
+            <h6>Operations</h6>
+          </div>
+        </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamHarrison + ")"}}></div>
+          <div className="contents">
+            <h5>Harrison Neff</h5>
+            <h6>Ideas by Nature</h6>
+            <h6>Project Management</h6>
+          </div>
+        </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamVen + ")"}}></div>
+          <div className="contents">
+            <h5>Ven Gist</h5>
+            <h6>Odyssy</h6>
+            <h6>Product + Design</h6>
+          </div>
+        </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamDekan + ")"}}></div>
+          <div className="contents">
+            <h5>Dekan Brown</h5>
+            <h6>Odyssy</h6>
+            <h6>Dapp Development / R&D</h6>
+          </div>
+        </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamSam + ")"}}></div>
+          <div className="contents">
+            <h5>Sam Kuhlmann</h5>
+            <h6>Odyssy</h6>
+            <h6>Full Stack Development</h6>
           </div>
         </div>
         <div className="member">
@@ -164,52 +172,11 @@ const SecondPage = () => (
             <h6>Social Media</h6>
           </div>
         </div>
-        <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + teamVen + ")"}}></div>
-          <div className="contents">
-            <h5>Ven Gist</h5>
-            <h6>Odyssy</h6>
-            <h6>Product + Design</h6>
-          </div>
-        </div>
-        <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + teamDekan + ")"}}></div>
-          <div className="contents">
-            <h5>Dekan Brown</h5>
-            <h6>Odyssy</h6>
-            <h6>Dapp Development / R&D</h6>
-          </div>
-        </div>
-        <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + teamSam + ")"}}></div>
-          <div className="contents">
-            <h5>Sam Kuhlmann</h5>
-            <h6>Odyssy</h6>
-            <h6>Full Stack Development</h6>
-          </div>
-        </div>
-        <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + teamHarrison + ")"}}></div>
-          <div className="contents">
-            <h5>Harrison Neff</h5>
-            <h6>Ideas by Nature</h6>
-            <h6>Project Management</h6>
-          </div>
-        </div>
-        <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + teamJeff + ")"}}></div>
-          <div className="contents">
-            <h5>Jeffrey Vier</h5>
-            <h6>Ideas by Nature</h6>
-            <h6>Operations</h6>
-          </div>
-        </div>
       </div>
       <p>Interested in working with us? <a href="mailto:hello@nativeproject.one">Shoot us an email!</a></p>
     </section>
     <section className="block project__advisors">
-      <h3>Trusted Advisors</h3>
-      <p>Our Advisors are key community members who are guiding us in the development of Native.</p>
+      <h3>Advisors</h3>
       <div className="members contain">
         <div className="member">
           <div className="member-photo" style={{backgroundImage: "url(" + advisorDemitri + ")"}}></div>
@@ -247,7 +214,7 @@ const SecondPage = () => (
       <p>Interested in working with us? <a href="mailto:hello@nativeproject.one">Shoot us an email!</a></p>
     </section>
     <section className="block project__partners">
-      <h3>We're proud to partner up with these leading forces.</h3>
+      <h3>Partners</h3>
       <div className="items">
           <img src={bancorLogo} />
           <img src={citrincoopermanLogo} />
