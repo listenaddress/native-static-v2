@@ -214,7 +214,7 @@ const SecondPage = () => (
       <p>Interested in working with us? <a href="mailto:hello@nativeproject.one">Shoot us an email!</a></p>
     </section>
     <section className="block project__partners">
-      <h3>Partners</h3>
+      <h3>Partners & Infrastructure</h3>
       <div className="items">
           <img src={bancorLogo} />
           <img src={citrincoopermanLogo} />

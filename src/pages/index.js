@@ -70,7 +70,7 @@ class IndexPage extends React.Component {
         <div className="hero home__hero">
           <img src={preloadImage} />
           <div className="contents">
-            <h1>The next evolution in social networking & community management is here.</h1>
+            <h1>The next evolution in social networking & community management.</h1>
             <p>Native provides the tools and infrastructure necessary for communities to operate in the emerging decentralized financial system.</p>
           </div>
         </div>

@@ -12,6 +12,9 @@
     top:0;
     left: 0;
     display: block;
+    @media (min-width: 1201px) {
+      padding-top: 150px;
+    }
     @media (max-width: 1200px) {
       padding-top: 250px;
     }
@@ -44,7 +47,7 @@
     position: absolute;
     text-align: left;
     left: 0;
-    width: 650px;
+    width: 700px;
     p {
       font-size: 1.15em;
     }
