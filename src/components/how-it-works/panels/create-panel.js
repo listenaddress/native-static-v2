@@ -29,8 +29,8 @@ class CreatePanel extends React.Component {
         <div className="contents contain">
           <div className="column">
             <Fade left>
-            <h3>Create your community</h3>
-            <p>The first step is to decide what your community is about.  Love art and want to support artists? Want to conserve energy? Save the Earth?  Make a lemonade stand?</p>
+            <h3>Design your community</h3>
+            <p>Consult with the Native team to design the optimal economic model for your community. Is your community designed for enterprise use, social impact, or maybe just to coordinate building a lemonade stand? Whatever the community is about, Native has your model.</p>
             </Fade>
           </div>
           <div className="column">
@@ -51,8 +51,13 @@ class CreatePanel extends React.Component {
           </div>
           <div className="column">
             <Fade right>
-            <h3>Your new community token!</h3>
-            <p>Now that you've started the Lemonade Community, you can track and participate in building the value of the Lemon tokens. Use your tokens to create tasks and fund projects.</p>
+            <h3>Deploy your Economy</h3>
+            <p>Once the structure and plan is solidified, Native deploys your community infrastructure which includes:</p>
+            <ul>
+              <li>A unique community token set to your economic model</li>
+              <li>An intuitive dashboard for members and the administrator for engagement and web3 interfacing</li>
+              <li>A customizable set of governance tools for the community to organize and make collective decisions</li>
+            </ul>
             </Fade>
           </div>
         </div>

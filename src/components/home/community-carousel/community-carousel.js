@@ -64,7 +64,7 @@ class CommunityCarousel extends React.Component {
       arrows: false,
       infinite: true,
       speed: 300,
-      slidesToShow: 5,
+      slidesToShow: 3,
       slidesToScroll: 1,
       centerMode: true,
       centerPadding: '0',
@@ -101,8 +101,7 @@ class CommunityCarousel extends React.Component {
       <div className="Communities">
         <div className="Communities__header contain">
           <div className="Communities__header--text">
-            <h3>Find Your Community</h3>
-            <p>We empower the collective dreams of the communities built on the Native platform.</p>
+            <h3>Experience our Pilot Communities</h3>
           </div>
           <div className="spacer"><p></p></div>
           {/* <div className="Communities__header--links">

@@ -1,16 +1,13 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import { ReactTypeformEmbed } from 'react-typeform-embed';
+import { ReactTypeformEmbed } from 'react-typeform-embed'
+import EmailListForm from '../components/home/email-list-form/email-list-form'
 
 // Lottie
 import LottieControl from "../components/shared/lottie-control/lottie-control"
-import * as bannerAnimation from "../assets/animations/01_HOME_BANNER_ANIM_v08.json"
 import preloadImage from "../assets/animations/01_HOME_BANNER_ANIM_1st_frame.png"
-import HeroBanner from '../components/home/hero-banner/hero-banner'
-import launchStars from "../assets/illustrations/05_Native_Website_ROCKET_Banner_cl_v05_stars.png"
-import launchClouds from "../assets/illustrations/05_Native_Website_ROCKET_Banner_cl_v05_clouds.png"
-import launchRocket from "../assets/illustrations/05_Native_Website_ROCKET_Banner_cl_v05_rocket.png"
+import devicesImage from '../assets/product/Native_Website_App_Devices_large.png'
 import * as step1Animation from "../assets/animations/11_join_v09.json"
 import * as step2Animation from "../assets/animations/12_participate_v05.json"
 import * as step3Animation from "../assets/animations/02_Native_Website_Home_Howitworks_Step3_Full_v03.json"
@@ -20,7 +17,6 @@ import CommunityCarousel from '../components/home/community-carousel/community-c
 import Fade from 'react-reveal/Fade'
 import Pulse from 'react-reveal/Pulse'
 import { OutboundLink } from 'gatsby-plugin-google-analytics'
-import { Parallax } from 'react-scroll-parallax';
 
 import './home.scss'
 
@@ -72,60 +68,50 @@ class IndexPage extends React.Component {
 
       <div>
         <div className="hero home__hero">
-          { !this.state.bannerIsLoaded &&
           <img src={preloadImage} />
-          }
-          <LottieControl
-              animationData={bannerAnimation}
-              loop={false}
-              autoplay={true}
-              isLoadedListener={this.handleBannerIsLoaded}
-            />
-          { this.state.bannerIsLoaded &&
-          <HeroBanner />
-          }
-        </div>
-        <section className="home__how-it-works steps">
-          <div className="launch">
-            <Parallax
-                className="launch-rocket"
-                offsetYMax={250}
-                offsetYMin={0}>
-              <img src={launchRocket} />
-            </Parallax>
-            <Parallax
-                className="launch-stars"
-                offsetYMax={25}
-                offsetYMin={0}>
-              <img src={launchStars} />
-            </Parallax>
-            <Parallax
-                  className="launch-clouds"
-                  offsetYMax={0}
-                  offsetYMin={0}>
-              <img src={launchClouds} />
-            </Parallax>
-
-            <div className="contents">
-              <Fade up>
-              <h2>And we're off!</h2>
-              <p>The Native App is live. Join one of our communities.</p>
-              </Fade>
-              <div className="button-group">
-                <OutboundLink className="button" href="https://app.nativeproject.one" target="_blank">Launch App</OutboundLink>
-                <OutboundLink className="button quick-start" href="https://native-project.gitbook.io/native-quick-start-guide/" target="_blank">Quick Start Guide</OutboundLink>
-              </div>
-            </div>
+          <div className="contents">
+            <h1>The next evolution in social networking & community management is here.</h1>
+            <p>Native provides the tools and infrastructure necessary for communities to operate in the emerging decentralized financial system.</p>
           </div>
+        </div>
+        <section className="home__problem">
           <div className="intro">
             <div className="contents">
-              <Fade top cascade>
-                <h2>Start Here</h2>
-              </Fade>
+              <h2>What is Native?</h2>
+              <p>Until now, community organization and operation has been centralized, with limited capacity to engage and support members. Using traditional social media networks, value is extracted from the community with very little being provided in return.</p>
+              <p>Imagine using blockchain technology to deploy community infrastructure at scale, and return network value back to the communities. Through digital tokens for each community and a functional set of governance tools, Native provides the system to enable the next wave of community sovereignty.</p>
+            </div>
+          </div>
+        </section>
+        <section className="intro--list">
+          <div className="grid">
+            <div className="column--3">
+              <h3>Create your digital community on the blockchain</h3>
+              <p>Native provides the infrastructure to build and operate your decentralized organization</p>
+            </div>
+            <div className="column--3">
+              <h3>Design your economy and token model</h3>
+              <p>Native provides recommendations for different community types so community organizers can deploy the optimal ecosystem for each community.</p>
+            </div>
+            <div className="column--3">
+              <h3>Transparent and open governance tools</h3>
+              <p>Organize and make collective decisions with Native tools for voting, projects, and tasks.</p>
+            </div>
+          </div>
+          <div className="cta">
+            <div className="contents">
+              <p>Sign up for our newsletter. We value your privacy, and promise not to spam.</p>
+              <EmailListForm />
+            </div>
+          </div>
+        </section>
+        <section className="home__how-it-works steps">
+          <div className="intro">
+            <div className="contents">
+              <h2>How it Works</h2>
             </div>
           </div>
           <div className="step-one">
-
             <div className="contents">
               <div className="column">
                 <Fade left onReveal={ () => this.playStep1Animation()} wait={500}>
@@ -139,8 +125,8 @@ class IndexPage extends React.Component {
               <div className="column">
                 <Fade right>
                 <h6>STEP ONE</h6>
-                <h3>Join</h3>
-                <p>Find communities that care about the things you do, like movies </p>
+                <h3>Discover & Launch</h3>
+                <p>Native is a network of communities. Find communities that share your goals and values or launch your own.</p>
                 </Fade>
               </div>
             </div>
@@ -150,8 +136,8 @@ class IndexPage extends React.Component {
                 <div className="column">
                   <Fade left>
                   <h6>STEP TWO</h6>
-                  <h3>Participate</h3>
-                  <p>Choose, fund and work on community projects.  Donate your mad skills, like cinematography</p>
+                  <h3>Connect & Participate</h3>
+                  <p>Participate in the anti-rivalrous network. Inside communities you can cast votes, propose projects, and earn tokens through bounties.</p>
                   </Fade>
                 </div>
               <div className="column">
@@ -180,8 +166,8 @@ class IndexPage extends React.Component {
               <div className="column">
                 <Fade up>
                 <h6>STEP THREE</h6>
-                <h3>Thrive</h3>
-                <p>Help your community to realize its vision. The community's value is derived from its growth and success.</p>
+                <h3>Network Prosperity</h3>
+                <p>Our platform and economic model is designed so that as communities grow, the network grows.</p>
                 <div>
                   <Pulse>
                   <Link to="/how-it-works" className="button">Take a deeper dive</Link>
@@ -192,6 +178,18 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </section>
+        <section className="launch">
+          <div className="contents">
+            <Fade up>
+            <h3>Native Alpha is live on Ethereum Mainnet.</h3>
+            </Fade>
+            <div className="button-group">
+              <OutboundLink className="button" href="https://app.nativeproject.one" target="_blank">Launch App</OutboundLink>
+              <OutboundLink className="button quick-start" href="https://native-project.gitbook.io/native-quick-start-guide/" target="_blank">Quick Start Guide</OutboundLink>
+            </div>
+          </div>
+        </section>
+
         <section className="home__community-carousel">
           <CommunityCarousel />
         </section>
@@ -207,9 +205,10 @@ class IndexPage extends React.Component {
             </div>
             <div className="column">
               <Fade right>
-              <h3>Create a Community</h3>
+              <h3>Interested in launching a community on Native?</h3>
+              <p>Let us know what you're thinking so we can start the conversation.</p>
               <div>
-                <a className="button" onClick={this.openForm}>Start Here</a>
+                <a className="button" onClick={this.openForm}>Get Started</a>
                 <ReactTypeformEmbed
                   url={'https://nativeproject.typeform.com/to/U3ZeE6'}
                   popup={true}
