@@ -27,7 +27,7 @@ class DiscoverPanel extends React.Component {
             <p>Explore the Native network of communities and join the ones that align with your values and interests. Here are some examples of Community types that you’ll find:</p>
             <ul>
               <li>Enterprise communities aligned around a product or service</li>
-              <li>Portfolio communities to act as blockchain accelerators</li>
+              <li>Project-focused communities for use in tech accelerators</li>
               <li>Social Impact communities aligned around a purpose</li>
               <li>Entertainment communities to support shows and memes</li>
             </ul>
