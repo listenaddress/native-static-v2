@@ -87,7 +87,7 @@ class IndexPage extends React.Component {
           <div className="grid">
             <div className="column--3">
               <h3>Create your digital community on the blockchain</h3>
-              <p>Native provides the infrastructure to build and operate your decentralized organization</p>
+              <p>Native provides the infrastructure to build and operate your decentralized organization.</p>
             </div>
             <div className="column--3">
               <h3>Design your economy and token model</h3>

@@ -77,7 +77,7 @@ const communityData = {
       "location": "Decentralized",
       "subtitle": "Wubba lubba dub dub!",
       "dataImage": "static/media/line-03.png",
-      "tribeIntro": "“It’s about to get a whole lot weirder, Morty” Join our crew as we fight against all those people with their heads up their asses. We’ll either conquer all or we’ll throw some great parties.",
+      "tribeIntro": "“It’s about to get a whole lot weirder, Morty”. This is the Rick and Morty fan club community. We are going to build a huge community of fans and then likely take over the world. We want to do things like get custom swag and inspire new people to watch the show.",
       "tribePurpose": "To inspire the world to greatness by bringing filmmakers and audiences together in a film funding, sharing and viewing collective.",
       "quorum": 0.5,
       "tickerSymbol": "R&M",
