@@ -57,8 +57,8 @@ class SecondPage extends React.Component {
             autoplay={true} />
         <div className="contents">
           <Fade up>
-          <h1>Welcome to Native</h1>
-          <p>Are you looking to find communities to join? Are you interested in starting your own community? Let’s take a deeper dive into Native and show you how it all works.</p>
+          <h1>Native is the Network</h1>
+          <p>Whether you want to join or create a community, Native provides the tools you need to participate in the emerging decentralized financial system. Let’s explore how it works.</p>
           </Fade>
         </div>
       </div>
@@ -76,8 +76,8 @@ class SecondPage extends React.Component {
             <div className="column">
               <Fade left>
               <h6>Projects</h6>
-              <h3>Create and Support Projects</h3>
-              <p>Projects are one of the main features on Native. Decide which of your community’s projects are important and get stuff done in the world.</p>
+              <h3>Propose and Support Projects</h3>
+              <p>You decide which of your community’s projects should be funded with your community’s resources.</p>
               </Fade>
             </div>
             <Fade right>
@@ -101,7 +101,7 @@ class SecondPage extends React.Component {
               <Fade right>
               <h6>Voting</h6>
               <h3>Your Vote Matters</h3>
-              <p>Help shape your community by voting on important topics, like choosing which flavors of lemonade you want to offer at the stand.</p>
+              <p>Help shape your community by voting on important topics. Transparently gather sentiment of the community members to ensure that the majority agrees on the direction.</p>
               </Fade>
             </div>
           </div>
@@ -111,8 +111,8 @@ class SecondPage extends React.Component {
             <div className="column">
               <Fade left>
               <h6>Tasks</h6>
-              <h3>Claim Tasks, Earn Money!</h3>
-              <p>When you complete tasks for your community, the overall value of the community goes up. You get paid in community tokens for each task you complete.</p>
+              <h3>Do Work to Earn Tokens</h3>
+              <p>If you want to help to grow the community on a regular basis, and want to be rewarded for your efforts, complete tasks to help execute your community’s vision.</p>
               </Fade>
             </div>
             <div className="column">

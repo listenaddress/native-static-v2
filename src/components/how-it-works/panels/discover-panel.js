@@ -23,8 +23,14 @@ class DiscoverPanel extends React.Component {
         <div className="contents contain">
           <div className="column">
             <Fade left>
-            <h3>Find your people</h3>
-            <p>Your first step is to explore and join communities that align with the things you care about. Want to conserve energy? Save the Earth? Join flash mobs around the world? Or maybe even join a lemonade loving community? Put your money where your heart is.</p>
+            <h3>Discover Communities</h3>
+            <p>Explore the Native network of communities and join the ones that align with your values and interests. Here are some examples of Community types that you’ll find:</p>
+            <ul>
+              <li>Enterprise communities aligned around a product or service</li>
+              <li>Portfolio communities to act as blockchain accelerators</li>
+              <li>Social Impact communities aligned around a purpose</li>
+              <li>Entertainment communities to support shows and memes</li>
+            </ul>
             </Fade>
           </div>
           <div className="column">
@@ -42,8 +48,14 @@ class DiscoverPanel extends React.Component {
           </div>
           <div className="column">
             <Fade right>
-            <h3>You’ve got tokens!</h3>
-            <p>Now that you are part of the Lemonade Community, you can track its value and participate in building the community. Fund relevant projects and earn by doing tasks.</p>
+            <h3>Execute the Vision</h3>
+            <p>Now that you’re in the communities that are important to you, it’s time to participate. Here are some of the action items that communities can leverage:</p>
+            <ul>
+              <li>Sentiment analysis of members through community voting</li>
+              <li>Assign and claim tasks so you can earn tokens for your work</li>
+              <li>Decide how to best allocate community resources into projects</li>
+              <li>Unlock member-only data, downloads and communication</li>
+            </ul>
             </Fade>
           </div>
         </div>
