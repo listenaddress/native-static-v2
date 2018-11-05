@@ -33,7 +33,11 @@ const Layout = ({ children, data }) => (
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'google-site-verification', content: 'chEdznCYN3OA7ITzOMmfnOsWkTOjkX86VD8PiIC8LRA' },
       ]}
-    />
+      script={[
+        { src: '/scripts/page-proofer.js', type: 'text/javascript' },
+      ]}
+    >
+    </Helmet>
 
     <Header />
     <ParallaxProvider>
