@@ -3,7 +3,5 @@
    pp.src = '//app.pageproofer.com/overlay/js/3590/1854';
    pp.type = 'text/javascript';
    pp.async = true;
-
-   console.log('page-proofer')
    s.parentNode.insertBefore(pp, s);
 })(document, 'script');         

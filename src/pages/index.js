@@ -33,7 +33,6 @@ class IndexPage extends React.Component {
 
   componentDidMount() {
     window.onload = () => {
-      console.log('im loaded');
       this.setState({windowIsLoaded: true})
     };
   }
