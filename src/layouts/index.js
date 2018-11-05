@@ -34,7 +34,7 @@ const Layout = ({ children, data }) => (
         { name: 'google-site-verification', content: 'chEdznCYN3OA7ITzOMmfnOsWkTOjkX86VD8PiIC8LRA' },
       ]}
       script={[
-        { src: '/page-proofer.js', type: 'text/javascript' },
+        { src: '/scripts/page-proofer.js', type: 'text/javascript' },
       ]}
     >
     </Helmet>
