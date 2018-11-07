@@ -25,6 +25,7 @@ const Layout = ({ children, data }) => (
         { property: 'og:title', content: 'Native - Tokenized Digital Communities' },
         { property: 'og:description', content: 'Operate tokenized digital communities on the blockchain.' },
         { property: 'og:image', content: 'https://nativeproject.one/ntv__logo--primary.png' },
+        { property: 'twitter:image', content: 'https://nativeproject.one/ntv__logo--primary.png' },
         { name: 'twitter:card', content: 'summary' },
         { name: 'twitter:site', content: '@nativeproject_' },
         { name: 'twitter:title', content: 'Native - Tokenized Digital Communities' },
