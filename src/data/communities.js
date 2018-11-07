@@ -1,7 +1,7 @@
 // banners
 import doloBanner from '../../src/assets/communities/dolo__banner.png';
 import earthBanner from '../../src/assets/communities/earth__banner.jpg';
-import nativeBanner from '../../src/assets/illustrations/04_Native_Website_Howitworks_Banner_V5.png';
+import nativeBanner from '../../src/assets/illustrations/04_Native_Website_Howitworks_Banner_V5--small.jpg';
 import rmBanner from '../../src/assets/communities/rm__banner.jpg';
 
 // token icons
