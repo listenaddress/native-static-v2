@@ -7,7 +7,6 @@ import EmailListForm from '../components/home/email-list-form/email-list-form'
 // Lottie
 import LottieControl from "../components/shared/lottie-control/lottie-control"
 import preloadImage from "../assets/animations/01_HOME_BANNER_ANIM_1st_frame.png"
-import devicesImage from '../assets/product/Native_Website_App_Devices_large.png'
 import * as step1Animation from "../assets/animations/11_join_v09.json"
 import * as step2Animation from "../assets/animations/12_participate_v05.json"
 import * as step3Animation from "../assets/animations/02_Native_Website_Home_Howitworks_Step3_Full_v03.json"
@@ -67,7 +66,7 @@ class IndexPage extends React.Component {
 
       <div>
         <div className="hero home__hero">
-          <img src={preloadImage} />
+          <img src={preloadImage} alt="Native Community"/>
           <div className="contents">
             <h1>The next evolution in social networking & community management.</h1>
             <p>Native provides the tools and infrastructure necessary for communities to operate in the emerging decentralized financial system.</p>
