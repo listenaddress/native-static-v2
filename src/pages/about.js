@@ -60,7 +60,7 @@ const SecondPage = () => (
     </div>
     <section className="block project__timeline">
       <h4>Timeline</h4>
-      <img src={iconTimeline} />
+      <img src={iconTimeline} alt="Native Timeline" />
       <div className="contents contain">
         <div className="item">
           <h6>Dec 2017</h6>
@@ -216,14 +216,14 @@ const SecondPage = () => (
     <section className="block project__partners">
       <h3>Partners & Infrastructure</h3>
       <div className="items">
-          <img src={bancorLogo} />
-          <img src={citrincoopermanLogo} />
-          <img src={decentranetLogo} />
-          <img src={genesisblockLogo} />
-          <img src={ideasbynatureLogo} />
-          <img src={odyssyLogo} />
-          <img src={sewardKisselLogo} />
-          <img src={storyworksLogo} />
+          <img src={bancorLogo} alt="Bancor" />
+          <img src={citrincoopermanLogo} alt="Citrin Cooperman" />
+          <img src={decentranetLogo} alt="Decentranet" />
+          <img src={genesisblockLogo} alt="Genesis Block" />
+          <img src={ideasbynatureLogo} alt="Ideas by Nature" />
+          <img src={odyssyLogo} alt="Odyssy" />
+          <img src={sewardKisselLogo} alt="Seward and Kissel LLP" />
+          <img src={storyworksLogo} alt="Storyworks" />
         </div>
     </section>
   </div>
