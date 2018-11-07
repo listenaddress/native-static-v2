@@ -3,7 +3,9 @@ const policy = process.env.ALLOW_ROBOTS ?
 
 module.exports = {
   siteMetadata: {
-    title: 'Native - Build Prosperous Communities',
+    title: 'Native - Tokenized Digital Communities',
+    siteUrl: `https://nativeproject.one/`,
+    description: 'Operate tokenized digital communities on the blockchain.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',

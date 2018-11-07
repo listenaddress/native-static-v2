@@ -1,6 +1,6 @@
 {
   "name": "Native",
-  "description": "Build Properous Communitie",
+  "description": "Operate tokenized digital communities on the blockchain.",
   "version": "1.0.0",
   "dependencies": {
     "gatsby": "^1.9.277",
