@@ -1,3 +1,6 @@
+const policy = process.env.ALLOW_ROBOTS ? 
+  [{ userAgent: '*', allow: '/' }] : [{ userAgent: '*', disallow: '/' }]
+
 module.exports = {
   siteMetadata: {
     title: 'Native - Build Prosperous Communities',
@@ -63,6 +66,12 @@ module.exports = {
         display: "minimal-ui",
         icon: "src/assets/favicon.png",
       },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: policy,
+      }
     },
   ],
 }
