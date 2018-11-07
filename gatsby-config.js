@@ -1,10 +1,16 @@
+const policy = process.env.ALLOW_ROBOTS ? 
+  [{ userAgent: '*', allow: '/' }] : [{ userAgent: '*', disallow: '/' }]
+
 module.exports = {
   siteMetadata: {
-    title: 'Native - Build Prosperous Communities',
+    title: 'Native - Tokenized Digital Communities',
+    siteUrl: `https://nativeproject.one/`,
+    description: 'Operate tokenized digital communities on the blockchain.',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-sass',
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-facebook-pixel`,
       options: {
@@ -62,6 +68,12 @@ module.exports = {
         display: "minimal-ui",
         icon: "src/assets/favicon.png",
       },
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        policy: policy,
+      }
     },
   ],
 }
