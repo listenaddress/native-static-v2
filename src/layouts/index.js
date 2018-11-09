@@ -31,7 +31,7 @@ const Layout = ({ children, data }) => (
         { name: 'twitter:description', content: 'Operate tokenized digital communities on the blockchain.' },
         { name: 'twitter:image', content: 'https://nativeproject.one/ntv__preview--twitter.jpg' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { name: 'google-site-verification', content: 'chEdznCYN3OA7ITzOMmfnOsWkTOjkX86VD8PiIC8LRA' },
+        { name: 'google-site-verification', content: 'uwfUfmaUFh6r6QeKiBxGhHKmsJ8pNghhMdVa1B43XpE' },
       ]}
       script={[
         { src: '/scripts/page-proofer.js', type: 'text/javascript' },
