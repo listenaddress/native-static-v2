@@ -57,7 +57,7 @@ class SecondPage extends React.Component {
             autoplay={true} />
         <div className="contents">
           <Fade up>
-          <h1>Native is the Network</h1>
+          <h1>The Native Ecosystem</h1>
           <p>Whether you want to join or create a community, Native provides the tools you need to participate in the emerging decentralized financial system. Let’s explore how it works.</p>
           </Fade>
         </div>
@@ -77,7 +77,7 @@ class SecondPage extends React.Component {
               <Fade left>
               <h6>Projects</h6>
               <h3>Propose and Support Projects</h3>
-              <p>You decide which of your community’s projects should be funded with your community’s resources.</p>
+              <p>Decide which projects should be funded with your community’s resources.</p>
               </Fade>
             </div>
             <Fade right>
@@ -100,7 +100,7 @@ class SecondPage extends React.Component {
             <div className="column">
               <Fade right>
               <h6>Voting</h6>
-              <h3>Your Vote Matters</h3>
+              <h3>Make Important Decisions</h3>
               <p>Help shape your community by voting on important topics. Transparently gather sentiment of the community members to ensure that the majority agrees on the direction.</p>
               </Fade>
             </div>
