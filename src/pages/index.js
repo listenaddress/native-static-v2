@@ -68,16 +68,16 @@ class IndexPage extends React.Component {
         <div className="hero home__hero">
           <img src={preloadImage} alt="Native Community"/>
           <div className="contents">
-            <h1>The next evolution in social networking & community management.</h1>
-            <p>Native provides the tools and infrastructure necessary for communities to operate in the emerging decentralized financial system.</p>
+            <h1>Unlock the value of your community.</h1>
+            <p>Native lets communities organize, incentivize their members and generate revenue in new ways.</p>
           </div>
         </div>
         <section className="home__problem">
           <div className="intro">
             <div className="contents">
               <h2>What is Native?</h2>
-              <p>Until now, community organization and operation has been centralized, with limited capacity to engage and support members. Using traditional social media networks, value is extracted from the community with very little being provided in return.</p>
-              <p>Imagine using blockchain technology to deploy community infrastructure at scale, and return network value back to the communities. Through digital tokens for each community and a functional set of governance tools, Native provides the system to enable the next wave of community sovereignty.</p>
+              <p>Until now, organizing and operating digital communities has been limited to centralized platforms, resulting in limited capacity to incentivize long-term and meaningful member engagement. Through these major social media networks, digital communities can expand globally but have no universally recognized economic system to realize the value of their efforts.</p>
+              <p>Imagine using blockchain technology to deploy community infrastructure so the network value can be returned to the communities who created it. Through community-backed tokens and a functional set of decision making tools, Native provides the system to enable the next wave of community sovereignty.</p>
             </div>
           </div>
         </section>
@@ -93,7 +93,7 @@ class IndexPage extends React.Component {
             </div>
             <div className="column--3">
               <h3>Transparent and open governance tools</h3>
-              <p>Organize and make collective decisions with Native tools for voting, projects, and tasks.</p>
+              <p>Organize and make collective decisions through voting, projects, and tasks.</p>
             </div>
           </div>
           <div className="cta">
@@ -165,7 +165,7 @@ class IndexPage extends React.Component {
                 <Fade up>
                 <h6>STEP THREE</h6>
                 <h3>Network Prosperity</h3>
-                <p>Our platform and economic model is designed so that as communities grow, the network grows.</p>
+                <p>The Native economic model is designed so communities are incentivized to cooperate, not compete.</p>
                 <div>
                   <Pulse>
                   <Link to="/how-it-works" className="button">Take a deeper dive</Link>
@@ -204,7 +204,7 @@ class IndexPage extends React.Component {
             <div className="column">
               <Fade right>
               <h3>Interested in launching a community on Native?</h3>
-              <p>Let us know what you're thinking so we can start the conversation.</p>
+              <p>Tell us about your community vision so we can start the conversation.</p>
               <div>
                 <a className="button" onClick={this.openForm}>Get Started</a>
                 <ReactTypeformEmbed
