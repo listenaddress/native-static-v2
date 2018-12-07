@@ -69,7 +69,7 @@ class IndexPage extends React.Component {
           <img src={preloadImage} alt="Native Community"/>
           <div className="contents">
             <h1>Unlock the value of your community.</h1>
-            <p>Native lets communities organize, incentivize their members and generate revenue in new ways.</p>
+            <p>Native helps digital communities organize, incentivize their members and generate revenue in new ways.</p>
           </div>
         </div>
         <section className="home__problem">
