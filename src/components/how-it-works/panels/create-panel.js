@@ -30,7 +30,7 @@ class CreatePanel extends React.Component {
           <div className="column">
             <Fade left>
             <h3>Design your community</h3>
-            <p>Consult with the Native team to design the optimal economic model for your community. Is your community designed for enterprise use, social impact, or maybe just to coordinate building a lemonade stand? Whatever the community is about, Native has your model.</p>
+            <p>Is your community designed around an event or publication? Are you gathering members for an interest group or raising capital for a new venture? Or maybe your community is creating inspiring entertainment and digital content. Whatever it is, we will make a model that works.</p>
             </Fade>
           </div>
           <div className="column">
@@ -52,11 +52,11 @@ class CreatePanel extends React.Component {
           <div className="column">
             <Fade right>
             <h3>Deploy your Economy</h3>
-            <p>Once the structure and plan is solidified, Native deploys your community infrastructure which includes:</p>
+            <p>Once your optimal economic model is designed, Native deploys your community infrastructure which includes:</p>
             <ul>
-              <li>A unique community token set to your economic model</li>
-              <li>An intuitive dashboard for members and the administrator for engagement and web3 interfacing</li>
-              <li>A customizable set of governance tools for the community to organize and make collective decisions</li>
+              <li>The unique token for your community</li>
+              <li>An intuitive dashboard that leverages web3</li>
+              <li>A set of tools to organize and make collective decisions</li>
             </ul>
             </Fade>
           </div>
