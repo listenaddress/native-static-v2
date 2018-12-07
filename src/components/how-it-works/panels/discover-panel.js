@@ -48,13 +48,12 @@ class DiscoverPanel extends React.Component {
           </div>
           <div className="column">
             <Fade right>
-            <h3>Execute the Vision</h3>
-            <p>Now that you’re in the communities that are important to you, it’s time to participate. Here are some of the action items that communities can leverage:</p>
+            <h3>Join your community</h3>
+            <p>Now that you found the right communities, it’s time to join! Become a member by purchasing and staking community tokens. Once you join, gain access to exclusive membership benefits like:</p>
             <ul>
-              <li>Sentiment analysis of members through community voting</li>
-              <li>Assign and claim tasks so you can earn tokens for your work</li>
-              <li>Decide how to best allocate community resources into projects</li>
-              <li>Unlock member-only data, downloads and communication</li>
+              <li>Access to members within the community</li>
+              <li>Ability to do tasks to earn money</li>
+              <li>Member-only data, downloads and communication</li>
             </ul>
             </Fade>
           </div>
