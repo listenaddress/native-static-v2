@@ -203,8 +203,8 @@ class IndexPage extends React.Component {
             </div>
             <div className="column">
               <Fade right>
-              <h3>Interested in launching a community on Native?</h3>
-              <p>Tell us about your community vision so we can start the conversation.</p>
+              <h3>Want to launch your community on Native?</h3>
+              <p>Tell us about it so we can start the conversation.</p>
               <div>
                 <a className="button" onClick={this.openForm}>Get Started</a>
                 <ReactTypeformEmbed
