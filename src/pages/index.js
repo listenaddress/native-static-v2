@@ -103,79 +103,79 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </section>
-        <section className="home__how-it-works steps">
-          <div className="intro">
-            <div className="contents">
-              <h2>How it Works</h2>
-            </div>
-          </div>
-          <div className="step-one">
-            <div className="contents">
-              <div className="column">
-                <Fade left onReveal={ () => this.playStep1Animation()} wait={500}>
-                  <LottieControl
-                      animationData={step1Animation}
-                      loop={false}
-                      autoplay={false}
-                      isStopped={this.state.step1IsStopped} />
-                </Fade>
-              </div>
-              <div className="column">
-                <Fade right>
-                <h6>STEP ONE</h6>
-                <h3>Discover & Launch</h3>
-                <p>Native is a network of communities. Find communities that share your goals and values or launch your own.</p>
-                </Fade>
-              </div>
-            </div>
-          </div>
-          <div className="step-two">
-            <div className="contents">
-                <div className="column">
-                  <Fade left>
-                  <h6>STEP TWO</h6>
-                  <h3>Connect & Participate</h3>
-                  <p>Participate in the anti-rivalrous network. Inside communities you can cast votes, propose projects, and earn tokens through bounties.</p>
-                  </Fade>
-                </div>
-              <div className="column">
-                <Fade right onReveal={ () => this.playStep2Animation()} wait={1000}>
-                  <LottieControl
-                      animationData={step2Animation}
-                      loop={false}
-                      autoplay={false}
-                      isStopped={this.state.step2IsStopped}
-                    />
-                </Fade>
-              </div>
-            </div>
-          </div>
-          <div className="step-three">
-            <Fade onReveal={ () => this.playStep3Animation()} wait={1000} >
-              <LottieControl
-                  animationData={step3Animation}
-                  loop={false}
-                  autoplay={false}
-                  isStopped={this.state.step3IsStopped} />
-            </Fade>
-            <div className="contents">
-              <div className="column">
-              </div>
-              <div className="column">
-                <Fade up>
-                <h6>STEP THREE</h6>
-                <h3>Network Prosperity</h3>
-                <p>The Native economic model is designed so communities are incentivized to cooperate, not compete.</p>
-                <div>
-                  <Pulse>
-                  <Link to="/how-it-works" className="button">Take a deeper dive</Link>
-                  </Pulse>
-                </div>
-                </Fade>
-              </div>
-            </div>
-          </div>
-        </section>
+              // <section className="home__how-it-works steps">
+       //   <div className="intro">
+       //     <div className="contents">
+       //       <h2>How it Works</h2>
+       //     </div>
+      //    </div>
+      //    <div className="step-one">
+      //      <div className="contents">
+      //        <div className="column">
+      //          <Fade left onReveal={ () => this.playStep1Animation()} wait={500}>
+      //            <LottieControl
+      //                animationData={step1Animation}
+      //                loop={false}
+      //                autoplay={false}
+      //                isStopped={this.state.step1IsStopped} />
+      //          </Fade>
+      //        </div>
+      ////        <div className="column">
+      //          <Fade right>
+      //          <h6>STEP ONE</h6>
+     //           <h3>Discover & Launch</h3>
+      //          <p>Native is a network of communities. Find communities that share your goals and values or launch your own.</p>
+     //           </Fade>
+      //        </div>
+     //       </div>
+     //     </div>
+     //     <div className="step-two">
+     //       <div className="contents">
+     //           <div className="column">
+     //             <Fade left>
+     //             <h6>STEP TWO</h6>
+      //            <h3>Connect & Participate</h3>
+     //             <p>Participate in the anti-rivalrous network. Inside communities you can cast votes, propose projects, and earn tokens through bounties.</p>
+     //             </Fade>
+     //           </div>
+     //         <div className="column">
+     //           <Fade right onReveal={ () => this.playStep2Animation()} wait={1000}>
+     //             <LottieControl
+    //                  animationData={step2Animation}
+    //                  loop={false}
+    //                  autoplay={false}
+    //                  isStopped={this.state.step2IsStopped}
+   //                 />
+   //             </Fade>
+   //           </div>
+   //         </div>
+   //       </div>
+   //       <div className="step-three">
+   //         <Fade onReveal={ () => this.playStep3Animation()} wait={1000} >
+   //           <LottieControl
+   //               animationData={step3Animation}
+   //               loop={false}
+   //               autoplay={false}
+   //               isStopped={this.state.step3IsStopped} />
+   //         </Fade>
+   //         <div className="contents">
+   //           <div className="column">
+   //           </div>
+    //          <div className="column">
+    //            <Fade up>
+    //            <h6>STEP THREE</h6>
+   //             <h3>Network Prosperity</h3>
+   //             <p>Our platform and economic model is designed so that as communities grow, the network grows.</p>
+   //             <div>
+  //                <Pulse>
+  //                <Link to="/how-it-works" className="button">Take a deeper dive</Link>
+  //                </Pulse>
+  //              </div>
+  //              </Fade>
+  //            </div>
+  //          </div>
+  //        </div>
+  //      </section>
         <section className="launch">
           <div className="contents">
             <Fade up>
