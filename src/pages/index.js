@@ -77,7 +77,7 @@ class IndexPage extends React.Component {
             <div className="contents">
               <h2>What is Native?</h2>
               <p>Until now, organizing and operating digital communities has been limited to centralized platforms, resulting in limited capacity to incentivize long-term and meaningful member engagement. Through these major social media networks, digital communities can expand globally but have no universally recognized economic system to realize the value of their efforts.</p>
-              <p>Imagine using blockchain technology to deploy community infrastructure so the network value can be returned to the communities who created it. Through community-backed tokens and a functional set of decision making tools, Native provides the system to enable the next wave of community sovereignty.</p>
+              <p>Imagine using blockchain technology to deploy digital community infrastructure at scale, and keeping the value inside the communities. Native enables digital communities to organize members, facilitate growth and simplify operational processes all in one application. Through unique community tokens, a functional set of governance tools and flexible incentive structures for member engagement, Native provides the system for the next wave of community sovereignty.</p>
             </div>
           </div>
         </section>
