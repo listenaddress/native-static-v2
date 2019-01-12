@@ -163,14 +163,6 @@ const SecondPage = () => (
             <h6>Onboarding</h6>
           </div>
         </div>
-        <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + teamMike + ")"}}></div>
-          <div className="contents">
-            <h5>Mike Slavin</h5>
-            <h6>Storyworks</h6>
-            <h6>Social Media</h6>
-          </div>
-        </div>
       </div>
       <p>Interested in working with us? <a href="mailto:hello@nativeproject.one">Shoot us an email!</a></p>
     </section>
