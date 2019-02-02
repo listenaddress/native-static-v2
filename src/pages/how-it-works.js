@@ -127,7 +127,7 @@ class SecondPage extends React.Component {
         <div className="steps--footer">
         </div>
       </section>
-      <section className="block how-it-works__curator">
+      //<section className="block how-it-works__curator">
         // <CommunityForm />
         // <Fade left>
         // <div className="white-paper">
