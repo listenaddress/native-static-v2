@@ -132,8 +132,8 @@ class SecondPage extends React.Component {
         <Fade left>
         <div className="white-paper">
         <div className="column">
-           /// <p>Nerding out? Learn more about the economics behind Native.</p>
-           /// <OutboundLink className="button" target="_blank" href="https://drive.google.com/file/d/13vedYkjzF-HpcC9I_JO6683bWls_uj4W/view?usp=sharing">Download Whitepaper</OutboundLink>
+           <p>Nerding out? Learn more about the economics behind Native.</p>
+           <OutboundLink className="button" target="_blank" href="mailto:hello@nativeproject.one">Contact Us</OutboundLink>
          </div>
          <img src={whitepaperIcon} alt="Native Whitepaper"/>
          </div>
