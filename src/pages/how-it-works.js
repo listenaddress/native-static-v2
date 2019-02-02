@@ -127,18 +127,18 @@ class SecondPage extends React.Component {
         <div className="steps--footer">
         </div>
       </section>
-      //<section className="block how-it-works__curator">
-        // <CommunityForm />
-        // <Fade left>
-        // <div className="white-paper">
-        //  <div className="column">
-        //    <p>Nerding out? Learn more about the economics behind Native.</p>
-        //    <OutboundLink className="button" target="_blank" href="https://drive.google.com/file/d/13vedYkjzF-HpcC9I_JO6683bWls_uj4W/view?usp=sharing">Download Whitepaper</OutboundLink>
-        //  </div>
-        //  <img src={whitepaperIcon} alt="Native Whitepaper"/>
-        // </div>
-        // </Fade>
-      // </section>
+      <section className="block how-it-works__curator">
+        <CommunityForm />
+        <Fade left>
+        <div className="white-paper">
+        <div className="column">
+           /// <p>Nerding out? Learn more about the economics behind Native.</p>
+           /// <OutboundLink className="button" target="_blank" href="https://drive.google.com/file/d/13vedYkjzF-HpcC9I_JO6683bWls_uj4W/view?usp=sharing">Download Whitepaper</OutboundLink>
+         </div>
+         <img src={whitepaperIcon} alt="Native Whitepaper"/>
+         </div>
+         </Fade>
+      </section>
       <section className="footer__spacer">
       </section>
 
