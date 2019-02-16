@@ -76,8 +76,7 @@ class IndexPage extends React.Component {
           <div className="intro">
             <div className="contents">
               <h2>What is Native?</h2>
-              <p>Until now, organizing and operating digital communities has been limited to centralized platforms, resulting in limited capacity to incentivize long-term and meaningful member engagement. Through these major social media networks, digital communities can expand globally but have no universally recognized economic system to realize the value of their efforts.</p>
-              <p>Imagine using blockchain technology to deploy digital community infrastructure at scale, and keeping the value inside the communities. Native enables digital communities to organize members, facilitate growth and simplify operational processes all in one application. Through unique community tokens, a functional set of governance tools and flexible incentive structures for member engagement, Native provides the system for the next wave of community sovereignty.</p>
+              <p>Imagine using blockchain technology to deploy community infrastructure at scale. What if we could keep value inside of communities instead of being sent to third parties who did not create it. Through a digital token for each community and a functional set of governance tools, Native provides the system to enable the next wave of community sovereignty.</p>
             </div>
           </div>
         </section>
@@ -164,8 +163,8 @@ class IndexPage extends React.Component {
               <div className="column">
                 <Fade up>
                 <h6>STEP THREE</h6>
-                <h3>Network Prosperity</h3>
-                <p>Our platform and economic model is designed so that as communities grow, the network grows.</p>
+                <h3>Thrive</h3>
+                <p>Our economic model enables communities to leverage their social and financial capital to work together and get things done.</p>
                <div>
                   <Pulse>
                   <Link to="/how-it-works" className="button">Take a deeper dive</Link>
