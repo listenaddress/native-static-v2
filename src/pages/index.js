@@ -76,7 +76,7 @@ class IndexPage extends React.Component {
           <div className="intro">
             <div className="contents">
               <h2>What is Native?</h2>
-              <p>Imagine using blockchain technology to deploy community infrastructure at scale. What if we could keep value inside of communities instead of being sent to third parties who did not create it. Through a digital token for each community and a functional set of governance tools, Native provides the system to enable the next wave of community sovereignty.</p>
+              <p>Imagine using blockchain technology to deploy community infrastructure at scale. What if we could keep value inside of communities instead of having value extracted by third parties who did not create it? Through a digital token for each community and a functional set of governance tools, Native provides the system to enable the next wave of community sovereignty.</p>
             </div>
           </div>
         </section>
