@@ -54,7 +54,7 @@ const SecondPage = () => (
       <div className="contents">
         <Fade up>
         <h1>Our Mission</h1>
-        <p>Native's mission is to build the future of social networking and community engagement so communities can realize and control their actual value.</p>
+        <p>Native's mission is to enable communities to realize and control their inherent value.</p>
         </Fade>
       </div>
     </div>
@@ -86,8 +86,7 @@ const SecondPage = () => (
     </section>
     <section className="block project__community">
       <h3>Our Community</h3>
-      <p>Native is one of the first communities deployed on the network. We are a group of individuals and organizations who have set out to build the Native platform</p>
-      <p>The organizations building Native include:</p>
+      <p>The organizations building Native:</p>
       <p><OutboundLink href="http://ideasbynature.com/" target="_blank">IDEAS BY NATURE</OutboundLink> - DAPP Dev, Web3, Solidity, UX/UI - Built Shapeshift, Coincap, worked on SALT</p>
       <p><OutboundLink href="https://odyssy.io" target="_blank">ODYSSY</OutboundLink> - Product Design & Management, Blockchain Prototyping, UX/UI, Web3 - Decentralized Product Design & Development</p>
       <p><OutboundLink href="http://storyworks.com" target="_blank">STORYWORKS</OutboundLink> - Branding, Marketing, Community Support</p>
@@ -97,7 +96,7 @@ const SecondPage = () => (
           <div className="contents">
             <h5>Jake Vartanian</h5>
             <h6>Native</h6>
-            <h6>Curator</h6>
+            <h6>Founder</h6>
           </div>
         </div>
         <div className="member">
@@ -164,14 +163,6 @@ const SecondPage = () => (
             <h6>Onboarding</h6>
           </div>
         </div>
-        <div className="member">
-          <div className="member-photo" style={{backgroundImage: "url(" + teamMike + ")"}}></div>
-          <div className="contents">
-            <h5>Mike Slavin</h5>
-            <h6>Storyworks</h6>
-            <h6>Social Media</h6>
-          </div>
-        </div>
       </div>
       <p>Interested in working with us? <a href="mailto:hello@nativeproject.one">Shoot us an email!</a></p>
     </section>
@@ -210,8 +201,15 @@ const SecondPage = () => (
             <h6>Auditor</h6>
           </div>
         </div>
+        <div className="member">
+          <div className="member-photo" style={{backgroundImage: "url(" + teamHeidi + ")"}}></div>
+          <div className="contents">
+            <h5>Heidi Cuppari</h5>
+            <h6>Anastasia Finance</h6>
+            <h6>Founder</h6>
+          </div>
+        </div>
       </div>
-      <p>Interested in working with us? <a href="mailto:hello@nativeproject.one">Shoot us an email!</a></p>
     </section>
     <section className="block project__partners">
       <h3>Partners & Infrastructure</h3>

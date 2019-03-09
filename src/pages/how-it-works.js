@@ -57,7 +57,7 @@ class SecondPage extends React.Component {
             autoplay={true} />
         <div className="contents">
           <Fade up>
-          <h1>Native is the Network</h1>
+          <h1>The Native Ecosystem</h1>
           <p>Whether you want to join or create a community, Native provides the tools you need to participate in the emerging decentralized financial system. Let’s explore how it works.</p>
           </Fade>
         </div>
@@ -75,9 +75,8 @@ class SecondPage extends React.Component {
           <div className="contents contain">
             <div className="column">
               <Fade left>
-              <h6>Projects</h6>
-              <h3>Propose and Support Projects</h3>
-              <p>You decide which of your community’s projects should be funded with your community’s resources.</p>
+              <h3>Support Community Projects</h3>
+              <p>Help decide which projects should be funded with your community’s resources.</p>
               </Fade>
             </div>
             <Fade right>
@@ -99,9 +98,8 @@ class SecondPage extends React.Component {
             </div>
             <div className="column">
               <Fade right>
-              <h6>Voting</h6>
-              <h3>Your Vote Matters</h3>
-              <p>Help shape your community by voting on important topics. Transparently gather sentiment of the community members to ensure that the majority agrees on the direction.</p>
+              <h3>Make Important Decisions</h3>
+              <p>Participate in community decision making and transparently ensure collective agreement.</p>
               </Fade>
             </div>
           </div>
@@ -110,9 +108,8 @@ class SecondPage extends React.Component {
           <div className="contents">
             <div className="column">
               <Fade left>
-              <h6>Tasks</h6>
-              <h3>Do Work to Earn Tokens</h3>
-              <p>If you want to help to grow the community on a regular basis, and want to be rewarded for your efforts, complete tasks to help execute your community’s vision.</p>
+              <h3>Get Paid Doing Work You Enjoy</h3>
+              <p>Help bring the community vision to life by offering your unique services. Complete tasks and get paid.</p>
               </Fade>
             </div>
             <div className="column">
@@ -134,13 +131,13 @@ class SecondPage extends React.Component {
         <CommunityForm />
         <Fade left>
         <div className="white-paper">
-          <div className="column">
-            <p>Nerding out? Learn more about the economics behind Native.</p>
-            <OutboundLink className="button" target="_blank" href="https://drive.google.com/file/d/13vedYkjzF-HpcC9I_JO6683bWls_uj4W/view?usp=sharing">Download Whitepaper</OutboundLink>
-          </div>
-          <img src={whitepaperIcon} alt="Native Whitepaper"/>
-        </div>
-        </Fade>
+        <div className="column">
+           <p>Nerding out? Learn more about the economics behind Native.</p>
+           <OutboundLink className="button" target="_blank" href="mailto:hello@nativeproject.one">Contact Us</OutboundLink>
+         </div>
+         <img src={whitepaperIcon} alt="Native Whitepaper"/>
+         </div>
+         </Fade>
       </section>
       <section className="footer__spacer">
       </section>

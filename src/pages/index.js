@@ -68,16 +68,15 @@ class IndexPage extends React.Component {
         <div className="hero home__hero">
           <img src={preloadImage} alt="Native Community"/>
           <div className="contents">
-            <h1>The next evolution in social networking & community management.</h1>
-            <p>Native provides the tools and infrastructure necessary for communities to operate in the emerging decentralized financial system.</p>
+            <h1>Unlock the value of your community.</h1>
+            <p>Native helps digital communities organize, incentivize their members and generate revenue in new ways.</p>
           </div>
         </div>
         <section className="home__problem">
           <div className="intro">
             <div className="contents">
               <h2>What is Native?</h2>
-              <p>Until now, community organization and operation has been centralized, with limited capacity to engage and support members. Using traditional social media networks, value is extracted from the community with very little being provided in return.</p>
-              <p>Imagine using blockchain technology to deploy community infrastructure at scale, and return network value back to the communities. Through digital tokens for each community and a functional set of governance tools, Native provides the system to enable the next wave of community sovereignty.</p>
+              <p>Imagine using blockchain technology to deploy community infrastructure at scale. What if we could keep value inside of communities instead of having value extracted by third parties who did not create it? Through a digital token for each community and a functional set of governance tools, Native provides the system to enable the next wave of community sovereignty.</p>
             </div>
           </div>
         </section>
@@ -93,7 +92,7 @@ class IndexPage extends React.Component {
             </div>
             <div className="column--3">
               <h3>Transparent and open governance tools</h3>
-              <p>Organize and make collective decisions with Native tools for voting, projects, and tasks.</p>
+              <p>Organize and make collective decisions through voting, projects, and tasks.</p>
             </div>
           </div>
           <div className="cta">
@@ -103,34 +102,34 @@ class IndexPage extends React.Component {
             </div>
           </div>
         </section>
-        <section className="home__how-it-works steps">
-          <div className="intro">
+              <section className="home__how-it-works steps">
+        <div className="intro">
             <div className="contents">
               <h2>How it Works</h2>
             </div>
-          </div>
-          <div className="step-one">
+        </div>
+         <div className="step-one">
             <div className="contents">
               <div className="column">
                 <Fade left onReveal={ () => this.playStep1Animation()} wait={500}>
                   <LottieControl
-                      animationData={step1Animation}
-                      loop={false}
+                     animationData={step1Animation}
+                     loop={false}
                       autoplay={false}
                       isStopped={this.state.step1IsStopped} />
                 </Fade>
               </div>
-              <div className="column">
-                <Fade right>
+             <div className="column">
+               <Fade right>
                 <h6>STEP ONE</h6>
-                <h3>Discover & Launch</h3>
+               <h3>Discover & Launch</h3>
                 <p>Native is a network of communities. Find communities that share your goals and values or launch your own.</p>
-                </Fade>
-              </div>
-            </div>
+               </Fade>
+             </div>
           </div>
-          <div className="step-two">
-            <div className="contents">
+         </div>
+         <div className="step-two">
+           <div className="contents">
                 <div className="column">
                   <Fade left>
                   <h6>STEP TWO</h6>
@@ -164,14 +163,14 @@ class IndexPage extends React.Component {
               <div className="column">
                 <Fade up>
                 <h6>STEP THREE</h6>
-                <h3>Network Prosperity</h3>
-                <p>Our platform and economic model is designed so that as communities grow, the network grows.</p>
-                <div>
+                <h3>Thrive</h3>
+                <p>Our economic model enables communities to leverage their social and financial capital to work together and get things done.</p>
+               <div>
                   <Pulse>
                   <Link to="/how-it-works" className="button">Take a deeper dive</Link>
                   </Pulse>
-                </div>
-                </Fade>
+               </div>
+               </Fade>
               </div>
             </div>
           </div>
@@ -203,8 +202,8 @@ class IndexPage extends React.Component {
             </div>
             <div className="column">
               <Fade right>
-              <h3>Interested in launching a community on Native?</h3>
-              <p>Let us know what you're thinking so we can start the conversation.</p>
+              <h3>Want to launch your community on Native?</h3>
+              <p>Tell us about it so we can start the conversation.</p>
               <div>
                 <a className="button" onClick={this.openForm}>Get Started</a>
                 <ReactTypeformEmbed
