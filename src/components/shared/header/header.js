@@ -35,7 +35,7 @@ class Header extends React.Component {
         <div className="navbar--desktop">
           <div className="navbar--links">
             <Link activeClassName="active" to="/how-it-works">How It Works</Link>
-//             <Link activeClassName="active" to="/about">About Us</Link>
+            /* <Link activeClassName="active" to="/about">About Us</Link> */
       
             <OutboundLink className="join--telegram" href="https://telegram.me/joinnative" target="_blank">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20">
