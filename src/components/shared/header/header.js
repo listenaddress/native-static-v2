@@ -35,6 +35,7 @@ class Header extends React.Component {
         <div className="navbar--desktop">
           <div className="navbar--links">
             <Link activeClassName="active" to="/how-it-works">How It Works</Link>
+            <OutboundLink target="_blank" href="https://medium.com/native-token">Blog</OutboundLink>
             <OutboundLink target="_blank" href="https://chat.nativeproject.one">Chat</OutboundLink>
             <OutboundLink target="_blank" href="https://forum.nativeproject.one">Forum</OutboundLink>
             <Pulse>
