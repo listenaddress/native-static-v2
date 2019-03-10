@@ -9,12 +9,6 @@ const Footer = ({ siteTitle }) => (
   <div className="footer">
     <LogoMono />
     <div className="footer__socials">
-      <OutboundLink className="social-icon ico--telegram" href="https://telegram.me/joinnative" target="_blank" style={{ height: 40, width: 40 }} >
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 20">
-          <title>ico--telegram</title>
-          <path d="M23.72,3.19a.78.78,0,0,0-.79-.14C18.73,4.6,5.82,9.45.54,11.4a.83.83,0,0,0-.54.8A.82.82,0,0,0,.59,13c2.37.71,5.48,1.7,5.48,1.7S7.52,19,8.28,21.27a.87.87,0,0,0,.6.58.89.89,0,0,0,.81-.21l3.1-2.92s3.57,2.62,5.59,4.06a1.19,1.19,0,0,0,1.11.14,1.17,1.17,0,0,0,.73-.84C21.08,18,23.19,7.66,24,4A.79.79,0,0,0,23.72,3.19ZM19.61,7,9.43,16.13l-.38,3.51L7.37,14.1l11.9-7.59a.28.28,0,0,1,.34.44Z" transform="translate(0 -3)"/>
-        </svg>
-      </OutboundLink>
       <SocialIcon url="https://medium.com/native-token" color="rgba(132,206,200,1)" style={{ height: 40, width: 40 }} />
       <SocialIcon url="https://twitter.com/joinnative" style={{ height: 40, width: 40 }} />
       <SocialIcon url="https://www.facebook.com/joinnative/" style={{ height: 40, width: 40 }} />
@@ -30,8 +24,8 @@ const Footer = ({ siteTitle }) => (
       <a>© 2018 Native</a>
       <Link to="/">Home</Link>
       <Link to="/how-it-works">How it works</Link>
-      <OutboundLink target="_blank" href="https://chat.nativeproject.one/hc/en-us">Chat</OutboundLink>
-      <OutboundLink target="_blank" href="https://forum.nativeproject.one/hc/en-us">Forum</OutboundLink>
+      <OutboundLink target="_blank" href="https://chat.nativeproject.one/">Chat</OutboundLink>
+      <OutboundLink target="_blank" href="https://forum.nativeproject.one/">Forum</OutboundLink>
       <OutboundLink href="mailto:hello@nativeproject.one?subject=Investment">Invest</OutboundLink>
       <OutboundLink target="_blank" href="https://press.nativeproject.one/">Press</OutboundLink>
       <OutboundLink target="_blank" href="https://nativeproject.zendesk.com/hc/en-us">Help</OutboundLink>
