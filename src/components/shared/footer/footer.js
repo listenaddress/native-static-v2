@@ -28,7 +28,6 @@ const Footer = ({ siteTitle }) => (
       <OutboundLink target="_blank" href="https://forum.nativeproject.one/">Forum</OutboundLink>
       <OutboundLink href="mailto:hello@nativeproject.one?subject=Investment">Invest</OutboundLink>
       <OutboundLink target="_blank" href="https://press.nativeproject.one/">Press</OutboundLink>
-      <OutboundLink target="_blank" href="https://nativeproject.zendesk.com/hc/en-us">Help</OutboundLink>
       <OutboundLink href="https://app.nativeproject.one" target="_blank">Launch App</OutboundLink>
     </div>
   </div>
