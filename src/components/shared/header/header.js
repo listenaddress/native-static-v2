@@ -37,7 +37,6 @@ class Header extends React.Component {
             <Link activeClassName="active" to="/how-it-works">How It Works</Link>
             <OutboundLink target="_blank" href="https://medium.com/native-token">Blog</OutboundLink>
             <OutboundLink target="_blank" href="https://chat.nativeproject.one">Chat</OutboundLink>
-            <OutboundLink target="_blank" href="https://forum.nativeproject.one">Forum</OutboundLink>
             <Pulse>
             <OutboundLink href="https://app.nativeproject.one" target="_blank" className="launch-app button">
               Launch App
