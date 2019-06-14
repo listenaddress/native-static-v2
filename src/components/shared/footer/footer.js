@@ -24,8 +24,8 @@ const Footer = ({ siteTitle }) => (
       <a>© 2019 Native</a>
       <Link to="/">Home</Link>
       <Link to="/how-it-works">How it works</Link>
-      <OutboundLink target="_blank" href="https://chat.nativeproject.one/">Chat</OutboundLink>
-      <OutboundLink href="mailto:hello@nativeproject.one?subject=Investment">Invest</OutboundLink>
+      <OutboundLink target="_blank" href="http://bit.ly/2WA877O">Chat</OutboundLink>
+      <OutboundLink href="mailto:hello@nativeproject.one?subject=Native Investment Inquiry">Invest</OutboundLink>
       <OutboundLink target="_blank" href="https://press.nativeproject.one/">Press</OutboundLink>
       <OutboundLink href="https://github.com/native-project" target="_blank">Github</OutboundLink>
       <OutboundLink href="https://app.nativeproject.one" target="_blank">Launch App</OutboundLink>
