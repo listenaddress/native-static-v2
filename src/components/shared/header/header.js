@@ -53,7 +53,7 @@ class Header extends React.Component {
        <div className={mobileNavClass}>
           <div className="navbar--links">
             <Link to="/how-it-works" onClick={this.toggleNav}>How it works</Link>
-            <OutboundLink target="_blank" href="https://chat.nativeproject.one">Chat</OutboundLink>
+            <OutboundLink target="_blank" href="http://bit.ly/2WA877O">Chat</OutboundLink>
             <OutboundLink target="_blank" href="https://app.nativeproject.one" className="button" onClick={this.toggleNav}>
               Launch App
             </OutboundLink>
